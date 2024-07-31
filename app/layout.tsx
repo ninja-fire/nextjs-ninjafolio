@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${bricoFont.variable}`}>
       <body className="antialiased overflow-x-hidden bg-background">
-        <div className="absolute z-[-1] bg-primary top-[64rem] 2xl:top-0 right-0 w-full 2xl:w-6/12 h-full"></div>
+        <div className="absolute z-[-1] bg-primary top-[64rem] 2xl:top-0 right-0 w-full h-[240%] md:h-full 2xl:w-6/12 xl:h-[120%]"></div>
         <header className="flex sticky top-0 z-10 w-full">
           <NavMenu />
         </header>
@@ -32,7 +32,7 @@ export default function RootLayout({
           <div className="flex flex-col">{children}</div>
         <Contact/>
         </main>
-        <footer className="flex items-center justify-center">
+        <footer className="flex w-full items-center justify-center">
           <FooterB />
         </footer>
       </body>

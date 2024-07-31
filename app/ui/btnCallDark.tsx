@@ -4,15 +4,6 @@ import call from "../../public/call.svg";
 
 export default function BtnCallDark({ text = "", target = "", href = "" }) {
     return (
-        // <Link
-        //     href={href}
-        //     target={target}
-        //     className="flex w-full bg-label transition-all justify-center items-center px-8 py-4 gap-2 rounded-full border-4 border-background shadow-darkXl">
-        //     <Image priority src={call} alt='' className="w-6" />
-        //     <span className="btnText text-background inline text-nowrap">{text}</span>
-        //     <Image priority src={call} alt='' className="w-6"/>
-        // </Link>
-
             <div className="group flex pb-2 pr-2 hover:pb-1 hover:pr-1 active:pb-0 active:pr-0 rounded-full transition-all">
                 <Link
                     href={href}
