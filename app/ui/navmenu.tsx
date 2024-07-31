@@ -8,7 +8,7 @@ import call from "../../public/call.svg";
 
 export default function NavMenu() {
     return (
-      <div className="flex w-full px-32 py-3 justify-between items-center">
+      <div className="flex w-full px-6 md:px-32 py-3 justify-between items-center">
         <Link className="flex" href="/">
           <div className="flex">
           <Image priority src={logo} alt='' className="w-12 md:w-20"/>
