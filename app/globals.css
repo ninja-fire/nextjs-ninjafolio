@@ -26,6 +26,10 @@ select:-webkit-autofill:focus {
   --primary: #C6FE09;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--label);
   background: var(--background);
@@ -94,11 +98,11 @@ p {
   inline-size: max-content;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 
   h1 {
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 64px;
+    line-height: 80px;
   }
 
   h2 {
