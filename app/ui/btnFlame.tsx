@@ -7,7 +7,7 @@ export default function BtnFlame({ text = "", target = "", href = ""}) {
         <Link
             href={href}
             target={target}
-            className="flex w-fit bg-label transition-all justify-center items-center px-8 py-4 gap-2 rounded-full border border-background darkXl">
+            className="flex w-fit bg-label transition-all justify-center items-center px-8 py-4 gap-2 rounded-full border-4 border-background shadow-darkXl">
             <Image priority src={flame} alt='' className="w-6" />
             <span className="btnText text-background inline text-nowrap">{text}</span>
             <Image priority src={flame} alt='' className="w-6"/>

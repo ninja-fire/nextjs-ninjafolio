@@ -77,6 +77,13 @@ h5 {
 
 }
 
+p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: justify;
+}
+
 .btnText {
   font-weight: 800;
   font-size: 16px;
