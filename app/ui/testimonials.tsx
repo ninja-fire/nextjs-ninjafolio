@@ -32,7 +32,7 @@ export default function Testimonials() {
                             <Image priority src={ninjapic} alt='' className="w-20" />
                         </div>
                         <div className="flex flex-col gap-2 items-center justify-center">
-                            <h5 className="text-background">Ninja Fire</h5>
+                            <p className="text-2xl leading-8 font-extrabold text-background">Ninja Fire</p>
                             <p className="text-background">Head of Design - Ninja Corp</p>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ export default function Testimonials() {
                             <Image priority src={ninjapic} alt='' className="w-20" />
                         </div>
                         <div className="flex flex-col gap-2 items-center justify-center">
-                            <h5 className="text-background">Ninja Fire</h5>
+                            <p className="text-2xl leading-8 font-extrabold text-background">Ninja Fire</p>
                             <p className="text-background">Head of Design - Ninja Corp</p>
                         </div>
                     </div>
@@ -90,7 +90,7 @@ export default function Testimonials() {
                             <Image priority src={ninjapic} alt='' className="w-20" />
                         </div>
                         <div className="flex flex-col gap-2 items-center justify-center">
-                            <h5 className="text-background">Ninja Fire</h5>
+                            <p className="text-2xl leading-8 font-extrabold text-background">Ninja Fire</p>
                             <p className="text-background">Head of Design - Ninja Corp</p>
                         </div>
                     </div>

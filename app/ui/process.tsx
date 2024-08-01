@@ -12,7 +12,7 @@ export default function Process() {
                 <div className="flex flex-col gap-8">
                     <div className="flex px-6 py-4 gap-4 rounded-full bg-label border-4 border-background shadow-darkXl items-center w-fit">
                     <Image priority src={one} alt=''/>
-                        <h4 className="text-background">Define</h4>
+                        <h3 className="text-3xl text-background">Define</h3>
                     </div>
                     <p className="text-background/[64%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</p>
                         <div className="flex flex-col gap-2">
@@ -45,7 +45,7 @@ export default function Process() {
                 <div className="flex flex-col gap-8">
                     <div className="flex px-6 py-4 gap-4 rounded-full bg-label border-4 border-background shadow-darkXl items-center w-fit">
                     <Image priority src={two} alt=''/>
-                        <h4 className="text-background">Design</h4>
+                        <h3 className="text-3xl text-background">Design</h3>
                     </div>
                     <p className="text-background/[64%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</p>
                         <div className="flex flex-col gap-2">
@@ -78,7 +78,7 @@ export default function Process() {
                 <div className="flex flex-col gap-8">
                     <div className="flex px-6 py-4 gap-4 rounded-full bg-label border-4 border-background shadow-darkXl items-center w-fit">
                     <Image priority src={three} alt=''/>
-                        <h4 className="text-background">Refine</h4>
+                        <h3 className="text-3xl text-background">Refine</h3>
                     </div>
                     <p className="text-background/[64%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</p>
                         <div className="flex flex-col gap-2">
