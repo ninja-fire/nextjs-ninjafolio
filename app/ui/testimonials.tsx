@@ -48,11 +48,11 @@ export default function Testimonials() {
                     </div>
                     <div className="flex w-full gap-6">
                         <div className="flex h-fit px-4 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm">
-                            <p className="text-2xl text-background">"</p>
+                            <p className="text-2xl text-background">&ldquo;</p>
                         </div>
                         <p className="text-background/[80%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.</p>
                         <div className="flex h-fit px-4 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm">
-                            <p className="text-2xl text-background">"</p>
+                            <p className="text-2xl text-background">&rdquo;</p>
                         </div>
                     </div>
                 </div>
@@ -76,11 +76,11 @@ export default function Testimonials() {
                     {breakLine}
                     <div className="flex gap-6">
                         <div className="flex h-fit px-4 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm">
-                            <p className="text-2xl text-background">"</p>
+                            <p className="text-2xl text-background">&ldquo;</p>
                         </div>
                         <p className="text-background/[80%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.</p>
                         <div className="flex h-fit px-4 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm">
-                            <p className="text-2xl text-background">"</p>
+                            <p className="text-2xl text-background">&rdquo;</p>
                         </div>
                     </div>
                 </div>
@@ -104,11 +104,11 @@ export default function Testimonials() {
                     {breakLine}
                     <div className="flex gap-6">
                         <div className="flex h-fit px-4 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm">
-                            <p className="text-2xl text-background">"</p>
+                            <p className="text-2xl text-background">&ldquo;</p>
                         </div>
                         <p className="text-background/[80%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.</p>
                         <div className="flex h-fit px-4 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm">
-                            <p className="text-2xl text-background">"</p>
+                            <p className="text-2xl text-background">&rdquo;</p>
                         </div>
                     </div>
                 </div>
