@@ -4,7 +4,7 @@ import flame from "../../public/flame.svg";
 
 export default function BtnFlameLight({ text = "", target = "", href = "" }) {
     return (
-        <div className="group flex pb-2 pr-2 hover:pb-1 hover:pr-1 active:pb-0 active:pr-0 rounded-full transition-all">
+        <div className="group flex pb-2 pr-2 hover:pb-1 hover:pr-1 active:pb-0 active:pr-0 rounded-full transition-all items-end h-20">
             <Link
                 href={href}
                 target={target}

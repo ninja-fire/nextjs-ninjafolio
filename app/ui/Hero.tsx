@@ -10,7 +10,7 @@ import arrowimg from "../../public/arrowimg.png";
 
 export default function Hero() {
     return (
-        <div className="flex flex-col 2xl:flex-row gap-20 px-6 md:px-32 lg:px-60 2xl:px-32 py-16 justify-center items-center">
+        <div className="flex flex-col 2xl:flex-row gap-20 px-6 md:px-32 py-16 justify-center items-center">
             <div className="flex flex-col gap-16 2xl:w-4/12">
                 <div className="flex flex-col gap-0">
                     <h1>I <span className="text-primary">fire</span> design,</h1> <h1>You <span className="text-primary">launch</span></h1>

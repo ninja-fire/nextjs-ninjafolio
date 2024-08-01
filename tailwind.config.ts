@@ -14,8 +14,8 @@ const config: Config = {
       colors: {
         'background': '#151514',
         'label': '#F5F7EF',
-        'caption': '#C8CAC2',
-        'placeholder': '#A4A6A0',
+        'caption': 'rgba(245, 247, 239, 0.8);',
+        'placeholder': 'rgba(245, 247, 239, 0.64);',
         'primary': '#C6FE09',
       },
       boxShadow: {

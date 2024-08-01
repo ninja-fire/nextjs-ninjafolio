@@ -8,8 +8,8 @@ import telegram from "../../public/telegram.svg";
 
 export default function NavMenu() {
     return (
-        <div className="flex w-full px-6 md:px-32 lg:px-60 2xl:px-32 py-3 justify-between items-center">
-            <Link className="flex" href="/">
+        <div id="top" className="flex w-full px-6 md:px-32 py-3 justify-between items-center">
+            <Link className="flex" href="#top">
                 <div className="flex">
                     <Image priority src={logo} alt='' className="w-20" />
                 </div>
