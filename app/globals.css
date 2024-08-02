@@ -4,7 +4,7 @@
 
 /* Change autocomplete styles in WebKit */
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
+input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
@@ -26,6 +26,10 @@ select:-webkit-autofill:focus {
   --primary: #C6FE09;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--label);
   background: var(--background);
@@ -39,73 +43,85 @@ body {
 
 h1 {
   font-family: var(--font-brico);
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 88px;
 }
 
 h2 {
   font-family: var(--font-brico);
-  font-size: 2.5rem;
+  font-size: 64px;
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: 800;
+  line-height: 72px;
 
 }
 
 h3 {
   font-family: var(--font-brico);
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0.045rem;
-  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 64px;
 
 }
 
 h4 {
   font-family: var(--font-brico);
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 32px;
 
 }
 
 h5 {
   font-family: var(--font-brico);
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 0.875rem;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 32px;
 
+}
+
+p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: justify;
+}
+
+.btnText {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .inline {
   inline-size: max-content;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 
   h1 {
-    font-size: 2.125rem;
+    font-size: 64px;
+    line-height: 80px;
   }
 
   h2 {
-    font-size: 1.75rem;
+    font-size: 52px;
+    line-height: 48px;
   }
 
   h3 {
-    font-size: 0.875rem;
+    font-size: 32px;
+    line-height: 32px;
   }
 
   h4 {
-    font-size: 1.2rem;
+    font-size: 24px;
+    line-height: 24px;
   }
 
   h5 {
-    font-size: 0.875rem;
+    font-size: 18px;
+    line-height: 18px;
   }
 }
