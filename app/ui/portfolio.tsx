@@ -16,17 +16,17 @@ export default function Portfolio() {
             <div className="flex gap-20 px-6 md:px-32 py-20 items-center">
                 <div className="flex flex-col gap-16 justify-center w-full">
                     <div className="flex flex-col gap-4">
-                        <h3 className="leading-[52px]">Trooper : Job Market Blockchain pour l'Industrie du Gaming</h3>
+                        <h3 className="leading-[52px]">Trooper : Job Market Blockchain pour l&apos;Industrie du Gaming</h3>
                         <h4 className="leading-[32px] font-medium text-xl">Comment créer une plateforme de job market basée sur la blockchain, spécialisée dans le secteur du gaming, qui répond aux besoins spécifiques des utilisateurs et assure la sécurité des transactions?</h4>
                     </div>
                     <div className="flex flex-col gap-2">
                         <h5>Objectifs</h5>
                         <div className="flex flex-col gap-2">
                             <p className="text-placeholder leading-6">Créer une identité visuelle percutante et personnifier le projet à travers une mascotte 3D.</p>
-                            <p className="text-placeholder leading-6">Fournir une plateforme spécialisée qui répond spécifiquement aux besoins et aux dynamiques de l'industrie du gaming.</p>
-                            <p className="text-placeholder leading-6">Faciliter au maximum la création d’un profil personnalisé pour chaque utilisateur permettant un matching efficace sur le marché de l’emploi.</p>
-                            <p className="text-placeholder leading-6">Instaurer la confiance grâce au système d'escrow, agissant comme un tiers de confiance impartial pour sécuriser les paiements entre utilisateurs.</p>
-                            <p className="text-placeholder leading-6">Introduire les mécanisme économiques inhérents à l’application et à l’utilisation du token Trooper.</p>
+                            <p className="text-placeholder leading-6">Fournir une plateforme spécialisée qui répond spécifiquement aux besoins et aux dynamiques de l&apos;industrie du gaming.</p>
+                            <p className="text-placeholder leading-6">Faciliter au maximum la création d&apos;un profil personnalisé pour chaque utilisateur permettant un matching efficace sur le marché de l&apos;emploi.</p>
+                            <p className="text-placeholder leading-6">Instaurer la confiance grâce au système d&apos;escrow, agissant comme un tiers de confiance impartial pour sécuriser les paiements entre utilisateurs.</p>
+                            <p className="text-placeholder leading-6">Introduire les mécanisme économiques inhérents à l&apos;application et à l&apos;utilisation du token Trooper.</p>
                         </div>
                     </div>
                 </div>
@@ -86,17 +86,17 @@ export default function Portfolio() {
                 </div>
                 <div className="flex flex-col gap-16 justify-center w-full">
                     <div className="flex flex-col gap-4">
-                        <h3 className="leading-[52px] text-background">Trooper : Job Market Blockchain pour l'Industrie du Gaming</h3>
+                        <h3 className="leading-[52px] text-background">Trooper : Job Market Blockchain pour l&apos;Industrie du Gaming</h3>
                         <h4 className="leading-[32px] text-background font-medium text-xl">Comment créer une plateforme de job market basée sur la blockchain, spécialisée dans le secteur du gaming, qui répond aux besoins spécifiques des utilisateurs et assure la sécurité des transactions?</h4>
                     </div>
                     <div className="flex flex-col gap-2">
                         <h5 className="text-background">Objectifs</h5>
                         <div className="flex flex-col gap-2">
                             <p className="text-background/[64%] leading-6">Créer une identité visuelle percutante et personnifier le projet à travers une mascotte 3D.</p>
-                            <p className="text-background/[64%] leading-6">Fournir une plateforme spécialisée qui répond spécifiquement aux besoins et aux dynamiques de l'industrie du gaming.</p>
-                            <p className="text-background/[64%] leading-6">Faciliter au maximum la création d’un profil personnalisé pour chaque utilisateur permettant un matching efficace sur le marché de l’emploi.</p>
-                            <p className="text-background/[64%] leading-6">Instaurer la confiance grâce au système d'escrow, agissant comme un tiers de confiance impartial pour sécuriser les paiements entre utilisateurs.</p>
-                            <p className="text-background/[64%] leading-6">Introduire les mécanisme économiques inhérents à l’application et à l’utilisation du token Trooper.</p>
+                            <p className="text-background/[64%] leading-6">Fournir une plateforme spécialisée qui répond spécifiquement aux besoins et aux dynamiques de l&apos;industrie du gaming.</p>
+                            <p className="text-background/[64%] leading-6">Faciliter au maximum la création d&apos;un profil personnalisé pour chaque utilisateur permettant un matching efficace sur le marché de l&apos;emploi.</p>
+                            <p className="text-background/[64%] leading-6">Instaurer la confiance grâce au système d&apos;escrow, agissant comme un tiers de confiance impartial pour sécuriser les paiements entre utilisateurs.</p>
+                            <p className="text-background/[64%] leading-6">Introduire les mécanisme économiques inhérents à l&apos;application et à l&apos;utilisation du token Trooper.</p>
                         </div>
                     </div>
                 </div>
@@ -104,17 +104,17 @@ export default function Portfolio() {
             <div className="flex gap-20 px-6 md:px-32 py-20 items-center">
                 <div className="flex flex-col gap-16 justify-center w-full">
                     <div className="flex flex-col gap-4">
-                        <h3 className="leading-[52px]">Trooper : Job Market Blockchain pour l'Industrie du Gaming</h3>
+                        <h3 className="leading-[52px]">Trooper : Job Market Blockchain pour l&apos;Industrie du Gaming</h3>
                         <h4 className="leading-[32px] font-medium text-xl">Comment créer une plateforme de job market basée sur la blockchain, spécialisée dans le secteur du gaming, qui répond aux besoins spécifiques des utilisateurs et assure la sécurité des transactions?</h4>
                     </div>
                     <div className="flex flex-col gap-2">
                         <h5>Objectifs</h5>
                         <div className="flex flex-col gap-2">
                             <p className="text-placeholder leading-6">Créer une identité visuelle percutante et personnifier le projet à travers une mascotte 3D.</p>
-                            <p className="text-placeholder leading-6">Fournir une plateforme spécialisée qui répond spécifiquement aux besoins et aux dynamiques de l'industrie du gaming.</p>
-                            <p className="text-placeholder leading-6">Faciliter au maximum la création d’un profil personnalisé pour chaque utilisateur permettant un matching efficace sur le marché de l’emploi.</p>
-                            <p className="text-placeholder leading-6">Instaurer la confiance grâce au système d'escrow, agissant comme un tiers de confiance impartial pour sécuriser les paiements entre utilisateurs.</p>
-                            <p className="text-placeholder leading-6">Introduire les mécanisme économiques inhérents à l’application et à l’utilisation du token Trooper.</p>
+                            <p className="text-placeholder leading-6">Fournir une plateforme spécialisée qui répond spécifiquement aux besoins et aux dynamiques de l&apos;industrie du gaming.</p>
+                            <p className="text-placeholder leading-6">Faciliter au maximum la création d&apos;un profil personnalisé pour chaque utilisateur permettant un matching efficace sur le marché de l&apos;emploi.</p>
+                            <p className="text-placeholder leading-6">Instaurer la confiance grâce au système d&apos;escrow, agissant comme un tiers de confiance impartial pour sécuriser les paiements entre utilisateurs.</p>
+                            <p className="text-placeholder leading-6">Introduire les mécanisme économiques inhérents à l&apos;application et à l&apos;utilisation du token Trooper.</p>
                         </div>
                     </div>
                 </div>
