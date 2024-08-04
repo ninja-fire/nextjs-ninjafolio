@@ -26,7 +26,7 @@ export default function Testimonials() {
         <div className="flex flex-col gap-16 px-6 md:px-32 py-20 bg-label items-center justify-center">
             <h2 className="text-background text-center">Don’t trust, verify</h2>
             <div className="flex flex-wrap w-full gap-16 items-center justify-center">
-                <div className="flex grow flex-1 min-w-96 flex-col gap-6 items-center justify-center">
+                <div className="flex grow flex-1 min-w-80 flex-col gap-6 items-center justify-center">
                     <div className="flex flex-col  w-full gap-6 items-center justify-center">
                         <div className="flex items-center justify-center bg-primary border-2 border-background rounded-full shadow-darkSm w-content overflow-hidden">
                             <Image priority src={ninjapic} alt='' className="w-20" />
@@ -56,7 +56,7 @@ export default function Testimonials() {
                         </div>
                     </div>
                 </div>
-                <div className="flex grow flex-1 min-w-96 flex-col gap-6 items-center justify-center">
+                <div className="flex grow flex-1 min-w-80 flex-col gap-6 items-center justify-center">
                     <div className="flex flex-col gap-6 items-center justify-center">
                         <div className="flex items-center justify-center bg-primary border-2 border-background rounded-full shadow-darkSm w-content overflow-hidden">
                             <Image priority src={ninjapic} alt='' className="w-20" />
@@ -84,7 +84,7 @@ export default function Testimonials() {
                         </div>
                     </div>
                 </div>
-                <div className="flex grow flex-1 min-w-96 flex-col gap-6 items-center justify-center">
+                <div className="flex grow flex-1 min-w-80 flex-col gap-6 items-center justify-center">
                     <div className="flex flex-col gap-6 items-center justify-center">
                         <div className="flex items-center justify-center bg-primary border-2 border-background rounded-full shadow-darkSm w-content overflow-hidden">
                             <Image priority src={ninjapic} alt='' className="w-20" />
