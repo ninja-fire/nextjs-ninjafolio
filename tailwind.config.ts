@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'trooper': "url('../public/trooper.png')",
+      },
       fontFamily: {
         sans: ['var(--font-brico)'],
       },
@@ -23,6 +26,7 @@ const config: Config = {
         'darkSm': '4px 4px 0px #151514;',
         'lightXl': '8px 8px 0px #F5F7EF;',
         'lightSm': '4px 4px 0px #F5F7EF;',
+        'primarySm': '4px 4px 0px #C6FE09;',
       },
     },
   },
