@@ -21,14 +21,16 @@ export default function Hero() {
                         </div>
                         <p className="text-label text-2xl font-extrabold leading-8">Hi, I&apos;m Ninja Fire!</p>
                     </div>
-                    <p className="text-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.</p>
+                    <p className="text-caption font-normal">
+                        I'm a dedicated <span className="text-primary font-bold">Web3 UX/UI designer</span> with a deep understanding of <span className="text-primary font-bold">blockchain technology</span> and a knack for creating <span className="text-primary font-bold">intuitive</span>, <span className="text-primary font-bold">user-centered</span> designs. My goal is to <span className="text-primary font-bold">bridge the gap</span> between complex technologies and user-friendly interfaces, ensuring that the <span className="text-primary font-bold">decentralized web</span> is accessible to everyone. With a keen eye for detail and a commitment to innovation, I <span className="text-primary font-bold">help projects succeed</span> in the rapidly evolving Web3 space.
+                    </p>
                 </div>
             </div>
             <div className="flex flex-wrap gap-6 2xl:w-8/12">
                 <div className="flex flex-col md:flex-row gap-6">
                     <div className="flex relative items-center justify-center border-4 border-background shadow-darkXl overflow-hidden">
                         <div className="flex absolute items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm px-2 py-1 left-4 top-4 z-[2]">
-                            <span className="text-xs text-background font-medium">logo design</span>
+                            <span className="text-xs text-background font-medium">design system</span>
                         </div>
                         <Image priority src={avantgarde} alt='' />
                     </div>

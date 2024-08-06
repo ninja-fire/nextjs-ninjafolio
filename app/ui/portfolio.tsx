@@ -30,7 +30,7 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className="group flex sticky top-28 min-w-[304px] sm:min-w-[480px] flex-1 max-h-[440px] xl:max-h-none relative flex-col justify-between px-8 py-8 bg-trooper bg-repeat bg-cover bg-center border-4 border-label shadow-lightXl w-full h-[800px]">
-                    <div className="group-hover:bg-background/[16%] flex absolute bg-background/[64%] w-full h-full top-0 left-0 transition-all"></div>
+                    <div className="group-hover:bg-background/[16%] backdrop-blur-[2px] group-hover:backdrop-blur-none flex absolute bg-background/[64%] w-full h-full top-0 left-0 transition-all"></div>
                     <div className="flex flex-col gap-6">
                         <h3 className="leading-[48px] z-[2]">Trooper</h3>
                         <div className="flex flex-wrap gap-6 w-full z-[2]">
@@ -76,7 +76,7 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className="group flex order-1 sticky top-28 min-w-[304px] sm:min-w-[480px] flex-1 max-h-[440px] xl:max-h-none relative flex-col justify-between px-8 py-8 bg-family bg-repeat bg-cover bg-center border-4 border-background shadow-darkXl w-full h-[800px]">
-                    <div className="group-hover:bg-background/[16%] flex absolute bg-background/[64%] w-full h-full top-0 left-0 transition-all"></div>
+                    <div className="group-hover:bg-background/[16%] backdrop-blur-[2px] group-hover:backdrop-blur-none flex absolute bg-background/[64%] w-full h-full top-0 left-0 transition-all"></div>
                     <div className="flex flex-col gap-6">
                         <h3 className="leading-[48px] z-[2]">Family</h3>
                         <div className="flex flex-wrap gap-6 w-full z-[2]">
@@ -116,7 +116,7 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className="group flex sticky top-28 min-w-[304px] sm:min-w-[480px] flex-1 max-h-[440px] xl:max-h-none relative flex-col justify-between px-8 py-8 bg-looter bg-repeat bg-cover bg-center border-4 border-label shadow-lightXl w-full h-[800px]">
-                    <div className="group-hover:bg-background/[16%] flex absolute bg-background/[64%] w-full h-full top-0 left-0 transition-all"></div>
+                    <div className="group-hover:bg-background/[16%] backdrop-blur-[2px] group-hover:backdrop-blur-none flex absolute bg-background/[64%] w-full h-full top-0 left-0 transition-all"></div>
                     <div className="flex flex-col gap-6">
                         <h3 className="leading-[48px] z-[2]">Looter</h3>
                         <div className="flex flex-wrap gap-6 w-full z-[2]">
