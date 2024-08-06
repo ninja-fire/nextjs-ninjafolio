@@ -63,7 +63,7 @@ export default function Portfolio() {
                 <div className="flex order-2 min-w-[304px] sm:min-w-[480px] flex-1 flex-col gap-16 justify-center w-full">
                     <div className="flex flex-col gap-4">
                         <h3 className="text-background leading-[40px]">Family: On-Chain Clothing Purchase and Sale</h3>
-                        <h4 className="text-background leading-[28px] font-medium text-xl">Comment créer une plateforme de job market basée sur la blockchain, spécialisée dans le secteur du gaming, qui répond aux besoins spécifiques des utilisateurs et assure la sécurité des transactions?</h4>
+                        <h4 className="text-background leading-[28px] font-medium text-xl">How to create a system where purchasing, NFC-certified ownership, and resale on a secondary market seamlessly integrate?</h4>
                     </div>
                     <div className="flex flex-col gap-2">
                         <h5 className="text-background">Objectives</h5>
@@ -103,15 +103,15 @@ export default function Portfolio() {
                 <div className="flex min-w-[304px] sm:min-w-[480px] flex-1 flex-col gap-16 justify-center w-full">
                     <div className="flex flex-col gap-4">
                         <h3 className="leading-[40px]">Looter: Decentralized Exchange with AMM and Game Theory</h3>
-                        <h4 className="leading-[28px] font-medium text-xl">How to create a brand identity and visual experience that captivates the "Dégen" community while integrating innovative economic mechanisms into a decentralized exchange.</h4>
+                        <h4 className="leading-[28px] font-medium text-xl">How to create a brand identity and visual experience that captivates the Degen community while integrating innovative economic mechanisms into a decentralized exchange.</h4>
                     </div>
                     <div className="flex flex-col gap-2">
                         <h5>Objectives</h5>
                         <div className="flex flex-col gap-2">
                             <p className="text-placeholder leading-6">Develop a striking visual identity and personify the project through a 3D mascot.</p>
-                            <p className="text-placeholder leading-6">Create an immersive user experience aligned with the culture and energy of the "Dégen" community.</p>
+                            <p className="text-placeholder leading-6">Create an immersive user experience aligned with the culture and energy of the Degen community.</p>
                             <p className="text-placeholder leading-6">Generate interest from potential investors through a compelling and persuasive pitch deck.</p>
-                            <p className="text-placeholder leading-6">Design social media banners aligned with the aesthetics and spirit of the brand identity and the "Dégen" community.</p>
+                            <p className="text-placeholder leading-6">Design social media banners aligned with the aesthetics and spirit of the brand identity and the Degen community.</p>
                         </div>
                     </div>
                 </div>
