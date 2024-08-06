@@ -10,6 +10,8 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'trooper': "url('../public/trooper.png')",
+        'looter': "url('../public/looter.png')",
+        'family': "url('../public/family.png')",
       },
       fontFamily: {
         sans: ['var(--font-brico)'],

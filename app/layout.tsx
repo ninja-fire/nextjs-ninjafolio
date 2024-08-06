@@ -3,7 +3,7 @@ import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import NavMenu from "./ui/navmenu";
 import FooterB from "./ui/footerB";
-import Contact from "./ui/contact";
+import Cta from "./ui/cta";
 
 const bricoFont = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -30,7 +30,7 @@ export default function RootLayout({
         </header>
         <main role="main" className="flex flex-col min-h-screen">
           <div className="flex flex-col">{children}</div>
-        <Contact/>
+        <Cta/>
         </main>
         <footer role="contentinfo" className="flex w-full items-center justify-center">
           <FooterB />
