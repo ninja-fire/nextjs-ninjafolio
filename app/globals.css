@@ -125,3 +125,10 @@ p {
     line-height: 18px;
   }
 }
+
+@media only screen and (max-width: 640px) {
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}

@@ -40,59 +40,59 @@ import logoclient38 from "../../public/logoclient/logoclient-38.svg";
 import logoclient39 from "../../public/logoclient/logoclient-39.svg";
 import logoclient40 from "../../public/logoclient/logoclient-40.svg";
 
-
 export default function Clients() {
+
     return (
         <div className="flex flex-col bg-background gap-8 py-20 overflow-hidden items-center justify-center">
             <p>Trusted by <span className="text-primary font-bold">40+</span> clients worldwide</p>
-            <div className="flex flex-col gap-6 opacity-50">
-                <div className="flex gap-8 lg:gap-16 h-8 lg:h-16">
-                <Image priority src={logoclient01} alt='' className="h-full"/>
-                <Image priority src={logoclient02} alt='' className="h-full"/>
-                <Image priority src={logoclient03} alt='' className="h-full"/>
-                <Image priority src={logoclient04} alt='' className="h-full"/>
-                <Image priority src={logoclient05} alt='' className="h-full"/>
-                <Image priority src={logoclient06} alt='' className="h-full"/>
-                <Image priority src={logoclient07} alt='' className="h-full"/>
-                <Image priority src={logoclient08} alt='' className="h-full"/>
-                <Image priority src={logoclient09} alt='' className="h-full"/>
-                <Image priority src={logoclient10} alt='' className="h-full"/>
+            <div  className="flex flex-col gap-6 opacity-50">
+                <div className="flex gap-8 lg:gap-16 h-8 lg:h-16" style={{transform: "translateX({scrollY})"}}>
+                    <Image priority src={logoclient01} alt='' className="h-full" />
+                    <Image priority src={logoclient02} alt='' className="h-full" />
+                    <Image priority src={logoclient03} alt='' className="h-full" />
+                    <Image priority src={logoclient04} alt='' className="h-full" />
+                    <Image priority src={logoclient05} alt='' className="h-full" />
+                    <Image priority src={logoclient06} alt='' className="h-full" />
+                    <Image priority src={logoclient07} alt='' className="h-full" />
+                    <Image priority src={logoclient08} alt='' className="h-full" />
+                    <Image priority src={logoclient09} alt='' className="h-full" />
+                    <Image priority src={logoclient10} alt='' className="h-full" />
                 </div>
                 <div className="flex gap-8 lg:gap-16 h-8 lg:h-16">
-                <Image priority src={logoclient11} alt='' className="h-full"/>
-                <Image priority src={logoclient12} alt='' className="h-full"/>
-                <Image priority src={logoclient13} alt='' className="h-full"/>
-                <Image priority src={logoclient14} alt='' className="h-full"/>
-                <Image priority src={logoclient15} alt='' className="h-full"/>
-                <Image priority src={logoclient16} alt='' className="h-full"/>
-                <Image priority src={logoclient17} alt='' className="h-full"/>
-                <Image priority src={logoclient18} alt='' className="h-full"/>
-                <Image priority src={logoclient19} alt='' className="h-full"/>
-                <Image priority src={logoclient20} alt='' className="h-full"/>
+                    <Image priority src={logoclient11} alt='' className="h-full" />
+                    <Image priority src={logoclient12} alt='' className="h-full" />
+                    <Image priority src={logoclient13} alt='' className="h-full" />
+                    <Image priority src={logoclient14} alt='' className="h-full" />
+                    <Image priority src={logoclient15} alt='' className="h-full" />
+                    <Image priority src={logoclient16} alt='' className="h-full" />
+                    <Image priority src={logoclient17} alt='' className="h-full" />
+                    <Image priority src={logoclient18} alt='' className="h-full" />
+                    <Image priority src={logoclient19} alt='' className="h-full" />
+                    <Image priority src={logoclient20} alt='' className="h-full" />
                 </div>
                 <div className="flex gap-8 lg:gap-16 h-8 lg:h-16">
-                <Image priority src={logoclient21} alt='' className="h-full"/>
-                <Image priority src={logoclient22} alt='' className="h-full"/>
-                <Image priority src={logoclient23} alt='' className="h-full"/>
-                <Image priority src={logoclient24} alt='' className="h-full"/>
-                <Image priority src={logoclient25} alt='' className="h-full"/>
-                <Image priority src={logoclient26} alt='' className="h-full"/>
-                <Image priority src={logoclient27} alt='' className="h-full"/>
-                <Image priority src={logoclient28} alt='' className="h-full"/>
-                <Image priority src={logoclient29} alt='' className="h-full"/>
-                <Image priority src={logoclient30} alt='' className="h-full"/>
+                    <Image priority src={logoclient21} alt='' className="h-full" />
+                    <Image priority src={logoclient22} alt='' className="h-full" />
+                    <Image priority src={logoclient23} alt='' className="h-full" />
+                    <Image priority src={logoclient24} alt='' className="h-full" />
+                    <Image priority src={logoclient25} alt='' className="h-full" />
+                    <Image priority src={logoclient26} alt='' className="h-full" />
+                    <Image priority src={logoclient27} alt='' className="h-full" />
+                    <Image priority src={logoclient28} alt='' className="h-full" />
+                    <Image priority src={logoclient29} alt='' className="h-full" />
+                    <Image priority src={logoclient30} alt='' className="h-full" />
                 </div>
                 <div className="flex gap-8 lg:gap-16 h-8 lg:h-16">
-                <Image priority src={logoclient31} alt='' className="h-full"/>
-                <Image priority src={logoclient32} alt='' className="h-full"/>
-                <Image priority src={logoclient33} alt='' className="h-full"/>
-                <Image priority src={logoclient34} alt='' className="h-full"/>
-                <Image priority src={logoclient35} alt='' className="h-full"/>
-                <Image priority src={logoclient36} alt='' className="h-full"/>
-                <Image priority src={logoclient37} alt='' className="h-full"/>
-                <Image priority src={logoclient38} alt='' className="h-full"/>
-                <Image priority src={logoclient39} alt='' className="h-full"/>
-                <Image priority src={logoclient40} alt='' className="h-full"/>
+                    <Image priority src={logoclient31} alt='' className="h-full" />
+                    <Image priority src={logoclient32} alt='' className="h-full" />
+                    <Image priority src={logoclient33} alt='' className="h-full" />
+                    <Image priority src={logoclient34} alt='' className="h-full" />
+                    <Image priority src={logoclient35} alt='' className="h-full" />
+                    <Image priority src={logoclient36} alt='' className="h-full" />
+                    <Image priority src={logoclient37} alt='' className="h-full" />
+                    <Image priority src={logoclient38} alt='' className="h-full" />
+                    <Image priority src={logoclient39} alt='' className="h-full" />
+                    <Image priority src={logoclient40} alt='' className="h-full" />
                 </div>
             </div>
         </div>
