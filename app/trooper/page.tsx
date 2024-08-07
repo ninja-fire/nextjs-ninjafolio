@@ -5,6 +5,10 @@ import FooterNav from "../ui/footerNav";
 import one from "../../public/1.svg";
 import two from "../../public/2.svg";
 import three from "../../public/3.svg";
+import trooper01 from "../../public/trooper/trooper01.webp";
+import trooper02 from "../../public/trooper/trooper02.webp";
+import trooper03 from "../../public/trooper/trooper03.webp";
+import flame from "../../public/flame.svg";
 
 export default function Trooper() {
     return (
@@ -45,20 +49,20 @@ export default function Trooper() {
             </div>
             <div className="flex flex-col bg-label w-full gap-20 px-6 md:px-32 py-20">
                 <h2 className="text-background">The challenges</h2>
-                <div className="flex gap-20 w-full">
-                    <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl w-full">
+                <div className="flex flex-wrap gap-20 w-full">
+                    <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl grow flex-1 min-w-80 sm:min-w-96">
                         <div className="flex">
                             <Image priority src={one} alt='Challenge 1 - Create an intuitive platform' />
                         </div>
                         <h3 className="text-background text-[32px] leading-10">How might we create an intuitive platform that seamlessly connects gamers and gaming professionals?</h3>
                     </div>
-                    <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl w-full">
+                    <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl grow flex-1 min-w-80 sm:min-w-96">
                         <div className="flex">
                             <Image priority src={two} alt='Challenge 2 - Implement a blockchain-based escrow system' />
                         </div>
                         <h3 className="text-background text-[32px] leading-10">How might we implement a blockchain-based escrow system that ensures secure and efficient transactions?</h3>
                     </div>
-                    <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl w-full">
+                    <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl grow flex-1 min-w-80 sm:min-w-96">
                         <div className="flex">
                             <Image priority src={three} alt='Challenge 3 - Incorporate gamification elements that engage users' />
                         </div>
@@ -66,6 +70,126 @@ export default function Trooper() {
                     </div>
                 </div>
             </div>
+            <div className="flex flex-col bg-primary w-full gap-20 px-6 md:px-32 py-20">
+                <h2 className="text-background">The process</h2>
+                <div className="flex flex-wrap gap-20 w-full">
+                    <div className="flex flex-col grow flex-1 min-w-80 sm:min-w-96 gap-8">
+                        <div className="flex px-[52px] py-4 gap-4 rounded-full bg-label border-4 border-background shadow-darkXl items-center w-fit">
+                            <h3 className="text-3xl text-background">Define</h3>
+                        </div>
+                        <div className="flex gap-4">
+                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
+                                <Image priority src={flame} alt='Research Icon' className="h-6" />
+                            </div>
+                            <div className="flex flex-col w-full">
+                                <h4 className="text-xl text-background">Research</h4>
+                                <p className="text-background">Conducted extensive research to understand the gaming and blockchain ecosystem, identifying key user needs and market gaps.</p>
+                            </div>
+                        </div>
+                        <div className="flex gap-4">
+                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
+                                <Image priority src={flame} alt='Research Icon' className="h-6" />
+                            </div>
+                            <div className="flex flex-col w-full">
+                                <h4 className="text-xl text-background">Strategic Planning</h4>
+                                <p className="text-background">Developed a strategic plan outlining the project goals, target audience, and key milestones, ensuring alignment with the client&apos;s vision.</p>
+                            </div>
+                        </div>
+                        <div className="flex gap-4">
+                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
+                                <Image priority src={flame} alt='Research Icon' className="h-6" />
+                            </div>
+                            <div className="flex flex-col w-full">
+                                <h4 className="text-xl text-background">Insight Gathering</h4>
+                                <p className="text-background">Collected insights from potential users and industry experts to inform the design direction and address specific user pain points.</p>
+                            </div>
+                        </div>
+                        <div className="flex gap-4">
+                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
+                                <Image priority src={flame} alt='Research Icon' className="h-6" />
+                            </div>
+                            <div className="flex flex-col w-full">
+                                <h4 className="text-xl text-background">Vision Alignment</h4>
+                                <p className="text-background">Collaborated closely with the client to ensure the project vision aligns with their goals and the needs of their target audience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col grow flex-1 min-w-80 sm:min-w-96 gap-8">
+                        <div className="flex px-[52px] py-4 gap-4 rounded-full bg-label border-4 border-background shadow-darkXl items-center w-fit">
+                            <h3 className="text-3xl text-background">Design</h3>
+                        </div>
+                        <div className="flex gap-4">
+                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
+                                <Image priority src={flame} alt='Research Icon' className="h-6" />
+                            </div>
+                            <div className="flex flex-col w-full">
+                                <h4 className="text-xl text-background">User Experience Optimization</h4>
+                                <p className="text-background">Designed user flows and wireframes to optimize the user experience, ensuring seamless interactions.</p>
+                            </div>
+                        </div>
+                        <div className="flex gap-4">
+                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
+                                <Image priority src={flame} alt='Research Icon' className="h-6" />
+                            </div>
+                            <div className="flex flex-col w-full">
+                                <h4 className="text-xl text-background">User Interface Design</h4>
+                                <p className="text-background">Crafted visually appealing and intuitive user interfaces that reflect the latest Web3 and blockchain design trends.</p>
+                            </div>
+                        </div>
+                        <div className="flex gap-4">
+                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
+                                <Image priority src={flame} alt='Research Icon' className="h-6" />
+                            </div>
+                            <div className="flex flex-col w-full">
+                                <h4 className="text-xl text-background">Incorporating Web3 Design Trends</h4>
+                                <p className="text-background">Integrated current Web3 and blockchain design trends to ensure the platform stands out in a competitive market.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col grow flex-1 min-w-80 sm:min-w-96 gap-8">
+                        <div className="flex px-[52px] py-4 gap-4 rounded-full bg-label border-4 border-background shadow-darkXl items-center w-fit">
+                            <h3 className="text-3xl text-background">Refine</h3>
+                        </div>
+                        <div className="flex gap-4">
+                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
+                                <Image priority src={flame} alt='Research Icon' className="h-6" />
+                            </div>
+                            <div className="flex flex-col w-full">
+                                <h4 className="text-xl text-background">User Testing and Feedback</h4>
+                                <p className="text-background">Conducted user testing sessions to gather feedback on the initial designs, identifying areas for improvement.</p>
+                            </div>
+                        </div>
+                        <div className="flex gap-4">
+                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
+                                <Image priority src={flame} alt='Research Icon' className="h-6" />
+                            </div>
+                            <div className="flex flex-col w-full">
+                                <h4 className="text-xl text-background">Iterative Improvements</h4>
+                                <p className="text-background">Implemented an iterative design process, refining the designs based on user feedback and testing results.</p>
+                            </div>
+                        </div>
+                        <div className="flex gap-4">
+                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
+                                <Image priority src={flame} alt='Research Icon' className="h-6" />
+                            </div>
+                            <div className="flex flex-col w-full">
+                                <h4 className="text-xl text-background">Polishing the Design</h4>
+                                <p className="text-background">Focused on attention to detail to ensure a polished and professional final product.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="flex relative w-full items-center justify-center overflow-hidden">
+                <Image src={trooper01} alt="" className="flex w-full" />
+            </div>
+            <div className="flex relative w-full items-center justify-center overflow-hidden">
+                <Image src={trooper02} alt="" className="flex w-full" />
+            </div>
+            <div className="flex relative w-full items-center justify-center overflow-hidden">
+                <Image src={trooper03} alt="" className="flex w-full" />
+            </div>
+            <div className="flex h-20 bg-background"></div>
             <FooterNav hrefprev="/looter" hrefnext="/family" previous="Looter" next="Family" />
         </div>
     );
