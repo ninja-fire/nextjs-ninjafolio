@@ -2,6 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import arrowstraight from "../../public/arrowstraight.svg";
 import FooterNav from "../ui/footerNav";
+import one from "../../public/1.svg";
+import two from "../../public/2.svg";
+import three from "../../public/3.svg";
 
 export default function Trooper() {
     return (
@@ -37,6 +40,29 @@ export default function Trooper() {
                         <p className="text-caption leading-6">Streamline the creation of personalized profiles for each user, facilitating effective job market matching.</p>
                         <p className="text-caption leading-6">Establish trust through the escrow system, acting as an impartial third party to secure payments between users.</p>
                         <p className="text-caption leading-6">Introduce economic mechanisms inherent to the application and the use of the Trooper token.</p>
+                    </div>
+                </div>
+            </div>
+            <div className="flex flex-col bg-label w-full gap-20 px-6 md:px-32 py-20">
+                <h2 className="text-background">The challenges</h2>
+                <div className="flex gap-20 w-full">
+                    <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl w-full">
+                        <div className="flex">
+                            <Image priority src={one} alt='Challenge 1 - Create an intuitive platform' />
+                        </div>
+                        <h3 className="text-background text-[32px] leading-10">How might we create an intuitive platform that seamlessly connects gamers and gaming professionals?</h3>
+                    </div>
+                    <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl w-full">
+                        <div className="flex">
+                            <Image priority src={two} alt='Challenge 2 - Implement a blockchain-based escrow system' />
+                        </div>
+                        <h3 className="text-background text-[32px] leading-10">How might we implement a blockchain-based escrow system that ensures secure and efficient transactions?</h3>
+                    </div>
+                    <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl w-full">
+                        <div className="flex">
+                            <Image priority src={three} alt='Challenge 3 - Incorporate gamification elements that engage users' />
+                        </div>
+                        <h3 className="text-background text-[32px] leading-10">How might we incorporate gamification elements that engage users and build trust within the community?</h3>
                     </div>
                 </div>
             </div>

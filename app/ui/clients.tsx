@@ -45,7 +45,7 @@ export default function Clients() {
     return (
         <div className="flex flex-col bg-background gap-8 py-20 overflow-hidden items-center justify-center">
             <p>Trusted by <span className="text-primary font-bold">40+</span> clients worldwide</p>
-            <div  className="flex flex-col gap-6 opacity-50">
+            <div className="flex flex-col gap-6 opacity-50 saturate-0">
                 <div className="flex gap-8 lg:gap-16 h-8 lg:h-16">
                     <Image priority src={logoclient01} alt='' className="h-full" />
                     <Image priority src={logoclient02} alt='' className="h-full" />

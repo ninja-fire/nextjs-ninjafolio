@@ -1,10 +1,10 @@
 import Image from "next/image";
 import ninjapic from "../../public/ninjapic.png";
 import avantgarde from "../../public/avantgarde.png";
-import looter from "../../public/looter.png";
-import trooper from "../../public/trooper.png";
+import looter from "../../public/looter/looter.png";
+import trooper from "../../public/trooper/trooper.png";
 import confab from "../../public/confab.png";
-import family from "../../public/family.png";
+import family from "../../public/family/family.png";
 import arrowimg from "../../public/arrowimg.png";
 
 export default function Hero() {
