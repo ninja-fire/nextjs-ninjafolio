@@ -1,6 +1,7 @@
 import Image from "next/image";
 import arrow from "../../public/arrowshadow.svg";
 import arrowstraight from "../../public/arrowstraight.svg";
+import Link from "next/link";
 
 export default function Portfolio() {
     return (
@@ -29,7 +30,7 @@ export default function Portfolio() {
                         </div>
                     </div>
                 </div>
-                <div className="group flex sticky top-28 min-w-[304px] sm:min-w-[480px] flex-1 max-h-[440px] xl:max-h-none relative flex-col justify-between px-8 py-8 bg-trooper bg-repeat bg-cover bg-center border-4 border-label shadow-lightXl w-full h-[800px]">
+                <Link href="/trooper" className="group flex sticky top-28 min-w-[304px] sm:min-w-[480px] flex-1 max-h-[440px] xl:max-h-none relative flex-col justify-between px-8 py-8 bg-trooper bg-repeat bg-cover bg-center border-4 border-label shadow-lightXl w-full h-[800px]">
                     <div className="group-hover:bg-background/[16%] backdrop-blur-[2px] group-hover:backdrop-blur-none flex absolute bg-background/[64%] w-full h-full top-0 left-0 transition-all"></div>
                     <div className="flex flex-col gap-6">
                         <h3 className="leading-[48px] z-[2]">Trooper</h3>
@@ -51,13 +52,13 @@ export default function Portfolio() {
                     <div className="flex flex-col sm:flex-row w-full justify-between z-[2]">
                         <div className="flex flex-col gap-2">
                             <h5>Tools</h5>
-                            <p className="text-placeholder">Figma - Blender</p>
+                            <p className="text-placeholder text-start leading-6">Figma - Blender</p>
                         </div>
                         <div className="flex">
                             <Image priority src={arrowstraight} alt='' className="" />
                         </div>
                     </div>
-                </div>
+                </Link>
             </div>
             <div className="flex bg-label flex-wrap gap-20 px-6 md:px-32 py-20 items-center">
                 <div className="flex order-2 min-w-[304px] sm:min-w-[480px] flex-1 flex-col gap-16 justify-center w-full">
@@ -75,7 +76,7 @@ export default function Portfolio() {
                         </div>
                     </div>
                 </div>
-                <div className="group flex order-1 sticky top-28 min-w-[304px] sm:min-w-[480px] flex-1 max-h-[440px] xl:max-h-none relative flex-col justify-between px-8 py-8 bg-family bg-repeat bg-cover bg-center border-4 border-background shadow-darkXl w-full h-[800px]">
+                <Link href="/family" className="group flex order-1 sticky top-28 min-w-[304px] sm:min-w-[480px] flex-1 max-h-[440px] xl:max-h-none relative flex-col justify-between px-8 py-8 bg-family bg-repeat bg-cover bg-center border-4 border-background shadow-darkXl w-full h-[800px]">
                     <div className="group-hover:bg-background/[16%] backdrop-blur-[2px] group-hover:backdrop-blur-none flex absolute bg-background/[64%] w-full h-full top-0 left-0 transition-all"></div>
                     <div className="flex flex-col gap-6">
                         <h3 className="leading-[48px] z-[2]">Family</h3>
@@ -91,13 +92,13 @@ export default function Portfolio() {
                     <div className="flex flex-col sm:flex-row w-full justify-between z-[2]">
                         <div className="flex flex-col gap-2">
                             <h5>Tools</h5>
-                            <p className="text-placeholder">Figma</p>
+                            <p className="text-placeholder text-start leading-6">Figma</p>
                         </div>
                         <div className="flex">
                             <Image priority src={arrowstraight} alt='' className="" />
                         </div>
                     </div>
-                </div>
+                </Link>
             </div>
             <div className="flex flex-wrap-reverse gap-20 px-6 md:px-32 py-20 items-center">
                 <div className="flex min-w-[304px] sm:min-w-[480px] flex-1 flex-col gap-16 justify-center w-full">
@@ -115,7 +116,7 @@ export default function Portfolio() {
                         </div>
                     </div>
                 </div>
-                <div className="group flex sticky top-28 min-w-[304px] sm:min-w-[480px] flex-1 max-h-[440px] xl:max-h-none relative flex-col justify-between px-8 py-8 bg-looter bg-repeat bg-cover bg-center border-4 border-label shadow-lightXl w-full h-[800px]">
+                <Link href="/looter" scroll={true} className="group flex sticky top-28 min-w-[304px] sm:min-w-[480px] flex-1 max-h-[440px] xl:max-h-none relative flex-col justify-between px-8 py-8 bg-looter bg-repeat bg-cover bg-center border-4 border-label shadow-lightXl w-full h-[800px]">
                     <div className="group-hover:bg-background/[16%] backdrop-blur-[2px] group-hover:backdrop-blur-none flex absolute bg-background/[64%] w-full h-full top-0 left-0 transition-all"></div>
                     <div className="flex flex-col gap-6">
                         <h3 className="leading-[48px] z-[2]">Looter</h3>
@@ -137,13 +138,13 @@ export default function Portfolio() {
                     <div className="flex flex-col sm:flex-row w-full justify-between z-[2]">
                         <div className="flex flex-col gap-2">
                             <h5>Tools</h5>
-                            <p className="text-placeholder">Figma - Blender - Marvelous Designer</p>
+                            <p className="text-placeholder text-start leading-6">Figma - Blender - Marvelous Designer</p>
                         </div>
                         <div className="flex">
                             <Image priority src={arrowstraight} alt='' className="" />
                         </div>
                     </div>
-                </div>
+                </Link>
             </div>
         </div>
     );
