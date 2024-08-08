@@ -8,7 +8,6 @@ import three from "../../public/3.svg";
 import trooper01 from "../../public/trooper/trooper01.webp";
 import trooper02 from "../../public/trooper/trooper02.webp";
 import trooper03 from "../../public/trooper/trooper03.webp";
-import problem1 from "../../public/trooper/problem1.png";
 import flame from "../../public/flame.svg";
 
 export default function Trooper() {
@@ -244,14 +243,14 @@ export default function Trooper() {
             <div className="flex flex-col bg-background w-full gap-20 px-6 md:px-32 py-20">
                 <h2 className="">Main <span className="text-primary">problems</span> and <span className="text-primary">solutions</span></h2>
                 <div className="flex flex-col gap-20">
-                    <div className="flex gap-16 py-6">
-                        <div className="flex bg-trooperP1 bg-center bg-cover w-full border-4 border-label shadow-lightXl"></div>
+                    <div className="flex items-center gap-16 py-6">
+                        <div className="flex bg-trooperP1 bg-center bg-cover w-full h-[640px] border-4 border-label shadow-lightXl"></div>
                         <div className="flex flex-col gap-6 w-full">
                             <h3 className="text-3xl">Difficulty in Filtering Applications for Multiple Player Missions</h3>
                             <div className="flex flex-col w-full">
                                 <h4 className="text-xl text-label">Issue</h4>
                                 <p className="text-placeholder">
-                                    Trooper began as an ambitious idea to revolutionize the gaming job market by connecting gamers and game developers within the blockchain ecosystem. The project&apos;s mission was to create a platform where gamers could find professional opportunities in the emerging &quot;play to earn&quot; market, while companies could find and hire skilled players and developers. The challenges were clear:
+                                    Companies posting job offers to hire multiple players for a mission found it challenging to filter applications effectively. The existing XP and badges system was not clear enough to differentiate between applicants.
                                 </p>
                             </div>
                             <div className="flex flex-col w-full">
@@ -263,39 +262,39 @@ export default function Trooper() {
 
                         </div>
                     </div>
-                    <div className="flex gap-16 py-6">
+                    <div className="flex items-center gap-16 py-6">
                         <div className="flex flex-col gap-6 w-full">
-                            <h3 className="text-3xl">Difficulty in Filtering Applications for Multiple Player Missions</h3>
+                            <h3 className="text-3xl">Low Job Visibility and Engagement</h3>
                             <div className="flex flex-col w-full">
                                 <h4 className="text-xl text-label">Issue</h4>
                                 <p className="text-placeholder">
-                                    Trooper began as an ambitious idea to revolutionize the gaming job market by connecting gamers and game developers within the blockchain ecosystem. The project&quot;s mission was to create a platform where gamers could find professional opportunities in the emerging &quot;play to earn&quot; market, while companies could find and hire skilled players and developers. The challenges were clear:
+                                    Users were concerned that the new platform might struggle to attract gamers to apply for their jobs, resulting in lower engagement.
                                 </p>
                             </div>
                             <div className="flex flex-col w-full">
                                 <h4 className="text-xl text-label">Solution</h4>
                                 <p className="text-placeholder">
-                                    We implemented a detailed review system with comments for each player. This allowed companies to read feedback from other employers, providing clearer insights into each applicant&quot;s past performance and reliability. We also enhanced the badges system to display specific skills and achievements more prominently.
+                                    We added a feature that allows users to share job posts on social media platforms directly from the app. This not only increased visibility but also drove more traffic to the job listings, ensuring that opportunities reached a wider audience quickly.
                                 </p>
                             </div>
 
                         </div>
-                        <div className="flex bg-trooperP1 bg-center bg-cover w-full border-4 border-label shadow-lightXl"></div>
+                        <div className="flex bg-trooperP2 bg-center bg-cover w-full h-[640px] border-4 border-label shadow-lightXl"></div>
                     </div>
-                    <div className="flex gap-16 py-6">
-                        <div className="flex bg-trooperP1 bg-center bg-cover w-full border-4 border-label shadow-lightXl"></div>
+                    <div className="flex items-center gap-16 py-6">
+                        <div className="flex bg-trooperP3 bg-center bg-cover w-full h-[640px] border-4 border-label shadow-lightXl"></div>
                         <div className="flex flex-col gap-6 w-full">
-                            <h3 className="text-3xl">Difficulty in Filtering Applications for Multiple Player Missions</h3>
+                            <h3 className="text-3xl">Lack of a Comprehensive Search Feature</h3>
                             <div className="flex flex-col w-full">
                                 <h4 className="text-xl text-label">Issue</h4>
                                 <p className="text-placeholder">
-                                    Trooper began as an ambitious idea to revolutionize the gaming job market by connecting gamers and game developers within the blockchain ecosystem. The project&quot;s mission was to create a platform where gamers could find professional opportunities in the emerging &quot;play to earn&quot; market, while companies could find and hire skilled players and developers. The challenges were clear:
+                                    Users expressed a need for a feature that would allow them to search across the entire app for gamers, guilds, and job listings. The absence of a unified search functionality made it cumbersome for users to find specific profiles or opportunities efficiently.
                                 </p>
                             </div>
                             <div className="flex flex-col w-full">
                                 <h4 className="text-xl text-label">Solution</h4>
                                 <p className="text-placeholder">
-                                    We implemented a detailed review system with comments for each player. This allowed companies to read feedback from other employers, providing clearer insights into each applicant&quot;s past performance and reliability. We also enhanced the badges system to display specific skills and achievements more prominently.
+                                    We developed and integrated a robust search engine that spans the entire platform. This feature includes advanced filtering options, enabling users to refine their search by specific criteria such as skills, game genres, job types, and guild specializations. The search results page was designed to display relevant matches from all categories—gamers, guilds, and jobs—in a single, easy-to-navigate interface. This enhancement significantly improved user experience by making it simpler and faster to locate the desired information within the app.
                                 </p>
                             </div>
 
