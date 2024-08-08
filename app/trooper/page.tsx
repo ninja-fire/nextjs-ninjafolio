@@ -79,7 +79,7 @@ export default function Trooper() {
                             <h3 className="text-3xl text-background">Define</h3>
                         </div>
                         <p className="text-background/[64%]">
-                            Trooper began as an ambitious idea to revolutionize the gaming job market by connecting gamers and game developers within the blockchain ecosystem. The project's mission was to create a platform where gamers could find professional opportunities in the emerging "play to earn" market, while companies could find and hire skilled players and developers. The challenges were clear:
+                            Trooper began as an ambitious idea to revolutionize the gaming job market by connecting gamers and game developers within the blockchain ecosystem. The project&apos;s mission was to create a platform where gamers could find professional opportunities in the emerging &quot;play to earn&quot; market, while companies could find and hire skilled players and developers. The challenges were clear:
                         </p>
                         <div className="flex gap-4">
                             <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
@@ -137,7 +137,7 @@ export default function Trooper() {
                             </div>
                         </div>
                         <p className="text-background/[64%]">
-                            To tackle these challenges, we started with comprehensive research and strategic planning. We dived deep into understanding the target audience's needs, the competitive landscape, and the latest trends in blockchain gaming and professional gaming markets. Workshops and brainstorming sessions with stakeholders ensured that we aligned our vision with the project's goals.
+                            To tackle these challenges, we started with comprehensive research and strategic planning. We dived deep into understanding the target audience&apos;s needs, the competitive landscape, and the latest trends in blockchain gaming and professional gaming markets. Workshops and brainstorming sessions with stakeholders ensured that we aligned our vision with the project&apos;s goals.
                         </p>
                     </div>
                     <div className="flex flex-col grow flex-1 min-w-80 sm:min-w-96 gap-8">
@@ -195,7 +195,7 @@ export default function Trooper() {
                             <div className="flex flex-col w-full">
                                 <h4 className="text-xl text-background">Gamification</h4>
                                 <p className="text-background">
-                                    To enhance user engagement and build trust, we implemented a gamified reputation system. Users could earn badges and XP points for completing jobs and receiving positive feedback. This system provided a clear, visual representation of a user's reliability and expertise.
+                                    To enhance user engagement and build trust, we implemented a gamified reputation system. Users could earn badges and XP points for completing jobs and receiving positive feedback. This system provided a clear, visual representation of a user&apos;s reliability and expertise.
                                 </p>
                             </div>
                         </div>
@@ -211,7 +211,7 @@ export default function Trooper() {
                             <div className="flex flex-col w-full">
                                 <h4 className="text-xl text-background">User Testing and Feedback</h4>
                                 <p className="text-background">
-                                    We conducted multiple rounds of user testing to gather feedback on the platform's usability and design. This feedback was invaluable in identifying areas for improvement and ensuring the platform met user expectations.
+                                    We conducted multiple rounds of user testing to gather feedback on the platform&apos;s usability and design. This feedback was invaluable in identifying areas for improvement and ensuring the platform met user expectations.
                                 </p>
                             </div>
                         </div>
@@ -251,13 +251,13 @@ export default function Trooper() {
                             <div className="flex flex-col w-full">
                                 <h4 className="text-xl text-label">Issue</h4>
                                 <p className="text-placeholder">
-                                    Trooper began as an ambitious idea to revolutionize the gaming job market by connecting gamers and game developers within the blockchain ecosystem. The project's mission was to create a platform where gamers could find professional opportunities in the emerging "play to earn" market, while companies could find and hire skilled players and developers. The challenges were clear:
+                                    Trooper began as an ambitious idea to revolutionize the gaming job market by connecting gamers and game developers within the blockchain ecosystem. The project&apos;s mission was to create a platform where gamers could find professional opportunities in the emerging &quot;play to earn&quot; market, while companies could find and hire skilled players and developers. The challenges were clear:
                                 </p>
                             </div>
                             <div className="flex flex-col w-full">
                                 <h4 className="text-xl text-label">Solution</h4>
                                 <p className="text-placeholder">
-                                    We implemented a detailed review system with comments for each player. This allowed companies to read feedback from other employers, providing clearer insights into each applicant's past performance and reliability. We also enhanced the badges system to display specific skills and achievements more prominently.
+                                    We implemented a detailed review system with comments for each player. This allowed companies to read feedback from other employers, providing clearer insights into each applicant&quot;s past performance and reliability. We also enhanced the badges system to display specific skills and achievements more prominently.
                                 </p>
                             </div>
 
@@ -269,13 +269,13 @@ export default function Trooper() {
                             <div className="flex flex-col w-full">
                                 <h4 className="text-xl text-label">Issue</h4>
                                 <p className="text-placeholder">
-                                    Trooper began as an ambitious idea to revolutionize the gaming job market by connecting gamers and game developers within the blockchain ecosystem. The project's mission was to create a platform where gamers could find professional opportunities in the emerging "play to earn" market, while companies could find and hire skilled players and developers. The challenges were clear:
+                                    Trooper began as an ambitious idea to revolutionize the gaming job market by connecting gamers and game developers within the blockchain ecosystem. The project&quot;s mission was to create a platform where gamers could find professional opportunities in the emerging &quot;play to earn&quot; market, while companies could find and hire skilled players and developers. The challenges were clear:
                                 </p>
                             </div>
                             <div className="flex flex-col w-full">
                                 <h4 className="text-xl text-label">Solution</h4>
                                 <p className="text-placeholder">
-                                    We implemented a detailed review system with comments for each player. This allowed companies to read feedback from other employers, providing clearer insights into each applicant's past performance and reliability. We also enhanced the badges system to display specific skills and achievements more prominently.
+                                    We implemented a detailed review system with comments for each player. This allowed companies to read feedback from other employers, providing clearer insights into each applicant&quot;s past performance and reliability. We also enhanced the badges system to display specific skills and achievements more prominently.
                                 </p>
                             </div>
 
@@ -289,13 +289,13 @@ export default function Trooper() {
                             <div className="flex flex-col w-full">
                                 <h4 className="text-xl text-label">Issue</h4>
                                 <p className="text-placeholder">
-                                    Trooper began as an ambitious idea to revolutionize the gaming job market by connecting gamers and game developers within the blockchain ecosystem. The project's mission was to create a platform where gamers could find professional opportunities in the emerging "play to earn" market, while companies could find and hire skilled players and developers. The challenges were clear:
+                                    Trooper began as an ambitious idea to revolutionize the gaming job market by connecting gamers and game developers within the blockchain ecosystem. The project&quot;s mission was to create a platform where gamers could find professional opportunities in the emerging &quot;play to earn&quot; market, while companies could find and hire skilled players and developers. The challenges were clear:
                                 </p>
                             </div>
                             <div className="flex flex-col w-full">
                                 <h4 className="text-xl text-label">Solution</h4>
                                 <p className="text-placeholder">
-                                    We implemented a detailed review system with comments for each player. This allowed companies to read feedback from other employers, providing clearer insights into each applicant's past performance and reliability. We also enhanced the badges system to display specific skills and achievements more prominently.
+                                    We implemented a detailed review system with comments for each player. This allowed companies to read feedback from other employers, providing clearer insights into each applicant&quot;s past performance and reliability. We also enhanced the badges system to display specific skills and achievements more prominently.
                                 </p>
                             </div>
 
