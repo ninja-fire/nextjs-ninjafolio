@@ -12,6 +12,7 @@ const config: Config = {
         'trooper': "url('../public/trooper/trooper.png')",
         'looter': "url('../public/looter/looter.png')",
         'family': "url('../public/family/family.png')",
+        'trooperP1': "url('../public/trooper/problem1.png')",
       },
       fontFamily: {
         sans: ['var(--font-brico)'],

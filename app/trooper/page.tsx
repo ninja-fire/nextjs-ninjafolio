@@ -8,6 +8,7 @@ import three from "../../public/3.svg";
 import trooper01 from "../../public/trooper/trooper01.webp";
 import trooper02 from "../../public/trooper/trooper02.webp";
 import trooper03 from "../../public/trooper/trooper03.webp";
+import problem1 from "../../public/trooper/problem1.png";
 import flame from "../../public/flame.svg";
 
 export default function Trooper() {
@@ -72,18 +73,23 @@ export default function Trooper() {
             </div>
             <div className="flex flex-col bg-primary w-full gap-20 px-6 md:px-32 py-20">
                 <h2 className="text-background">The process</h2>
-                <div className="flex flex-wrap gap-20 w-full">
+                <div className="flex flex-col gap-20 w-full">
                     <div className="flex flex-col grow flex-1 min-w-80 sm:min-w-96 gap-8">
                         <div className="flex px-[52px] py-4 gap-4 rounded-full bg-label border-4 border-background shadow-darkXl items-center w-fit">
                             <h3 className="text-3xl text-background">Define</h3>
                         </div>
+                        <p className="text-background/[64%]">
+                            Trooper began as an ambitious idea to revolutionize the gaming job market by connecting gamers and game developers within the blockchain ecosystem. The project's mission was to create a platform where gamers could find professional opportunities in the emerging "play to earn" market, while companies could find and hire skilled players and developers. The challenges were clear:
+                        </p>
                         <div className="flex gap-4">
                             <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
                                 <Image priority src={flame} alt='Research Icon' className="h-6" />
                             </div>
                             <div className="flex flex-col w-full">
-                                <h4 className="text-xl text-background">Research</h4>
-                                <p className="text-background">Conducted extensive research to understand the gaming and blockchain ecosystem, identifying key user needs and market gaps.</p>
+                                <h4 className="text-xl text-background">Branding</h4>
+                                <p className="text-background">
+                                    Establish a unique, captivating brand identity.
+                                </p>
                             </div>
                         </div>
                         <div className="flex gap-4">
@@ -91,8 +97,10 @@ export default function Trooper() {
                                 <Image priority src={flame} alt='Research Icon' className="h-6" />
                             </div>
                             <div className="flex flex-col w-full">
-                                <h4 className="text-xl text-background">Strategic Planning</h4>
-                                <p className="text-background">Developed a strategic plan outlining the project goals, target audience, and key milestones, ensuring alignment with the client&apos;s vision.</p>
+                                <h4 className="text-xl text-background">User Profiles</h4>
+                                <p className="text-background">
+                                    Create comprehensive profiles for gamers and professionals.
+                                </p>
                             </div>
                         </div>
                         <div className="flex gap-4">
@@ -100,8 +108,10 @@ export default function Trooper() {
                                 <Image priority src={flame} alt='Research Icon' className="h-6" />
                             </div>
                             <div className="flex flex-col w-full">
-                                <h4 className="text-xl text-background">Insight Gathering</h4>
-                                <p className="text-background">Collected insights from potential users and industry experts to inform the design direction and address specific user pain points.</p>
+                                <h4 className="text-xl text-background">Job Listings</h4>
+                                <p className="text-background">
+                                    Design a seamless job posting and application system.
+                                </p>
                             </div>
                         </div>
                         <div className="flex gap-4">
@@ -109,10 +119,26 @@ export default function Trooper() {
                                 <Image priority src={flame} alt='Research Icon' className="h-6" />
                             </div>
                             <div className="flex flex-col w-full">
-                                <h4 className="text-xl text-background">Vision Alignment</h4>
-                                <p className="text-background">Collaborated closely with the client to ensure the project vision aligns with their goals and the needs of their target audience.</p>
+                                <h4 className="text-xl text-background">Escrow System</h4>
+                                <p className="text-background">
+                                    Develop a secure blockchain-based escrow system for payments.
+                                </p>
                             </div>
                         </div>
+                        <div className="flex gap-4">
+                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
+                                <Image priority src={flame} alt='Research Icon' className="h-6" />
+                            </div>
+                            <div className="flex flex-col w-full">
+                                <h4 className="text-xl text-background">Gamification</h4>
+                                <p className="text-background">
+                                    Implement a gamified reputation system to build trust and engagement.
+                                </p>
+                            </div>
+                        </div>
+                        <p className="text-background/[64%]">
+                            To tackle these challenges, we started with comprehensive research and strategic planning. We dived deep into understanding the target audience's needs, the competitive landscape, and the latest trends in blockchain gaming and professional gaming markets. Workshops and brainstorming sessions with stakeholders ensured that we aligned our vision with the project's goals.
+                        </p>
                     </div>
                     <div className="flex flex-col grow flex-1 min-w-80 sm:min-w-96 gap-8">
                         <div className="flex px-[52px] py-4 gap-4 rounded-full bg-label border-4 border-background shadow-darkXl items-center w-fit">
@@ -123,8 +149,10 @@ export default function Trooper() {
                                 <Image priority src={flame} alt='Research Icon' className="h-6" />
                             </div>
                             <div className="flex flex-col w-full">
-                                <h4 className="text-xl text-background">User Experience Optimization</h4>
-                                <p className="text-background">Designed user flows and wireframes to optimize the user experience, ensuring seamless interactions.</p>
+                                <h4 className="text-xl text-background">Branding</h4>
+                                <p className="text-background">
+                                    The first step was crafting a brand identity that resonated with both gamers and professionals. We opted for a bold and futuristic theme, reflecting the innovative nature of blockchain technology and the excitement of gaming. The logo, typography, and color scheme were carefully chosen to create a strong, memorable brand.
+                                </p>
                             </div>
                         </div>
                         <div className="flex gap-4">
@@ -132,8 +160,10 @@ export default function Trooper() {
                                 <Image priority src={flame} alt='Research Icon' className="h-6" />
                             </div>
                             <div className="flex flex-col w-full">
-                                <h4 className="text-xl text-background">User Interface Design</h4>
-                                <p className="text-background">Crafted visually appealing and intuitive user interfaces that reflect the latest Web3 and blockchain design trends.</p>
+                                <h4 className="text-xl text-background">User Profiles</h4>
+                                <p className="text-background">
+                                    Next, we designed user profiles that allowed gamers to showcase their skills, experiences, and achievements. These profiles included features like skill badges, past project highlights, and integration with gaming platforms to verify achievements and in-game rewards.
+                                </p>
                             </div>
                         </div>
                         <div className="flex gap-4">
@@ -141,8 +171,32 @@ export default function Trooper() {
                                 <Image priority src={flame} alt='Research Icon' className="h-6" />
                             </div>
                             <div className="flex flex-col w-full">
-                                <h4 className="text-xl text-background">Incorporating Web3 Design Trends</h4>
-                                <p className="text-background">Integrated current Web3 and blockchain design trends to ensure the platform stands out in a competitive market.</p>
+                                <h4 className="text-xl text-background">Job Listings</h4>
+                                <p className="text-background">
+                                    We designed a user-friendly job posting system where companies could easily list opportunities and gamers could search and apply for jobs. The interface was optimized for ease of use, with filters and search functions to help users find relevant listings quickly.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="flex gap-4">
+                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
+                                <Image priority src={flame} alt='Research Icon' className="h-6" />
+                            </div>
+                            <div className="flex flex-col w-full">
+                                <h4 className="text-xl text-background">Escrow System</h4>
+                                <p className="text-background">
+                                    A key feature of Trooper was the blockchain-based escrow system. We designed a secure escrow mechanism where companies would lock funds into a smart contract when posting a job. This not only ensured payment security but also allowed Trooper to stake these funds and earn interest, providing additional value to companies.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="flex gap-4">
+                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
+                                <Image priority src={flame} alt='Research Icon' className="h-6" />
+                            </div>
+                            <div className="flex flex-col w-full">
+                                <h4 className="text-xl text-background">Gamification</h4>
+                                <p className="text-background">
+                                    To enhance user engagement and build trust, we implemented a gamified reputation system. Users could earn badges and XP points for completing jobs and receiving positive feedback. This system provided a clear, visual representation of a user's reliability and expertise.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -156,7 +210,9 @@ export default function Trooper() {
                             </div>
                             <div className="flex flex-col w-full">
                                 <h4 className="text-xl text-background">User Testing and Feedback</h4>
-                                <p className="text-background">Conducted user testing sessions to gather feedback on the initial designs, identifying areas for improvement.</p>
+                                <p className="text-background">
+                                    We conducted multiple rounds of user testing to gather feedback on the platform's usability and design. This feedback was invaluable in identifying areas for improvement and ensuring the platform met user expectations.
+                                </p>
                             </div>
                         </div>
                         <div className="flex gap-4">
@@ -165,7 +221,9 @@ export default function Trooper() {
                             </div>
                             <div className="flex flex-col w-full">
                                 <h4 className="text-xl text-background">Iterative Improvements</h4>
-                                <p className="text-background">Implemented an iterative design process, refining the designs based on user feedback and testing results.</p>
+                                <p className="text-background">
+                                    Based on the feedback, we made iterative improvements to the platform. This included refining the user interface, enhancing the search and filter functions, and improving the overall user experience.
+                                </p>
                             </div>
                         </div>
                         <div className="flex gap-4">
@@ -174,12 +232,78 @@ export default function Trooper() {
                             </div>
                             <div className="flex flex-col w-full">
                                 <h4 className="text-xl text-background">Polishing the Design</h4>
-                                <p className="text-background">Focused on attention to detail to ensure a polished and professional final product.</p>
+                                <p className="text-background">
+                                    Attention to detail was key in the final stages. We polished the design, ensuring consistency across all elements and optimizing the platform for performance and speed.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div className="flex flex-col bg-background w-full gap-20 px-6 md:px-32 py-20">
+                <h2 className="">Main <span className="text-primary">problems</span> and <span className="text-primary">solutions</span></h2>
+                <div className="flex flex-col gap-20">
+                    <div className="flex gap-16 py-6">
+                        <div className="flex bg-trooperP1 bg-center bg-cover w-full border-4 border-label shadow-lightXl"></div>
+                        <div className="flex flex-col gap-6 w-full">
+                            <h3 className="text-3xl">Difficulty in Filtering Applications for Multiple Player Missions</h3>
+                            <div className="flex flex-col w-full">
+                                <h4 className="text-xl text-label">Issue</h4>
+                                <p className="text-placeholder">
+                                    Trooper began as an ambitious idea to revolutionize the gaming job market by connecting gamers and game developers within the blockchain ecosystem. The project's mission was to create a platform where gamers could find professional opportunities in the emerging "play to earn" market, while companies could find and hire skilled players and developers. The challenges were clear:
+                                </p>
+                            </div>
+                            <div className="flex flex-col w-full">
+                                <h4 className="text-xl text-label">Solution</h4>
+                                <p className="text-placeholder">
+                                    We implemented a detailed review system with comments for each player. This allowed companies to read feedback from other employers, providing clearer insights into each applicant's past performance and reliability. We also enhanced the badges system to display specific skills and achievements more prominently.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div className="flex gap-16 py-6">
+                        <div className="flex flex-col gap-6 w-full">
+                            <h3 className="text-3xl">Difficulty in Filtering Applications for Multiple Player Missions</h3>
+                            <div className="flex flex-col w-full">
+                                <h4 className="text-xl text-label">Issue</h4>
+                                <p className="text-placeholder">
+                                    Trooper began as an ambitious idea to revolutionize the gaming job market by connecting gamers and game developers within the blockchain ecosystem. The project's mission was to create a platform where gamers could find professional opportunities in the emerging "play to earn" market, while companies could find and hire skilled players and developers. The challenges were clear:
+                                </p>
+                            </div>
+                            <div className="flex flex-col w-full">
+                                <h4 className="text-xl text-label">Solution</h4>
+                                <p className="text-placeholder">
+                                    We implemented a detailed review system with comments for each player. This allowed companies to read feedback from other employers, providing clearer insights into each applicant's past performance and reliability. We also enhanced the badges system to display specific skills and achievements more prominently.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div className="flex bg-trooperP1 bg-center bg-cover w-full border-4 border-label shadow-lightXl"></div>
+                    </div>
+                    <div className="flex gap-16 py-6">
+                        <div className="flex bg-trooperP1 bg-center bg-cover w-full border-4 border-label shadow-lightXl"></div>
+                        <div className="flex flex-col gap-6 w-full">
+                            <h3 className="text-3xl">Difficulty in Filtering Applications for Multiple Player Missions</h3>
+                            <div className="flex flex-col w-full">
+                                <h4 className="text-xl text-label">Issue</h4>
+                                <p className="text-placeholder">
+                                    Trooper began as an ambitious idea to revolutionize the gaming job market by connecting gamers and game developers within the blockchain ecosystem. The project's mission was to create a platform where gamers could find professional opportunities in the emerging "play to earn" market, while companies could find and hire skilled players and developers. The challenges were clear:
+                                </p>
+                            </div>
+                            <div className="flex flex-col w-full">
+                                <h4 className="text-xl text-label">Solution</h4>
+                                <p className="text-placeholder">
+                                    We implemented a detailed review system with comments for each player. This allowed companies to read feedback from other employers, providing clearer insights into each applicant's past performance and reliability. We also enhanced the badges system to display specific skills and achievements more prominently.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div className="flex relative w-full items-center justify-center overflow-hidden">
                 <Image src={trooper01} alt="" className="flex w-full" />
             </div>
