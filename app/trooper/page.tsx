@@ -243,7 +243,7 @@ export default function Trooper() {
             <div className="flex flex-col bg-background w-full gap-20 px-6 md:px-32 py-20">
                 <h2 className="">Main <span className="text-primary">problems</span> and <span className="text-primary">solutions</span></h2>
                 <div className="flex flex-col gap-20">
-                    <div className="flex items-center gap-16 py-6">
+                    <div className="flex flex-col xl:flex-row items-center gap-16 py-6">
                         <div className="flex bg-trooperP1 bg-center bg-cover w-full h-[640px] border-4 border-label shadow-lightXl"></div>
                         <div className="flex flex-col gap-6 w-full">
                             <h3 className="text-3xl">Difficulty in Filtering Applications for Multiple Player Missions</h3>
@@ -262,8 +262,8 @@ export default function Trooper() {
 
                         </div>
                     </div>
-                    <div className="flex items-center gap-16 py-6">
-                        <div className="flex flex-col gap-6 w-full">
+                    <div className="flex flex-col xl:flex-row items-center gap-16 py-6">
+                        <div className="flex order-2 xl:order-1 flex-col gap-6 w-full">
                             <h3 className="text-3xl">Low Job Visibility and Engagement</h3>
                             <div className="flex flex-col w-full">
                                 <h4 className="text-xl text-label">Issue</h4>
@@ -279,9 +279,9 @@ export default function Trooper() {
                             </div>
 
                         </div>
-                        <div className="flex bg-trooperP2 bg-center bg-cover w-full h-[640px] border-4 border-label shadow-lightXl"></div>
+                        <div className="flex bg-trooperP2 order-1 xl:order-2 bg-center bg-cover w-full h-[640px] border-4 border-label shadow-lightXl"></div>
                     </div>
-                    <div className="flex items-center gap-16 py-6">
+                    <div className="flex flex-col xl:flex-row items-center gap-16 py-6">
                         <div className="flex bg-trooperP3 bg-center bg-cover w-full h-[640px] border-4 border-label shadow-lightXl"></div>
                         <div className="flex flex-col gap-6 w-full">
                             <h3 className="text-3xl">Lack of a Comprehensive Search Feature</h3>
