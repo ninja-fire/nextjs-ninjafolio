@@ -6,35 +6,24 @@ import FooterNav from "../ui/footerNav";
 import one from "../../public/1.svg";
 import two from "../../public/2.svg";
 import three from "../../public/3.svg";
+import looterpitch from "../../public/looter/looter.webp";
+import looterlogo from "../../public/looter/looterlogo.webp";
+import looterswap from "../../public/looter/looterswap.webp";
+import looterlanding from "../../public/looter/looter03.webp";
+import looterlogoanimated from "../../public/looter/logoanimated.gif";
+import cardanimated from "../../public/looter/cardanimated.gif";
+import btnanimated from "../../public/looter/btnanimated.gif";
+import key from "../../public/looter/keygif.gif";
+import chestgif from "../../public/looter/chestgif.gif";
+import chest from "../../public/looter/chest.png";
+import chest540 from "../../public/looter/chest540.gif";
+import looter from "../../public/looter/lootertexturedweapon2.png";
+import step1 from "../../public/looter/step1.png";
+import step2 from "../../public/looter/step2.png";
+import step3 from "../../public/looter/step3.png";
 
 export default function Looter() {
     return (
-        // <div className="flex flex-col bg-background">
-        //     <div className="flex flex-col bg-label w-full gap-20 px-6 md:px-32 py-20">
-        //         <h2 className="text-background">The challenges</h2>
-        //         <div className="flex gap-20 w-full">
-        //             <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl w-full">
-        //                 <div className="flex">
-        //                     <Image priority src={one} alt='Challenge 1 - Create an engaging and intuitive DEX experience' />
-        //                 </div>
-        //                 <h3 className="text-background text-[32px] leading-10">How might we create an engaging and intuitive DEX experience for the Degen community?</h3>
-        //             </div>
-        //             <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl w-full">
-        //                 <div className="flex">
-        //                     <Image priority src={two} alt='Challenge 2 - Simplify the integration of AMM and game theory elements' />
-        //                 </div>
-        //                 <h3 className="text-background text-[32px] leading-10">How might we simplify the integration of AMM and game theory elements into the user interface?</h3>
-        //             </div>
-        //             <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl w-full">
-        //                 <div className="flex">
-        //                     <Image priority src={three} alt='Challenge 3 - Develop a bold and distinctive visual identity' />
-        //                 </div>
-        //                 <h3 className="text-background text-[32px] leading-10">How might we develop a bold and distinctive visual identity that resonates with the Degen community?</h3>
-        //             </div>
-        //         </div>
-        //     </div>
-        //     <FooterNav hrefprev="/family" hrefnext="/trooper" previous="Family" next="Trooper" />
-        // </div>
         <div className="flex flex-col bg-background">
             <div className="flex relative bg-looter bg-cover bg-center w-full h-[800px] py-16 px-6 md:px-32 items-end overflow-hidden">
                 <div className="flex absolute bg-gradient-to-t from-background w-full h-full top-0 left-0"></div>
@@ -42,9 +31,9 @@ export default function Looter() {
             </div>
             <div className="flex flex-col lg:flex-row w-full gap-20 px-6 md:px-32 py-20 pt-0">
                 <div className="flex w-full flex-col gap-6">
-                    <h2 className="text-2xl font-extrabold text-primary leading-8">Decentralized Exchange with AMM and Game Theory</h2>
+                    <h2 className="text-2xl font-extrabold text-primary leading-8">A Deflationist, Strategy-Oriented DEX AMM</h2>
                     <p className="text-placeholder text-sm font-normal leading-6">
-                        Looter is a decentralized exchange platform designed for the Degen community, incorporating Automated Market Maker (AMM) functionality and game theory elements. The project aimed to create an engaging, immersive user experience and a strong visual identity that resonates with the unique culture of the Degen community.
+                        Looter is a cutting-edge decentralized exchange (DEX) with a deflationary tokenomics model designed for the adventurous. Looter combines elements of finance and gaming, enabling users to develop yield strategies, participate in liquidity mining, and compete for valuable rewards. The project’s unique branding, 3D assets, and seamless user experience make it a standout in the world of blockchain-based decentralized finance.
                     </p>
                     <div className="flex flex-wrap gap-6 w-full">
                         <div className="flex items-center justify-center rounded-full bg-background border-2 border-label shadow-primarySm px-2 py-1 left-4 top-4">
@@ -81,143 +70,143 @@ export default function Looter() {
                         <div className="flex">
                             <Image priority src={one} alt='Challenge 1 - Create an engaging and intuitive DEX experience' />
                         </div>
-                        <h3 className="text-background text-[32px] leading-10">How might we create an engaging and intuitive DEX experience for the Degen community?</h3>
+                        <h3 className="text-background text-[32px] leading-10">How might we make complex tokenomics clear and engaging?</h3>
                     </div>
                     <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl grow flex-1 min-w-80 sm:min-w-96">
                         <div className="flex">
                             <Image priority src={two} alt='Challenge 2 - Simplify the integration of AMM and game theory elements' />
                         </div>
-                        <h3 className="text-background text-[32px] leading-10">How might we simplify the integration of AMM and game theory elements into the user interface?</h3>
+                        <h3 className="text-background text-[32px] leading-10">How might we design a visual identity that&apos;s both sophisticated and appealing?</h3>
                     </div>
                     <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl grow flex-1 min-w-80 sm:min-w-96">
                         <div className="flex">
                             <Image priority src={three} alt='Challenge 3 - Develop a bold and distinctive visual identity' />
                         </div>
-                        <h3 className="text-background text-[32px] leading-10">How might we develop a bold and distinctive visual identity that resonates with the Degen community?</h3>
+                        <h3 className="text-background text-[32px] leading-10">How might we integrate gamification seamlessly into the user experience?</h3>
                     </div>
                 </div>
             </div>
+
             <div className="flex flex-col bg-primary w-full gap-20 px-6 md:px-32 py-20">
                 <h2 className="text-background">The process</h2>
-                <div className="flex flex-wrap gap-20 w-full">
+                <div className="flex flex-col lg:flex-row gap-20 w-full">
                     <div className="flex flex-col grow flex-1 min-w-80 sm:min-w-96 gap-8">
                         <div className="flex px-[52px] py-4 gap-4 rounded-full bg-label border-4 border-background shadow-darkXl items-center w-fit">
                             <h3 className="text-3xl text-background">Define</h3>
                         </div>
-                        <div className="flex gap-4">
-                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
-                                <Image priority src={flame} alt='Research Icon' className="h-6" />
-                            </div>
-                            <div className="flex flex-col w-full">
-                                <h4 className="text-xl text-background">Research</h4>
-                                <p className="text-background">Conducted extensive research to understand the gaming and blockchain ecosystem, identifying key user needs and market gaps.</p>
-                            </div>
-                        </div>
-                        <div className="flex gap-4">
-                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
-                                <Image priority src={flame} alt='Research Icon' className="h-6" />
-                            </div>
-                            <div className="flex flex-col w-full">
-                                <h4 className="text-xl text-background">Strategic Planning</h4>
-                                <p className="text-background">Developed a strategic plan outlining the project goals, target audience, and key milestones, ensuring alignment with the client&apos;s vision.</p>
-                            </div>
-                        </div>
-                        <div className="flex gap-4">
-                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
-                                <Image priority src={flame} alt='Research Icon' className="h-6" />
-                            </div>
-                            <div className="flex flex-col w-full">
-                                <h4 className="text-xl text-background">Insight Gathering</h4>
-                                <p className="text-background">Collected insights from potential users and industry experts to inform the design direction and address specific user pain points.</p>
-                            </div>
-                        </div>
-                        <div className="flex gap-4">
-                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
-                                <Image priority src={flame} alt='Research Icon' className="h-6" />
-                            </div>
-                            <div className="flex flex-col w-full">
-                                <h4 className="text-xl text-background">Vision Alignment</h4>
-                                <p className="text-background">Collaborated closely with the client to ensure the project vision aligns with their goals and the needs of their target audience.</p>
-                            </div>
-                        </div>
+                        <p className="text-background/[64%]">
+                            The journey began with a deep dive into understanding the core problems facing the crypto and DeFi space—where user needs were unmet, and retention was low. We defined our mission to create a strategy-oriented DEX AMM that not only addresses these issues but also introduces innovative gamification elements. Through extensive research and user interviews, we identified the key challenges: clarity in tokenomics, the need for an engaging visual identity, and the seamless integration of game mechanics.
+                        </p>
                     </div>
                     <div className="flex flex-col grow flex-1 min-w-80 sm:min-w-96 gap-8">
                         <div className="flex px-[52px] py-4 gap-4 rounded-full bg-label border-4 border-background shadow-darkXl items-center w-fit">
                             <h3 className="text-3xl text-background">Design</h3>
                         </div>
-                        <div className="flex gap-4">
-                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
-                                <Image priority src={flame} alt='Research Icon' className="h-6" />
-                            </div>
-                            <div className="flex flex-col w-full">
-                                <h4 className="text-xl text-background">User Experience Optimization</h4>
-                                <p className="text-background">Designed user flows and wireframes to optimize the user experience, ensuring seamless interactions.</p>
-                            </div>
-                        </div>
-                        <div className="flex gap-4">
-                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
-                                <Image priority src={flame} alt='Research Icon' className="h-6" />
-                            </div>
-                            <div className="flex flex-col w-full">
-                                <h4 className="text-xl text-background">User Interface Design</h4>
-                                <p className="text-background">Crafted visually appealing and intuitive user interfaces that reflect the latest Web3 and blockchain design trends.</p>
-                            </div>
-                        </div>
-                        <div className="flex gap-4">
-                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
-                                <Image priority src={flame} alt='Research Icon' className="h-6" />
-                            </div>
-                            <div className="flex flex-col w-full">
-                                <h4 className="text-xl text-background">Incorporating Web3 Design Trends</h4>
-                                <p className="text-background">Integrated current Web3 and blockchain design trends to ensure the platform stands out in a competitive market.</p>
-                            </div>
-                        </div>
+                        <p className="text-background/[64%]">
+                            Armed with these insights, we started crafting a design that would not only meet but exceed user expectations. The branding was designed to reflect both sophistication and accessibility, using neon and cyberpunk aesthetics to create a unique identity. We also focused on making the complex tokenomics easy to understand through intuitive UI elements and clear visual cues. Our goal was to ensure that users could easily navigate the platform while enjoying a gamified experience that kept them engaged.
+                        </p>
                     </div>
                     <div className="flex flex-col grow flex-1 min-w-80 sm:min-w-96 gap-8">
                         <div className="flex px-[52px] py-4 gap-4 rounded-full bg-label border-4 border-background shadow-darkXl items-center w-fit">
                             <h3 className="text-3xl text-background">Refine</h3>
                         </div>
-                        <div className="flex gap-4">
-                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
-                                <Image priority src={flame} alt='Research Icon' className="h-6" />
+                        <p className="text-background/[64%]">
+                            With the initial designs in place, we moved into the refinement phase. We conducted multiple rounds of user testing to gather feedback on the usability and overall experience. Iterative design sessions allowed us to fine-tune every detail, from the color scheme to the interactive elements. We made adjustments based on user behavior and feedback, ensuring that the final product was not only functional but also enjoyable. The result was a polished platform that successfully balances strategy, engagement, and visual appeal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex flex-col bg-background w-full gap-20 px-6 md:px-32 py-20">
+                <h2 className="">Main project <span className="text-primary">highlights</span></h2>
+                <div className="flex flex-col gap-20">
+                    <div className="flex flex-col gap-16 py-6">
+                        <div className="flex gap-6 w-full">
+                            <div className="flex w-full border-4 border-label shadow-lightXl">
+                                <Image src={step1} alt="" className="flex w-full" />
                             </div>
-                            <div className="flex flex-col w-full">
-                                <h4 className="text-xl text-background">User Testing and Feedback</h4>
-                                <p className="text-background">Conducted user testing sessions to gather feedback on the initial designs, identifying areas for improvement.</p>
+                            <div className="flex w-full border-4 border-label shadow-lightXl">
+                                <Image src={step2} alt="" className="flex w-full" />
+                            </div>
+                            <div className="flex w-full border-4 border-label shadow-lightXl">
+                                <Image src={step3} alt="" className="flex w-full" />
                             </div>
                         </div>
-                        <div className="flex gap-4">
-                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
-                                <Image priority src={flame} alt='Research Icon' className="h-6" />
-                            </div>
+                        <div className="flex flex-col gap-6 w-6/12">
+                            <h3 className="text-3xl">Guided Swapping Experience with Integrated Notifications</h3>
                             <div className="flex flex-col w-full">
-                                <h4 className="text-xl text-background">Iterative Improvements</h4>
-                                <p className="text-background">Implemented an iterative design process, refining the designs based on user feedback and testing results.</p>
+                                <p className="text-placeholder">
+                                    In the Looter project, we designed a step-by-step UI that guides users seamlessly through the swapping process, paired with a real-time notification system. This feature ensures users are not confined to the swapping interface and can engage with other app features concurrently. Notifications serve to inform users of the transaction status without interrupting their overall app experience, allowing them to multitask efficiently.
+                                </p>
                             </div>
                         </div>
-                        <div className="flex gap-4">
-                            <div className="flex px-1 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm h-fit">
-                                <Image priority src={flame} alt='Research Icon' className="h-6" />
+                    </div>
+                </div>
+                <div className="flex flex-col gap-20">
+                    <div className="flex flex-col gap-16 py-6">
+                        <div className="flex gap-6 w-full">
+                            <div className="flex w-full border-4 border-label shadow-lightXl">
+                                <Image src={looterlogoanimated} alt="" unoptimized />
                             </div>
+                            <div className="flex w-full border-4 border-label shadow-lightXl">
+                                <Image src={cardanimated} alt="" unoptimized />
+                            </div>
+                            <div className="flex w-full border-4 border-label shadow-lightXl">
+                                <Image src={btnanimated} alt="" unoptimized />
+
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-6 w-6/12">
+                            <h3 className="text-3xl">Guided Swapping Experience with Integrated Notifications</h3>
                             <div className="flex flex-col w-full">
-                                <h4 className="text-xl text-background">Polishing the Design</h4>
-                                <p className="text-background">Focused on attention to detail to ensure a polished and professional final product.</p>
+                                <p className="text-placeholder">
+                                    In the Looter project, we designed a step-by-step UI that guides users seamlessly through the swapping process, paired with a real-time notification system. This feature ensures users are not confined to the swapping interface and can engage with other app features concurrently. Notifications serve to inform users of the transaction status without interrupting their overall app experience, allowing them to multitask efficiently.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="flex flex-col gap-20">
+                    <div className="flex flex-col gap-16 py-6">
+                        <div className="flex gap-6 w-full">
+                            <div className="flex w-full border-4 border-label shadow-lightXl">
+                                <Image src={key} alt="" unoptimized />
+                            </div>
+                            <div className="flex w-full border-4 border-label shadow-lightXl overflow-hidden">
+                                <Image src={chest540} unoptimized alt="" />
+                            </div>
+                            <div className="flex w-full border-4 border-label shadow-lightXl overflow-hidden">
+                                <Image src={looter} alt="" className="scale-[120%]" />
+
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-6 w-6/12">
+                            <h3 className="text-3xl">Guided Swapping Experience with Integrated Notifications</h3>
+                            <div className="flex flex-col w-full">
+                                <p className="text-placeholder">
+                                    In the Looter project, we designed a step-by-step UI that guides users seamlessly through the swapping process, paired with a real-time notification system. This feature ensures users are not confined to the swapping interface and can engage with other app features concurrently. Notifications serve to inform users of the transaction status without interrupting their overall app experience, allowing them to multitask efficiently.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div className="flex relative w-full items-center justify-center overflow-hidden">
-                {/* <Image src={trooper01} alt="" className="flex w-full" /> */}
+                <Image src={looterpitch} alt="" className="flex w-full" />
             </div>
             <div className="flex relative w-full items-center justify-center overflow-hidden">
-                {/* <Image src={trooper02} alt="" className="flex w-full" /> */}
+                <Image src={looterlogo} alt="" className="flex w-full" />
             </div>
             <div className="flex relative w-full items-center justify-center overflow-hidden">
-                {/* <Image src={trooper03} alt="" className="flex w-full" /> */}
+                <Image src={looterlanding} alt="" className="flex w-full" />
+            </div>
+            <div className="flex relative w-full items-center justify-center overflow-hidden">
+                <Image src={looterswap} alt="" className="flex w-full" />
             </div>
             <div className="flex h-20 bg-background"></div>
-            <FooterNav hrefprev="/trooper" hrefnext="/family" previous="Trooper" next="Family" />
+            <FooterNav hrefprev="/family" hrefnext="/trooper" previous="Family" next="Trooper" />
         </div>
     );
 }
