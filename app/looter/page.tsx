@@ -1,7 +1,4 @@
-import Link from "next/link";
 import Image from "next/image";
-import arrowstraight from "../../public/arrowstraight.svg";
-import flame from "../../public/flame.svg";
 import FooterNav from "../ui/footerNav";
 import one from "../../public/1.svg";
 import two from "../../public/2.svg";
@@ -14,10 +11,8 @@ import looterlogoanimated from "../../public/looter/logoanimated.gif";
 import cardanimated from "../../public/looter/cardanimated.gif";
 import btnanimated from "../../public/looter/btnanimated.gif";
 import key from "../../public/looter/keygif.gif";
-import chestgif from "../../public/looter/chestgif.gif";
-import chest from "../../public/looter/chest.png";
 import chest540 from "../../public/looter/chest540.gif";
-import looter from "../../public/looter/lootertexturedweapon2.png";
+import looterblur from "../../public/looter/looterblur.png";
 import step1 from "../../public/looter/step1.png";
 import step2 from "../../public/looter/step2.png";
 import step3 from "../../public/looter/step3.png";
@@ -157,10 +152,10 @@ export default function Looter() {
                             </div>
                         </div>
                         <div className="flex flex-col gap-6 w-6/12">
-                            <h3 className="text-3xl">Guided Swapping Experience with Integrated Notifications</h3>
+                            <h3 className="text-3xl">Dynamic UI Interactions and Branding</h3>
                             <div className="flex flex-col w-full">
                                 <p className="text-placeholder">
-                                    In the Looter project, we designed a step-by-step UI that guides users seamlessly through the swapping process, paired with a real-time notification system. This feature ensures users are not confined to the swapping interface and can engage with other app features concurrently. Notifications serve to inform users of the transaction status without interrupting their overall app experience, allowing them to multitask efficiently.
+                                The Looter app&apos;s dynamic UI elements are crafted to captivate users and make the experience unforgettable. The &quot;Open App&quot; button&apos;s fluid animation and the interactive &quot;LOOT / ETH&quot; card draw users in, signaling both engagement and ease of use. The animated Looter logo serves as a strong branding tool, making the app instantly recognizable and memorable. These design elements not only enhance user interaction but also make the app stand out on social media, attracting attention and encouraging user retention.
                                 </p>
                             </div>
                         </div>
@@ -171,21 +166,21 @@ export default function Looter() {
                     <div className="flex flex-col gap-16 py-6">
                         <div className="flex gap-6 w-full">
                             <div className="flex w-full border-4 border-label shadow-lightXl">
-                                <Image src={key} alt="" unoptimized />
+                                <Image src={key} alt="" unoptimized className="scale-90" />
                             </div>
                             <div className="flex w-full border-4 border-label shadow-lightXl overflow-hidden">
                                 <Image src={chest540} unoptimized alt="" />
                             </div>
                             <div className="flex w-full border-4 border-label shadow-lightXl overflow-hidden">
-                                <Image src={looter} alt="" className="scale-[120%]" />
+                                <Image src={looterblur} unoptimized alt="" />
 
                             </div>
                         </div>
                         <div className="flex flex-col gap-6 w-6/12">
-                            <h3 className="text-3xl">Guided Swapping Experience with Integrated Notifications</h3>
+                            <h3 className="text-3xl">Immersive 3D Elements</h3>
                             <div className="flex flex-col w-full">
                                 <p className="text-placeholder">
-                                    In the Looter project, we designed a step-by-step UI that guides users seamlessly through the swapping process, paired with a real-time notification system. This feature ensures users are not confined to the swapping interface and can engage with other app features concurrently. Notifications serve to inform users of the transaction status without interrupting their overall app experience, allowing them to multitask efficiently.
+                                The Looter project embodies the essence of Web3 innovation, combining cutting-edge design with a deep understanding of the blockchain community. The first visual element, a glowing green cube adorned with circuit-like patterns, symbolizes the core technology and decentralized structure that forms the backbone of the Looter ecosystem. The second illustration presents a dynamic, intricate object that visually represents the cryptographic keys essential to security and access within the platform. Finally, the third design—a futuristic figure donning a hoodie and augmented reality goggles—captures the spirit of the user base: tech-savvy, forward-thinking, and deeply engaged in the digital frontier. Together, these visuals encapsulate the Looter project&apos;s commitment to blending aesthetic appeal with functional, user-centric design.
                                 </p>
                             </div>
                         </div>
