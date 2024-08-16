@@ -1,6 +1,4 @@
-import Link from "next/link";
 import Image from "next/image";
-import arrowstraight from "../../public/arrowstraight.svg";
 import FooterNav from "../ui/footerNav";
 import one from "../../public/1.svg";
 import two from "../../public/2.svg";
@@ -297,7 +295,6 @@ export default function Trooper() {
                                     We developed and integrated a robust search engine that spans the entire platform. This feature includes advanced filtering options, enabling users to refine their search by specific criteria such as skills, game genres, job types, and guild specializations. The search results page was designed to display relevant matches from all categories—gamers, guilds, and jobs—in a single, easy-to-navigate interface. This enhancement significantly improved user experience by making it simpler and faster to locate the desired information within the app.
                                 </p>
                             </div>
-
                         </div>
                     </div>
                 </div>
