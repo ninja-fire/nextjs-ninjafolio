@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'trooper': "url('../public/trooper/trooper.webp')",
+        'trooper': "url('../public/trooper/trooper.png')",
         'looter': "url('../public/looter/looter.png')",
         'family': "url('../public/family/family.png')",
         'trooperP1': "url('../public/trooper/problem1.png')",

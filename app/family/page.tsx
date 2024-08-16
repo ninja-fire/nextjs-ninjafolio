@@ -1,10 +1,12 @@
-import Link from "next/link";
 import Image from "next/image";
-import arrowstraight from "../../public/arrowstraight.svg";
 import FooterNav from "../ui/footerNav";
 import one from "../../public/1.svg";
 import two from "../../public/2.svg";
 import three from "../../public/3.svg";
+import fam01 from "../../public/family/fam01.png";
+import fam02 from "../../public/family/fam02.png";
+import fam03 from "../../public/family/fam03.png";
+import famdesignsystem from "../../public/family/famdesignsystem.png";
 
 export default function Family() {
     return (
@@ -40,20 +42,20 @@ export default function Family() {
             </div>
             <div className="flex flex-col bg-label w-full gap-20 px-6 md:px-32 py-20">
                 <h2 className="text-background">The challenges</h2>
-                <div className="flex gap-20 w-full">
-                    <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl w-full">
+                <div className="flex flex-wrap gap-20 w-full">
+                    <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl grow flex-1 min-w-80 sm:min-w-96">
                         <div className="flex">
                             <Image priority src={one} alt='Challenge 1 - Integrate physical and digital fashion' />
                         </div>
-                        <h3 className="text-background text-[32px] leading-10">How might we integrate physical and digital fashion in a user-friendly manner?</h3>
+                        <h3 className="text-background text-[32px] leading-10">How might we create a seamless user experience that merges traditional e-commerce functionalities with Web3 technologies?</h3>
                     </div>
-                    <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl w-full">
+                    <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl grow flex-1 min-w-80 sm:min-w-96">
                         <div className="flex">
                             <Image priority src={two} alt='Challenge 2 - Ensure NFC-certified ownership and blockchain transactions' />
                         </div>
-                        <h3 className="text-background text-[32px] leading-10">How might we ensure NFC-certified ownership and blockchain transactions are smooth and intuitive?</h3>
+                        <h3 className="text-background text-[32px] leading-10">How might we ensure the smooth integration of RFID chip scanning within the buying and selling processes?</h3>
                     </div>
-                    <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl w-full">
+                    <div className="flex flex-col p-8 gap-4 bg-primary border-4 border-background shadow-darkXl grow flex-1 min-w-80 sm:min-w-96">
                         <div className="flex">
                             <Image priority src={three} alt='Challenge 3 - Create an engaging and secure secondary market' />
                         </div>
@@ -61,6 +63,80 @@ export default function Family() {
                     </div>
                 </div>
             </div>
+
+            <div className="flex flex-col bg-primary w-full gap-20 px-6 md:px-32 py-20">
+                <h2 className="text-background">The process</h2>
+                <div className="flex flex-wrap gap-20 w-full">
+                    <div className="flex flex-col grow flex-1 min-w-80 sm:min-w-96 gap-8">
+                        <div className="flex px-[52px] py-4 gap-4 rounded-full bg-label border-4 border-background shadow-darkXl items-center w-fit">
+                            <h3 className="text-3xl text-background">Define</h3>
+                        </div>
+                        <p className="text-background/[64%]">
+                            The journey began with understanding the complex integration of digital NFTs with physical garments through RFID chips. We had to bridge traditional e-commerce functionalities with cutting-edge Web3 features. The challenge was to craft a user experience that could seamlessly guide users through scanning their RFID chips to link their clothes to the digital space, ensuring both the security and ease of use needed in a marketplace with both physical and digital assets. This phase was crucial to ensure every user interaction was intuitive and aligned with the unique demands of the project.
+                        </p>
+                    </div>
+                    <div className="flex flex-col grow flex-1 min-w-80 sm:min-w-96 gap-8">
+                        <div className="flex px-[52px] py-4 gap-4 rounded-full bg-label border-4 border-background shadow-darkXl items-center w-fit">
+                            <h3 className="text-3xl text-background">Design</h3>
+                        </div>
+                        <p className="text-background/[64%]">
+                            In the design phase, we focused on creating a UI that was as familiar as a standard clothing marketplace but with the added layer of Web3 capabilities. The design had to be sleek and modern, offering users a straightforward yet engaging experience. We integrated features like a live chat similar to Vinted, allowing users to negotiate prices and discuss deliveries, all while ensuring that the RFID scanning process was clear and accessible. The design also included specific flows for selling and buying on the second-hand market, ensuring the chip scanning was seamlessly integrated into these processes.
+                        </p>
+                    </div>
+                    <div className="flex flex-col grow flex-1 min-w-80 sm:min-w-96 gap-8">
+                        <div className="flex px-[52px] py-4 gap-4 rounded-full bg-label border-4 border-background shadow-darkXl items-center w-fit">
+                            <h3 className="text-3xl text-background">Refine</h3>
+                        </div>
+                        <p className="text-background/[64%]">
+                            Refinement was about perfecting the user experience. We rigorously tested the UI to ensure every scenario—from scanning a garment for the first time to transferring ownership on the second-hand market—was smooth and error-free. Feedback loops were crucial here; we worked closely with potential users to gather insights and make adjustments. The final product is a refined, user-centric application that merges the physical and digital worlds, providing a marketplace that feels both cutting-edge and user-friendly, ensuring that the complexities of the Family project are elegantly managed through design.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex flex-col bg-background w-full gap-20 px-6 md:px-32 py-20">
+                <h2 className=""><span className="text-primary">Interactive </span>Design Solutions</h2>
+                <div className="flex flex-col gap-20">
+                    <div className="flex flex-col gap-16 py-6">
+                        <div className="flex flex-col xl:flex-row gap-6 w-full">
+                            <div className="flex w-full border-4 items-center justify-center border-label shadow-lightXl">
+                                <Image src={fam01} alt="" />
+                            </div>
+                            <div className="flex w-full border-4 items-center justify-center border-label shadow-lightXl">
+                                <Image src={fam02} alt="" />
+                            </div>
+                            <div className="flex w-full border-4 items-center justify-center border-label shadow-lightXl">
+                                <Image src={fam03} alt="" />
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-6 xl:w-6/12">
+                            <h3 className="text-3xl">RFID Scanning and Live Chat Integration</h3>
+                            <div className="flex flex-col w-full">
+                                <p className="text-placeholder">
+                                    The RFID Scanning and Live Chat Integration seamlessly blend Web3 technology with a user-friendly experience. The RFID scanning feature allows users to link their physical garments to digital NFTs, ensuring authenticity and enabling easy management within the dApp. Coupled with a live chat feature, users can directly communicate during transactions, enhancing trust and simplifying negotiation processes. This integration makes the marketplace both innovative and practical, streamlining the buying and selling process with real-time communication and cutting-edge technology.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="flex flex-col gap-20 h-full">
+                    <div className="flex flex-col gap-16 py-6 h-full">
+                        <div className="flex w-full items-center justify-center border-4 border-label shadow-lightXl">
+                            <Image src={famdesignsystem} alt="" />
+                        </div>
+                        <div className="flex flex-col gap-6 xl:w-6/12">
+                            <h3 className="text-3xl">Visual Branding Elements</h3>
+                            <div className="flex flex-col w-full">
+                                <p className="text-placeholder">
+                                    The Visual Branding Elements of the Family project focus on creating a cohesive and recognizable identity that bridges the physical and digital realms. Utilizing a carefully crafted design system, the branding reflects the project&apos;s innovative spirit while maintaining user accessibility. From logos and typography to color schemes and iconography, each element was meticulously designed to resonate with both Web3 enthusiasts and mainstream users. This strong visual identity not only enhances brand recall but also contributes to a consistent and engaging user experience across all touchpoints.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <FooterNav hrefprev="/trooper" hrefnext="/looter" previous="Trooper" next="Looter" />
         </div>
     );

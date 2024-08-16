@@ -84,7 +84,7 @@ export default function Looter() {
 
             <div className="flex flex-col bg-primary w-full gap-20 px-6 md:px-32 py-20">
                 <h2 className="text-background">The process</h2>
-                <div className="flex flex-col lg:flex-row gap-20 w-full">
+                <div className="flex flex-wrap gap-20 w-full">
                     <div className="flex flex-col grow flex-1 min-w-80 sm:min-w-96 gap-8">
                         <div className="flex px-[52px] py-4 gap-4 rounded-full bg-label border-4 border-background shadow-darkXl items-center w-fit">
                             <h3 className="text-3xl text-background">Define</h3>
@@ -116,7 +116,7 @@ export default function Looter() {
                 <h2 className="">Main project <span className="text-primary">highlights</span></h2>
                 <div className="flex flex-col gap-20">
                     <div className="flex flex-col gap-16 py-6">
-                        <div className="flex gap-6 w-full">
+                        <div className="flex flex-col xl:flex-row gap-6 w-full">
                             <div className="flex w-full border-4 border-label shadow-lightXl">
                                 <Image src={step1} alt="" className="flex w-full" />
                             </div>
@@ -127,7 +127,7 @@ export default function Looter() {
                                 <Image src={step3} alt="" className="flex w-full" />
                             </div>
                         </div>
-                        <div className="flex flex-col gap-6 w-6/12">
+                        <div className="flex flex-col gap-6 xl:w-6/12">
                             <h3 className="text-3xl">Guided Swapping Experience with Integrated Notifications</h3>
                             <div className="flex flex-col w-full">
                                 <p className="text-placeholder">
@@ -139,19 +139,19 @@ export default function Looter() {
                 </div>
                 <div className="flex flex-col gap-20">
                     <div className="flex flex-col gap-16 py-6">
-                        <div className="flex gap-6 w-full">
-                            <div className="flex w-full border-4 border-label shadow-lightXl">
+                        <div className="flex flex-col xl:flex-row gap-6 w-full">
+                            <div className="flex w-full border-4 items-center justify-center border-label shadow-lightXl">
                                 <Image src={looterlogoanimated} alt="" unoptimized />
                             </div>
-                            <div className="flex w-full border-4 border-label shadow-lightXl">
+                            <div className="flex w-full border-4 items-center justify-center border-label shadow-lightXl">
                                 <Image src={cardanimated} alt="" unoptimized />
                             </div>
-                            <div className="flex w-full border-4 border-label shadow-lightXl">
+                            <div className="flex w-full border-4 items-center justify-center border-label shadow-lightXl">
                                 <Image src={btnanimated} alt="" unoptimized />
 
                             </div>
                         </div>
-                        <div className="flex flex-col gap-6 w-6/12">
+                        <div className="flex flex-col gap-6 xl:w-6/12">
                             <h3 className="text-3xl">Dynamic UI Interactions and Branding</h3>
                             <div className="flex flex-col w-full">
                                 <p className="text-placeholder">
@@ -164,19 +164,19 @@ export default function Looter() {
 
                 <div className="flex flex-col gap-20">
                     <div className="flex flex-col gap-16 py-6">
-                        <div className="flex gap-6 w-full">
-                            <div className="flex w-full border-4 border-label shadow-lightXl">
+                        <div className="flex flex-col xl:flex-row gap-6 w-full">
+                            <div className="flex w-full items-center justify-center border-4 border-label shadow-lightXl">
                                 <Image src={key} alt="" unoptimized className="scale-90" />
                             </div>
-                            <div className="flex w-full border-4 border-label shadow-lightXl overflow-hidden">
+                            <div className="flex w-full items-center justify-center border-4 border-label shadow-lightXl overflow-hidden">
                                 <Image src={chest540} unoptimized alt="" />
                             </div>
-                            <div className="flex w-full border-4 border-label shadow-lightXl overflow-hidden">
+                            <div className="flex w-full items-center justify-center border-4 border-label shadow-lightXl overflow-hidden">
                                 <Image src={looterblur} unoptimized alt="" />
 
                             </div>
                         </div>
-                        <div className="flex flex-col gap-6 w-6/12">
+                        <div className="flex flex-col gap-6 xl:w-6/12">
                             <h3 className="text-3xl">Immersive 3D Elements</h3>
                             <div className="flex flex-col w-full">
                                 <p className="text-placeholder">
