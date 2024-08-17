@@ -3,10 +3,12 @@ import FooterNav from "../ui/footerNav";
 import one from "../../public/1.svg";
 import two from "../../public/2.svg";
 import three from "../../public/3.svg";
-import fam01 from "../../public/family/fam01.png";
-import fam02 from "../../public/family/fam02.png";
-import fam03 from "../../public/family/fam03.png";
-import famdesignsystem from "../../public/family/famdesignsystem.png";
+import fam01 from "../../public/family/fam01.svg";
+import fam02 from "../../public/family/fam02.svg";
+import fam03 from "../../public/family/fam03.svg";
+import famdesignsystem from "../../public/family/famdesignsystem.svg";
+import famlanding from "../../public/family/famlanding.svg";
+import fammobile from "../../public/family/fammobile.png";
 
 export default function Family() {
     return (
@@ -99,13 +101,13 @@ export default function Family() {
                 <div className="flex flex-col gap-20">
                     <div className="flex flex-col gap-16 py-6">
                         <div className="flex flex-col xl:flex-row gap-6 w-full">
-                            <div className="flex w-full border-4 items-center justify-center border-label shadow-lightXl">
+                            <div className="flex w-full border-4 bg-gradient-to-b from-[#232323] to-[#0E0E0E] items-center justify-center border-label shadow-lightXl">
                                 <Image src={fam01} alt="" />
                             </div>
-                            <div className="flex w-full border-4 items-center justify-center border-label shadow-lightXl">
+                            <div className="flex w-full border-4 bg-gradient-to-b from-[#232323] to-[#0E0E0E] items-center justify-center border-label shadow-lightXl">
                                 <Image src={fam02} alt="" />
                             </div>
-                            <div className="flex w-full border-4 items-center justify-center border-label shadow-lightXl">
+                            <div className="flex w-full border-4 bg-gradient-to-b from-[#232323] to-[#0E0E0E] items-center justify-center border-label shadow-lightXl">
                                 <Image src={fam03} alt="" />
                             </div>
                         </div>
@@ -122,8 +124,8 @@ export default function Family() {
 
                 <div className="flex flex-col gap-20 h-full">
                     <div className="flex flex-col gap-16 py-6 h-full">
-                        <div className="flex w-full items-center justify-center border-4 border-label shadow-lightXl">
-                            <Image src={famdesignsystem} alt="" />
+                        <div className="flex w-full bg-gradient-to-b from-[#232323] to-[#0E0E0E] items-center justify-center border-4 border-label shadow-lightXl">
+                            <Image src={famdesignsystem} alt="" height={1080} width={1920} className="drop-shadow-4xl"/>
                         </div>
                         <div className="flex flex-col gap-6 xl:w-6/12">
                             <h3 className="text-3xl">Visual Branding Elements</h3>
@@ -135,6 +137,13 @@ export default function Family() {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className="flex bg-gradient-to-b from-[#232323] to-[#0E0E0E] relative w-full items-center justify-center overflow-hidden">
+                <Image src={famlanding} alt="" className="flex w-full" />
+            </div>
+            <div className="flex bg-gradient-to-b from-[#232323] to-[#0E0E0E] relative w-full items-center justify-center overflow-hidden">
+                <Image src={fammobile} alt="" className="flex w-full" />
             </div>
 
             <FooterNav hrefprev="/trooper" hrefnext="/looter" previous="Trooper" next="Looter" />

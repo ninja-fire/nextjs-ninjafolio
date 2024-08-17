@@ -33,6 +33,12 @@ const config: Config = {
         'lightSm': '4px 4px 0px #F5F7EF;',
         'primarySm': '4px 4px 0px #C6FE09;',
       },
+      dropShadow: {
+        '4xl': [
+            '0px 16px 32px rgba(12, 12, 12, 0.32)',
+            '0px 32px 64px rgba(12, 12, 12, 0.64)'
+        ]
+      }
     },
   },
   plugins: [],

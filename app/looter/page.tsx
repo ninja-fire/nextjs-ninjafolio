@@ -200,7 +200,6 @@ export default function Looter() {
             <div className="flex relative w-full items-center justify-center overflow-hidden">
                 <Image src={looterswap} alt="" className="flex w-full" />
             </div>
-            <div className="flex h-20 bg-background"></div>
             <FooterNav hrefprev="/family" hrefnext="/trooper" previous="Family" next="Trooper" />
         </div>
     );

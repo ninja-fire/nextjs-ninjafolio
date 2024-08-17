@@ -309,7 +309,6 @@ export default function Trooper() {
             <div className="flex relative w-full items-center justify-center overflow-hidden">
                 <Image src={trooper03} alt="" className="flex w-full" />
             </div>
-            <div className="flex h-20 bg-background"></div>
             <FooterNav hrefprev="/looter" hrefnext="/family" previous="Looter" next="Family" />
         </div>
     );
