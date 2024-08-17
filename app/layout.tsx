@@ -23,9 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${bricoFont.variable}`}>
-      <body className="antialiased overflow-x-hidden bg-background">
+      <body className="flex flex-col antialiased overflow-x-hidden bg-background">
         <div className="absolute z-[-1] bg-primary top-[64rem] 2xl:top-0 right-0 w-full h-[240%] md:h-full 2xl:w-6/12 xl:h-[120%]"></div>
-        <header role="navigation" className="flex sticky top-0 z-10 w-full">
+        <header role="navigation" className="flex fixed top-0 z-10 w-full">
           <NavMenu />
         </header>
         <main role="main" className="flex flex-col min-h-screen">
