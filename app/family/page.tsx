@@ -17,14 +17,15 @@ export default function Family() {
                 <div className="flex absolute bg-gradient-to-t from-background w-full h-full top-0 left-0"></div>
                 <h1 className="z-[1]">Family</h1>
             </div>
+
             <div className="flex flex-col lg:flex-row w-full gap-20 px-6 md:px-32 py-20 pt-0">
-                <div className="flex flex-col gap-6 w-6/12">
-                    <p className="text-2xl font-extrabold text-primary leading-8">On-Chain Clothing Purchase and Sale</p>
+                <div className="flex w-full flex-col gap-6">
+                    <h2 className="text-2xl font-extrabold text-primary leading-8">On-Chain Clothing Purchase and Sale</h2>
                     <p className="text-placeholder text-sm font-normal leading-6">
-                        Family is an on-chain clothing purchase and sale platform, integrating NFC-certified ownership and secondary market resale. The project aimed to seamlessly combine physical and digital fashion, allowing users to acquire, own, and resell clothing items with blockchain technology, ensuring a smooth and intuitive experience similar to traditional online commerce platforms.
+                    Family is an on-chain clothing purchase and sale platform, integrating NFC-certified ownership and secondary market resale. The project aimed to seamlessly combine physical and digital fashion, allowing users to acquire, own, and resell clothing items with blockchain technology, ensuring a smooth and intuitive experience similar to traditional online commerce platforms.
                     </p>
                     <div className="flex flex-wrap gap-6 w-full">
-                        <div className="flex items-center justify-center rounded-full bg-background border-2 border-label shadow-primarySm px-2 py-1 left-4 top-4">
+                    <div className="flex items-center justify-center rounded-full bg-background border-2 border-label shadow-primarySm px-2 py-1 left-4 top-4">
                             <span className="text-xs text-label font-medium">landing page design</span>
                         </div>
                         <div className="flex items-center justify-center rounded-full bg-background border-2 border-label shadow-primarySm px-2 py-1 left-4 top-4">
@@ -32,16 +33,17 @@ export default function Family() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col gap-6 w-6/12">
+                <div className="flex w-full flex-col gap-6">
                     <p className="text-2xl font-extrabold text-label leading-8">Objectives</p>
                     <div className="flex flex-col gap-2">
-                        <p className="text-caption leading-6">Develop an application enabling users to acquire clothing collections, whether physical or in the form of NFTs, with a simplicity comparable to other online commerce platforms.</p>
+                    <p className="text-caption leading-6">Develop an application enabling users to acquire clothing collections, whether physical or in the form of NFTs, with a simplicity comparable to other online commerce platforms.</p>
                         <p className="text-caption leading-6">Establish an ecosystem where physical and digital fashion coexist seamlessly, providing users with a comprehensive experience.</p>
                         <p className="text-caption leading-6">Ensure a smooth integration of blockchain technology to certify clothing ownership, utilizing NFC tags and assigning NFTs without creating complex barriers for users.</p>
                         <p className="text-caption leading-6">Integrate a feature allowing users to resell their clothing items on a second-hand market directly within the application.</p>
                     </div>
                 </div>
             </div>
+
             <div className="flex flex-col bg-label w-full gap-20 px-6 md:px-32 py-20">
                 <h2 className="text-background">The challenges</h2>
                 <div className="flex flex-wrap gap-20 w-full">

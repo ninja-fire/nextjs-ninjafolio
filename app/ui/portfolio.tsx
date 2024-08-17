@@ -49,7 +49,7 @@ export default function Portfolio() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col sm:flex-row w-full justify-between items-center z-[2]">
+                    <div className="flex flex-col sm:flex-row w-full justify-between z-[2]">
                         <div className="flex flex-col gap-2">
                             <h5>Tools</h5>
                             <p className="text-placeholder text-start leading-6">Figma - Blender</p>
