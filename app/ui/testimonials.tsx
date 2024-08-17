@@ -1,6 +1,8 @@
 import ninjapic from "../../public/ninjapic.png";
 import Image from "next/image";
 import flame from "../../public/flame.svg";
+import dani from "../../public/testimonials/dani.png";
+import madperps from "../../public/testimonials/madperps.png";
 
 const breakLine =
     <svg className="w-full" width="463" height="7" viewBox="0 0 463 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,11 +31,11 @@ export default function Testimonials() {
                 <div className="flex grow flex-1 min-w-80 sm:min-w-96 flex-col gap-6 items-center justify-center">
                     <div className="flex flex-col  w-full gap-6 items-center justify-center">
                         <div className="flex items-center justify-center bg-primary border-2 border-background rounded-full shadow-darkSm w-content overflow-hidden">
-                            <Image priority src={ninjapic} alt='' className="w-20" />
+                            <Image priority src={dani} alt='' className="w-20" />
                         </div>
                         <div className="flex flex-col gap-2 items-center justify-center">
-                            <p className="text-2xl leading-8 font-extrabold text-background">Ninja Fire</p>
-                            <p className="text-background">Head of Design - Ninja Corp</p>
+                            <p className="text-2xl leading-8 font-extrabold text-background">Daniel Dohne</p>
+                            <p className="text-background">CEO - Aramid Labs</p>
                         </div>
                     </div>
                     <div className="flex px-4 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm">
@@ -50,7 +52,9 @@ export default function Testimonials() {
                         <div className="flex h-fit px-4 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm">
                             <p className="text-2xl text-background">&ldquo;</p>
                         </div>
-                        <p className="text-background/[80%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.</p>
+                        <p className="text-background/[80%]">
+                        Manon was amazing at understanding exactly what I wanted for Aramid.Finance. She worked quickly and efficiently, delivering a fantastic design ahead of schedule. Even after the project was completed, she was incredibly helpful, providing support and ensuring everything ran smoothly. Highly recommend!
+                        </p>
                         <div className="flex h-fit px-4 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm">
                             <p className="text-2xl text-background">&rdquo;</p>
                         </div>
@@ -59,7 +63,7 @@ export default function Testimonials() {
                 <div className="flex grow flex-1 min-w-80 sm:min-w-96 flex-col gap-6 items-center justify-center">
                     <div className="flex flex-col gap-6 items-center justify-center">
                         <div className="flex items-center justify-center bg-primary border-2 border-background rounded-full shadow-darkSm w-content overflow-hidden">
-                            <Image priority src={ninjapic} alt='' className="w-20" />
+                            <Image priority src={madperps} alt='' className="w-20" />
                         </div>
                         <div className="flex flex-col gap-2 items-center justify-center">
                             <p className="text-2xl leading-8 font-extrabold text-background">Ninja Fire</p>
@@ -87,7 +91,7 @@ export default function Testimonials() {
                 <div className="flex grow flex-1 min-w-80 sm:min-w-96 flex-col gap-6 items-center justify-center">
                     <div className="flex flex-col gap-6 items-center justify-center">
                         <div className="flex items-center justify-center bg-primary border-2 border-background rounded-full shadow-darkSm w-content overflow-hidden">
-                            <Image priority src={ninjapic} alt='' className="w-20" />
+                            <Image priority src={dani} alt='' className="w-20" />
                         </div>
                         <div className="flex flex-col gap-2 items-center justify-center">
                             <p className="text-2xl leading-8 font-extrabold text-background">Ninja Fire</p>
