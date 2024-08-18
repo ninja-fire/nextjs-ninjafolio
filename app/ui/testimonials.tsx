@@ -83,7 +83,7 @@ export default function Testimonials() {
                             <p className="text-2xl text-background">&ldquo;</p>
                         </div>
                         <p className="text-background/[80%] text-sm leading-7">
-                            Ninja Fire delivered exceptional branding for MadPerps. Her style, font choices, and color palette perfectly captured our vision for our perpetual futures DEX on Berachain. What impressed us most was her speed and accuracy - nailing it on the first try. While we're still in the early stages, the initial response to our branding has been overwhelmingly positive. Ninja Fire's work has given us a strong visual identity to build upon as we grow our community and partnerships.
+                            Ninja Fire delivered exceptional branding for MadPerps. Her style, font choices, and color palette perfectly captured our vision for our perpetual futures DEX on Berachain. What impressed us most was her speed and accuracy - nailing it on the first try. While we&apos;re still in the early stages, the initial response to our branding has been overwhelmingly positive. Ninja Fire&apos;s work has given us a strong visual identity to build upon as we grow our community and partnerships.
                         </p>
                         <div className="flex h-fit px-4 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm">
                             <p className="text-2xl text-background">&rdquo;</p>
