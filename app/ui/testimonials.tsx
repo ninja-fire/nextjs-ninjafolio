@@ -98,7 +98,7 @@ export default function Testimonials() {
                         </div>
                         <div className="flex flex-col gap-2 items-center justify-center">
                             <p className="text-2xl leading-8 font-extrabold text-background">Marvin Scaringella</p>
-                            <p className="text-background">CEO - VeneLabs</p>
+                            <p className="text-background">CEO - VenaLabs</p>
                         </div>
                     </div>
                     <div className="flex px-4 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm">
