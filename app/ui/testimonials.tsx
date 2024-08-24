@@ -3,6 +3,7 @@ import Image from "next/image";
 import flame from "../../public/flame.svg";
 import dani from "../../public/testimonials/dani.png";
 import madperps from "../../public/testimonials/madperps.png";
+import marvin from "../../public/testimonials/marvin.png";
 
 const breakLine =
     <svg className="w-full" width="463" height="7" viewBox="0 0 463 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -96,8 +97,8 @@ export default function Testimonials() {
                             <Image priority src={ninjapic} alt='' className="w-20" />
                         </div>
                         <div className="flex flex-col gap-2 items-center justify-center">
-                            <p className="text-2xl leading-8 font-extrabold text-background">Ninja Fire</p>
-                            <p className="text-background">Head of Design - Ninja Corp</p>
+                            <p className="text-2xl leading-8 font-extrabold text-background">Marvin Scaringella</p>
+                            <p className="text-background">CEO - VeneLabs</p>
                         </div>
                     </div>
                     <div className="flex px-4 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm">
@@ -113,7 +114,8 @@ export default function Testimonials() {
                             <p className="text-2xl text-background">&ldquo;</p>
                         </div>
                         <p className="text-background/[80%] text-sm leading-7">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
+                        Manon est une designer de talent avec qui nous avons eu le plaisir de travailler sur notre projet VenaLabs. Elle a su faire preuve d'une grande initiative et d'une créativité exceptionnelle, transformant nos idées en une réalité visuelle. C'est rare de rencontrer une designer qui comprend aussi profondément les besoins de ses clients et qui y répond avec autant de brio. 
+                        Merci Manon, tu as été formidable!
                         </p>
                         <div className="flex h-fit px-4 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm">
                             <p className="text-2xl text-background">&rdquo;</p>
