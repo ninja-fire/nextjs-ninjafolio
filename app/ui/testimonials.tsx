@@ -94,7 +94,7 @@ export default function Testimonials() {
                 <div className="flex grow flex-1 min-w-80 sm:min-w-96 flex-col gap-6 items-center justify-center">
                     <div className="flex flex-col gap-6 items-center justify-center">
                         <div className="flex items-center justify-center bg-primary border-2 border-background rounded-full shadow-darkSm w-content overflow-hidden">
-                            <Image priority src={ninjapic} alt='' className="w-20" />
+                            <Image priority src={marvin} alt='' className="w-20" />
                         </div>
                         <div className="flex flex-col gap-2 items-center justify-center">
                             <p className="text-2xl leading-8 font-extrabold text-background">Marvin Scaringella</p>
