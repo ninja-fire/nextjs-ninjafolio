@@ -114,7 +114,7 @@ export default function Testimonials() {
                             <p className="text-2xl text-background">&ldquo;</p>
                         </div>
                         <p className="text-background/[80%] text-sm leading-7">
-                        Manon est une designer de talent avec qui nous avons eu le plaisir de travailler sur notre projet VenaLabs. Elle a su faire preuve d'une grande initiative et d'une créativité exceptionnelle, transformant nos idées en une réalité visuelle. C'est rare de rencontrer une designer qui comprend aussi profondément les besoins de ses clients et qui y répond avec autant de brio. 
+                        Manon est une designer de talent avec qui nous avons eu le plaisir de travailler sur notre projet VenaLabs. Elle a su faire preuve d&apos;une grande initiative et d&apos;une créativité exceptionnelle, transformant nos idées en une réalité visuelle. C&apos;est rare de rencontrer une designer qui comprend aussi profondément les besoins de ses clients et qui y répond avec autant de brio. 
                         Merci Manon, tu as été formidable!
                         </p>
                         <div className="flex h-fit px-4 py-2 items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm">
