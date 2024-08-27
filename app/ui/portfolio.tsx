@@ -51,7 +51,7 @@ export default function Portfolio() {
                     </div>
                     <div className="flex flex-col sm:flex-row w-full justify-between z-[2]">
                         <div className="flex flex-col gap-2">
-                            <h5>Tools</h5>
+                            <p className="text-2xl leading-8">Tools</p>
                             <p className="text-placeholder text-start leading-6">Figma - Blender</p>
                         </div>
                         <div className="flex">
@@ -91,7 +91,7 @@ export default function Portfolio() {
                     </div>
                     <div className="flex flex-col sm:flex-row w-full justify-between z-[2]">
                         <div className="flex flex-col gap-2">
-                            <h5>Tools</h5>
+                            <p className="text-2xl leading-8">Tools</p>
                             <p className="text-placeholder text-start leading-6">Figma</p>
                         </div>
                         <div className="flex">
@@ -137,7 +137,7 @@ export default function Portfolio() {
                     </div>
                     <div className="flex flex-col sm:flex-row w-full justify-between z-[2]">
                         <div className="flex flex-col gap-2">
-                            <h5>Tools</h5>
+                            <p className="text-2xl leading-8">Tools</p>
                             <p className="text-placeholder text-start leading-6">Figma - Blender - Marvelous Designer</p>
                         </div>
                         <div className="flex">
