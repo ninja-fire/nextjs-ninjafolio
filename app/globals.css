@@ -2,32 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Change autocomplete styles in WebKit */
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  border: 1px solid --caption;
-  -webkit-text-fill-color: var(--label);
-  /* -webkit-box-shadow: 0 0 0px 1000px #000 inset; */
-  transition: background-color 5000s ease-in-out 0s;
-}
-
 :root {
   --background: #151514;
   --label: #F5F7EF;
-  --caption: #C8CAC2;
-  --placeholder: #A4A6A0;
   --primary: #C6FE09;
 }
 
-* {
+html {
   scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 body {
@@ -35,100 +18,60 @@ body {
   background: var(--background);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+::selection {
+  background: var(--primary);
+  color: var(--background);
 }
 
-h1 {
-  font-family: var(--font-brico);
+h1, h2, h3, h4, h5 {
   font-weight: 800;
-  font-size: 80px;
-  line-height: 88px;
-}
-
-h2 {
-  font-family: var(--font-brico);
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 72px;
-
-}
-
-h3 {
-  font-family: var(--font-brico);
-  font-size: 40px;
-  font-weight: 800;
-  line-height: 64px;
-
-}
-
-h4 {
-  font-family: var(--font-brico);
-  font-size: 32px;
-  font-weight: 800;
-  line-height: 32px;
-
-}
-
-h5 {
-  font-family: var(--font-brico);
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 32px;
-
+  text-wrap: balance;
 }
 
 p {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 32px;
-  text-align: justify;
+  text-wrap: pretty;
 }
 
-.btnText {
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 24px;
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
 }
 
-.inline {
-  inline-size: max-content;
-}
-
-@media only screen and (max-width: 1024px) {
-
-  h1 {
-    font-size: 64px;
-    line-height: 80px;
+@layer components {
+  /* Horizontal page gutter + max width, used by every section. */
+  .container-site {
+    @apply mx-auto w-full max-w-site px-4 sm:px-8 lg:px-16;
   }
 
-  h2 {
-    font-size: 52px;
-    line-height: 48px;
-  }
-
-  h3 {
-    font-size: 32px;
-    line-height: 32px;
-  }
-
-  h4 {
-    font-size: 24px;
-    line-height: 24px;
-  }
-
-  h5 {
-    font-size: 18px;
-    line-height: 18px;
+  .eyebrow {
+    @apply text-sm font-semibold uppercase tracking-[0.16em] text-primary;
   }
 }
 
-@media only screen and (max-width: 640px) {
-  h1 {
-    font-size: 48px;
-    line-height: 56px;
+/* Elements with .reveal fade up (only when JS runs, so content never stays hidden) once they enter the viewport (see ui/reveal.tsx). */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .animate-marquee {
+    animation: none;
   }
 }
