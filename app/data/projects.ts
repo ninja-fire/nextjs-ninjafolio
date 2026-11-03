@@ -1,6 +1,6 @@
 import type { StaticImageData } from "next/image";
 
-import orageCover from "../../public/orage/hero.webp";
+import orageCover from "../../public/orage/cover.webp";
 import orageHome from "../../public/orage/app-home.webp";
 import orageForecast from "../../public/orage/app-forecast-calendar.webp";
 import orageSeason from "../../public/orage/app-season.webp";
@@ -10,11 +10,13 @@ import orageJournalSaved from "../../public/orage/app-journal-saved.webp";
 import orageWelcome from "../../public/orage/app-onboarding-welcome.webp";
 import orageLastStorm from "../../public/orage/app-onboarding-last-storm.webp";
 import orageCycleLength from "../../public/orage/app-onboarding-cycle-length.webp";
-import orageLanding from "../../public/orage/landing.webp";
-import orageLandingAdvice from "../../public/orage/landing-advice.webp";
-import orageSkyStorm from "../../public/orage/sky-day-02-a.webp";
-import orageSkySun from "../../public/orage/sky-day-14-a.webp";
-import orageSkyAutumn from "../../public/orage/sky-day-22-b.webp";
+import orageLanding from "../../public/orage/landing-hero.webp";
+import orageLandingForecast from "../../public/orage/landing-forecast.webp";
+import orageLandingHeadsUp from "../../public/orage/landing-headsup.webp";
+import orageLandingJournal from "../../public/orage/landing-journal.webp";
+import orageSkySun from "../../public/orage/sky-sun.webp";
+import orageSkySunset from "../../public/orage/sky-sunset.webp";
+import orageSkyRain from "../../public/orage/sky-rain.webp";
 
 import zuCover from "../../public/zuitzerland/cover.webp";
 import zuLogo from "../../public/zuitzerland/logo.webp";
@@ -176,7 +178,7 @@ export const projects: Project[] = [
     year: "2026",
     client: "Self-initiated product",
     link: { href: "https://orage.app", label: "orage.app (coming soon)" },
-    cover: { src: orageCover, alt: "Watercolor painting of a storm at sea, Orage's signature visual" },
+    cover: { src: orageCover, alt: "Orage logo over a watercolor storm at sea" },
     role: "Founder, brand & product designer",
     deliverables: [
       "Name, logo & brand identity",
@@ -267,21 +269,29 @@ export const projects: Project[] = [
           text: "Place today's sky like a polaroid, drag up to four moods into the circles, write a note in a handwritten font. Only today can be written, and pages lock once saved, because a journal records how you feel now. On days you'd rather not, “I don't feel journaling today” lets the page rest.",
         },
         {
-          title: "65 skies, one for every day",
+          title: "Painted skies",
           images: [
-            { src: orageSkyStorm, alt: "Watercolor storm sky" },
-            { src: orageSkySun, alt: "Watercolor full-sun sky" },
-            { src: orageSkyAutumn, alt: "Watercolor autumn sunset sky" },
+            { src: orageSkySun, alt: "Soft sun behind a cloud" },
+            { src: orageSkySunset, alt: "Watercolor sunset sky" },
+            { src: orageSkyRain, alt: "Rain clouds on a grey-blue sky" },
           ],
-          text: "Storms, clearing skies, bright sun, soft autumn light. The sky replaces the chart: you know where you are in your cycle before you read a single word.",
+          text: "Soft sun, sunsets, rain clouds: 65 watercolor skies, one for every day of the cycle, and the same paintings carry the landing page. The sky replaces the chart: you know where you are in your cycle before you read a single word.",
         },
         {
           title: "A landing page that keeps the app's promise",
           images: [
             { src: orageLanding, alt: "orage.app hero: Check your cycle like you check the weather" },
-            { src: orageLandingAdvice, alt: "orage.app advice section" },
           ],
           text: "orage.app opens on a storm at sea, with a scroll-driven season dial that walks through a cycle and rain falling at the same angle as the paintings. The first version looked like a generic website, so I threw it away and rebuilt it product-first. It runs zero analytics and makes zero third-party requests: privacy before you've even downloaded the app.",
+        },
+        {
+          title: "Every section, its own sky",
+          images: [
+            { src: orageLandingForecast, alt: "orage.app forecast section: the next five days over a sun painting" },
+            { src: orageLandingHeadsUp, alt: "orage.app heads-up section: storm notifications over a dusk sky" },
+            { src: orageLandingJournal, alt: "orage.app journal section: a notebook page with today's sky as a polaroid" },
+          ],
+          text: "Each feature sits on its own painting, with a real piece of the app on top: the forecast, the heads-up before a storm, the journal. The season dial in the corner follows you down the page, from day 1 to day 28.",
         },
       ],
     },
@@ -376,7 +386,7 @@ export const projects: Project[] = [
     year: "2025",
     client: "VenaLabs",
     link: { href: "https://venalabs.com/en/landing", label: "venalabs.com" },
-    cover: { src: venaCover, alt: "VenaLabs v2 Discover screen: a starter course, airdrops and routines" },
+    cover: { src: venaCover, alt: "VenaLabs v2 screens in perspective: Discover, leaderboard and profile" },
     role: "Product designer",
     deliverables: ["UX research & app architecture", "Full app redesign (v1 → v2)", "Design system", "Rewards & gamification"],
     tags: ["ux/ui design", "redesign", "design system", "gamification"],

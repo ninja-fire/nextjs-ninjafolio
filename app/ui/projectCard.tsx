@@ -7,7 +7,7 @@ export default function ProjectCard({ project, spotlight = false }: { project: P
   return (
     <Link
       href={`/work/${project.slug}`}
-      className={`group relative flex h-full overflow-hidden rounded-3xl border-2 border-line bg-surface transition-all duration-300 hover:-translate-x-1 hover:-translate-y-1 hover:border-label hover:shadow-primaryXl ${
+      className={`group relative flex h-full overflow-hidden rounded-3xl border-2 border-line bg-surface transition-colors duration-500 hover:border-primary ${
         spotlight ? "flex-col lg:flex-row" : "flex-col"
       }`}
     >
@@ -17,7 +17,7 @@ export default function ProjectCard({ project, spotlight = false }: { project: P
           alt={project.cover.alt}
           fill
           sizes={spotlight ? "(min-width: 1024px) 60vw, 100vw" : "(min-width: 768px) 50vw, 100vw"}
-          className="object-cover transition-transform duration-700 group-hover:scale-105"
+          className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
         />
       </div>
 
