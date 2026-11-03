@@ -1,10 +1,15 @@
 import type { StaticImageData } from "next/image";
 
 import orageCover from "../../public/orage/hero.webp";
-import orageHome from "../../public/orage/home.webp";
-import orageForecast from "../../public/orage/forecast.webp";
-import orageSeason from "../../public/orage/season.webp";
-import orageJournal from "../../public/orage/journal.webp";
+import orageHome from "../../public/orage/app-home.webp";
+import orageForecast from "../../public/orage/app-forecast-calendar.webp";
+import orageSeason from "../../public/orage/app-season.webp";
+import orageJournalSky from "../../public/orage/app-journal-sky-placed.webp";
+import orageJournalMoods from "../../public/orage/app-journal-moods-dragging.webp";
+import orageJournalSaved from "../../public/orage/app-journal-saved.webp";
+import orageWelcome from "../../public/orage/app-onboarding-welcome.webp";
+import orageLastStorm from "../../public/orage/app-onboarding-last-storm.webp";
+import orageCycleLength from "../../public/orage/app-onboarding-cycle-length.webp";
 import orageLanding from "../../public/orage/landing.webp";
 import orageLandingAdvice from "../../public/orage/landing-advice.webp";
 import orageSkyStorm from "../../public/orage/sky-day-02-a.webp";
@@ -183,18 +188,31 @@ export const projects: Project[] = [
       highlightsTitle: "Design highlights",
       highlights: [
         {
+          title: "Set up in three questions",
+          images: [
+            { src: orageWelcome, alt: "Orage welcome screen: Your personal weather app" },
+            { src: orageLastStorm, alt: "Onboarding: pick your last storm on a range calendar" },
+            { src: orageCycleLength, alt: "Onboarding: days between storms, with an 'It varies a lot' option" },
+          ],
+          text: "When did your last storm start, how long did it last, how many days between storms? That's all Orage asks. Every question has a way out for real life (“I'm not sure of the exact day”, “It varies a lot”). There's no account to create.",
+        },
+        {
           title: "Today, as a forecast",
           images: [
-            { src: orageHome, alt: "Orage home screen: Spring, day 8, storm expected soon, today's forecast" },
-            { src: orageForecast, alt: "Orage forecast screen" },
-            { src: orageSeason, alt: "Orage season screen with eat, move and plan advice" },
+            { src: orageHome, alt: "Orage home: Summer, day 14 of 28, three-day forecast and today's advice" },
+            { src: orageForecast, alt: "Orage forecast calendar with season-colored days and the next storm range" },
+            { src: orageSeason, alt: "Orage season screen: what's happening in early summer, with eat, move and plan advice" },
           ],
-          text: "Home shows today's season and sky, a banner for the next storm and a one-tap update. Forecast learns from your own history once you've logged three cycles. Season turns each phase into everyday advice: what to eat, how to move, how to plan your week.",
+          text: "Home shows today's season and sky, a three-day forecast in weather words, and one tap to log a storm. The calendar colors each day by season and learns from your own history once you've logged three cycles. Season turns each phase into everyday advice: what to eat, how to move, how to plan your week.",
         },
         {
           title: "A journal that lives in the present",
-          images: [{ src: orageJournal, alt: "Orage journal flow: pick a sky, drag moods, write a note, saved page" }],
-          text: "Pick a sky polaroid, drag up to four moods into place, write a note in a handwritten font. Only today can be written, and pages lock once saved, because a journal records how you feel now. On days you'd rather not, “I don't feel journaling today” lets the page rest.",
+          images: [
+            { src: orageJournalSky, alt: "Journal: today's sky placed as a polaroid" },
+            { src: orageJournalMoods, alt: "Journal: dragging a mood into one of four circles" },
+            { src: orageJournalSaved, alt: "Journal: the saved, locked page with sky, moods and a handwritten note" },
+          ],
+          text: "Place today's sky like a polaroid, drag up to four moods into the circles, write a note in a handwritten font. Only today can be written, and pages lock once saved, because a journal records how you feel now. On days you'd rather not, “I don't feel journaling today” lets the page rest.",
         },
         {
           title: "65 skies, one for every day",
