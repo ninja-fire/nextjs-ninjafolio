@@ -18,17 +18,11 @@ import orageSkyRain from "../../public/orage/sky-rain.webp";
 import zuCover from "../../public/zuitzerland/cover.webp";
 import zuWordmarkNavy from "../../public/zuitzerland/wordmark-navy.webp";
 import zuWordmarkPink from "../../public/zuitzerland/wordmark-pink.webp";
-import zuPatternLime from "../../public/zuitzerland/pattern-lime.webp";
-import zuPatternPink from "../../public/zuitzerland/pattern-pink.webp";
-import zuSeal from "../../public/zuitzerland/seal.webp";
 import zuSlideSpeaker from "../../public/zuitzerland/slide-speaker.webp";
 import zuSlidePartners from "../../public/zuitzerland/slide-partners.webp";
 import zuSlideAgenda from "../../public/zuitzerland/slide-agenda.webp";
 import zuYtKeynote from "../../public/zuitzerland/yt-keynote.webp";
-import zuYtOpening from "../../public/zuitzerland/yt-opening.webp";
 import zuYtSwissWay from "../../public/zuitzerland/yt-swiss-way.webp";
-import zuYtHubs from "../../public/zuitzerland/yt-hubs.webp";
-import zuYtDemos from "../../public/zuitzerland/yt-demos.webp";
 import zuYtFireside from "../../public/zuitzerland/yt-fireside.webp";
 import zuPosters from "../../public/zuitzerland/print-posters.webp";
 import zuSignage from "../../public/zuitzerland/print-signage.webp";
@@ -306,48 +300,22 @@ export const projects: Project[] = [
     tools: ["Figma", "Figma Slides"],
     question: "How do you keep one brand consistent across a month of events, every screen, print and piece of merch?",
     summary:
-      "Zuitzerland is a Swiss network state: a month-long residency in May 2025 where builders, researchers and thinkers explored new ways to govern and live together, ending with a summit. I designed the brand identity, then stayed on as the event's designer: speaker slides, agendas, posters, signage, social visuals and merch, so every touchpoint looked like the same world.",
+      "Zuitzerland is a Swiss network state: a month-long residency in May 2025 where builders, researchers and thinkers explored new ways to govern and live together, ending with a summit. I designed the brand identity, then stayed on as the event's designer: speaker slides, agendas, posters, signage, merch and, after the summit, the YouTube thumbnails, so every touchpoint looked like the same world.",
     objectives: [
       "Create an identity that feels both Swiss and future-facing, serious and warm.",
       "Keep a month of daily events visually consistent, with a fast turnaround.",
       "Make attendees proud to wear and share the brand.",
     ],
     caseStudy: {
-      process: [
-        {
-          name: "Brand",
-          intro:
-            "A custom wordmark, a Z monogram and a round “A Swiss Network State · Future Society Sandbox” seal. A palette that runs from night blue to orchid pink, with a soft lime, and a four-pointed sparkle pattern that turns any surface into Zuitzerland.",
-        },
-        {
-          name: "Event",
-          intro:
-            "During the residency, I was the team's on-call designer. Templates did the heavy lifting: one speaker slide, one panel slide, one agenda, so any talk could go on stage the same day it was booked.",
-        },
-        {
-          name: "Print & merch",
-          intro:
-            "Posters, room signage, stickers and color-coded welcome kits for team, participants and guests. The same seal and pattern on every piece, so the venue felt like one place.",
-        },
-      ],
-      highlightsTitle: "Selected work",
+      highlightsTitle: "One brand, every touchpoint",
       highlights: [
         {
-          title: "The wordmark",
+          title: "The brand: Swiss, from the future",
           images: [
             { src: zuWordmarkNavy, alt: "Zuitzerland wordmark in white on night blue" },
             { src: zuWordmarkPink, alt: "Zuitzerland wordmark in orchid on light pink" },
           ],
-          text: "A custom wordmark with a sparkle and a little flag folded into its letters: Swiss, a bit playful, and readable from the back of a room.",
-        },
-        {
-          title: "Seal, pattern and color",
-          images: [
-            { src: zuPatternLime, alt: "Lime background with the sparkle pattern and the Zuitzerland seal, labelled Zuiteam" },
-            { src: zuSeal, alt: "Zuitzerland seal: A Swiss Network State, Future Society Sandbox, with the Z monogram" },
-            { src: zuPatternPink, alt: "Pink background with the sparkle pattern and the seal, labelled Zuiticipants" },
-          ],
-          text: "The round seal carries the mission, “A Swiss Network State · Future Society Sandbox”, around the Z monogram. Each color has a role (lime for the team, pink for participants, lavender for guests), so the sparkle pattern also tells you who you're talking to.",
+          text: "A custom wordmark with a sparkle and a little flag folded into its letters, a round “A Swiss Network State · Future Society Sandbox” seal, and a palette from night blue to orchid and lime. Everything that follows is built from these few pieces.",
         },
         {
           title: "On stage",
@@ -356,37 +324,34 @@ export const projects: Project[] = [
             { src: zuSlideAgenda, alt: "Zuitzerland agenda slide" },
             { src: zuSlidePartners, alt: "Zuitzerland partners slide" },
           ],
-          text: "Livestream layouts with room for the camera and the speaker's deck, daily agendas and a partner wall. Built as templates, so the team could fill them in minutes between sessions.",
+          text: "A talk could be booked in the morning and streamed in the afternoon, so the slides were templates: a livestream layout with room for the camera and the deck, a daily agenda and a partner wall, filled in minutes between sessions.",
         },
         {
-          title: "Posters & prints",
+          title: "Around the venue",
           images: [
             { src: zuPosters, alt: "Framed Zuitzerland posters" },
             { src: zuSignage, alt: "Room signage: Room B, Solarpunk talks" },
             { src: zuStickers, alt: "Zuitzerland stickers on a laptop" },
           ],
-          text: "Posters, room signs with schedules and QR codes, and a sticker sheet. A month of events means people get lost, so every print had a job to do.",
+          text: "A month of events means people get lost. Posters set the mood, room signs carried the schedule and a QR code, and stickers spread the brand onto every laptop in the building.",
         },
         {
-          title: "After the event: YouTube thumbnails",
-          images: [
-            { src: zuYtKeynote, alt: "YouTube thumbnail: Keynote, Vitalik Buterin" },
-            { src: zuYtOpening, alt: "YouTube thumbnail: Opening Ceremony" },
-            { src: zuYtSwissWay, alt: "YouTube thumbnail: Panel, d/acc the Swiss Way" },
-            { src: zuYtHubs, alt: "YouTube thumbnail: Panel, Permanent Zuzalu Hubs" },
-            { src: zuYtDemos, alt: "YouTube thumbnail: d/acc Tech Experiment Results & Demos" },
-            { src: zuYtFireside, alt: "YouTube thumbnail: Fireside, d/acc and Future of Ethereum" },
-          ],
-          text: "Every summit talk went on YouTube with its own thumbnail. One system for keynotes, panels and firesides: cut-out speakers in black and white, the talk title on a brand color, the seal to sign it. Easy to tell apart in a playlist, and clearly from the same event.",
-        },
-        {
-          title: "Merch & welcome kits",
+          title: "In everyone's hands",
           images: [
             { src: zuTiers, alt: "Three badge colors for team, participants and guests" },
             { src: zuKits, alt: "Zuitzerland welcome kit boxes" },
             { src: zuHoodie, alt: "Zuitzerland hoodie" },
           ],
-          text: "Lime for the team, pink for participants, lilac for guests: you know who to ask for help at a glance. Every attendee got a kit with a t-shirt, cap, badge, bottle, tote and stickers.",
+          text: "Lime for the team, pink for participants, lavender for guests: the palette doubled as a badge system, so you knew who you were talking to. Every attendee got a welcome kit, and the hoodie became the unofficial uniform.",
+        },
+        {
+          title: "After: the talks live on",
+          images: [
+            { src: zuYtKeynote, alt: "YouTube thumbnail: Keynote, Vitalik Buterin" },
+            { src: zuYtSwissWay, alt: "YouTube thumbnail: Panel, d/acc the Swiss Way" },
+            { src: zuYtFireside, alt: "YouTube thumbnail: Fireside, d/acc and Future of Ethereum" },
+          ],
+          text: "Every summit talk went on YouTube with its own thumbnail: speakers cut out in black and white, the title on a brand color, the seal to sign it. Keynotes, panels and firesides each have their own layout, so the playlist is easy to scan and still clearly one event.",
         },
       ],
     },
@@ -398,7 +363,7 @@ export const projects: Project[] = [
     year: "2025",
     client: "VenaLabs",
     link: { href: "https://venalabs.com/en/landing", label: "venalabs.com" },
-    cover: { src: venaCover, alt: "VenaLabs 3D lightning bolt and routine gem on a dark blue glow" },
+    cover: { src: venaCover, alt: "The VenaLabs logo in 3D ice blue, floating above a pedestal" },
     role: "Product designer",
     deliverables: ["UX research & app architecture", "Full app redesign (v1 → v2)", "Design system", "Rewards & gamification"],
     tags: ["ux/ui design", "redesign", "design system", "gamification"],
