@@ -1,13 +1,13 @@
 import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 import orageHome from "../../public/orage/app-home.webp";
-import orageCover from "../../public/orage/cover.webp";
+import orageIcon from "../../public/orage/app-icon.webp";
 import orageJournal from "../../public/orage/app-journal-sky-placed.webp";
 import venaCover from "../../public/venalabs/cover.webp";
 import ethPosterHand from "../../public/ethzurich/poster-hand.webp";
-import zuWordmark from "../../public/zuitzerland/wordmark-pink.webp";
-import zuKeynote from "../../public/zuitzerland/yt-keynote.webp";
-import trooperMascot from "../../public/trooper/trooper01.webp";
+import zuWordmark from "../../public/zuitzerland/wordmark-navy.webp";
+import zuFireside from "../../public/zuitzerland/yt-fireside.webp";
+import trooperMascot from "../../public/trooper/mascot.webp";
 import looterDeck from "../../public/looter/looter03.webp";
 import trooperLanding from "../../public/trooper/trooper02.webp";
 import zuStickers from "../../public/zuitzerland/print-stickers.webp";
@@ -20,18 +20,18 @@ type Tile = { slug: string; title: string; src: StaticImageData; alt: string; as
 const columns: Tile[][] = [
   [
     { slug: "orage", title: "Orage", src: orageHome, alt: "Orage app home screen", aspect: "aspect-[3/5]", position: "object-top" },
-    { slug: "trooper", title: "Trooper", src: trooperMascot, alt: "Trooper mascot and logo", aspect: "aspect-[4/3]" },
+    { slug: "trooper", title: "Trooper", src: trooperMascot, alt: "Trooper 3D mascot", aspect: "aspect-[4/3]" },
     { slug: "venalabs", title: "VenaLabs", src: venaCover, alt: "VenaLabs 3D logo", aspect: "aspect-square" },
   ],
   [
     { slug: "zuitzerland", title: "Zuitzerland", src: zuWordmark, alt: "Zuitzerland wordmark", aspect: "aspect-[5/2]" },
     { slug: "looter", title: "Looter", src: looterDeck, alt: "Looter pitch deck slides", aspect: "aspect-[4/3]" },
-    { slug: "zuitzerland", title: "Zuitzerland", src: zuKeynote, alt: "Zuitzerland keynote YouTube thumbnail", aspect: "aspect-video" },
+    { slug: "zuitzerland", title: "Zuitzerland", src: zuFireside, alt: "Zuitzerland fireside YouTube thumbnail", aspect: "aspect-video" },
     { slug: "ethzurich", title: "ETHZürich", src: ethPosterHand, alt: "ETHZürich poster with the hand illustration", aspect: "aspect-[5/7]" },
   ],
   [
     { slug: "zuitzerland", title: "Zuitzerland", src: zuMerch, alt: "Zuitzerland hoodie", aspect: "aspect-[4/3]" },
-    { slug: "orage", title: "Orage", src: orageCover, alt: "Orage logo over a watercolor storm", aspect: "aspect-[4/5]" },
+    { slug: "orage", title: "Orage", src: orageIcon, alt: "Orage app icon: the sun-and-cloud logo on a rainy sky", aspect: "aspect-square" },
     { slug: "family", title: "Family", src: familyHero, alt: "Family app screens", aspect: "aspect-[4/3]" },
   ],
   [
