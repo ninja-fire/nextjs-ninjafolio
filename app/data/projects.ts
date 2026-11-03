@@ -11,20 +11,25 @@ import orageWelcome from "../../public/orage/app-onboarding-welcome.webp";
 import orageLastStorm from "../../public/orage/app-onboarding-last-storm.webp";
 import orageCycleLength from "../../public/orage/app-onboarding-cycle-length.webp";
 import orageLanding from "../../public/orage/landing-hero.webp";
-import orageLandingForecast from "../../public/orage/landing-forecast.webp";
-import orageLandingHeadsUp from "../../public/orage/landing-headsup.webp";
-import orageLandingJournal from "../../public/orage/landing-journal.webp";
 import orageSkySun from "../../public/orage/sky-sun.webp";
 import orageSkySunset from "../../public/orage/sky-sunset.webp";
 import orageSkyRain from "../../public/orage/sky-rain.webp";
 
 import zuCover from "../../public/zuitzerland/cover.webp";
-import zuLogo from "../../public/zuitzerland/logo.webp";
-import zuColors from "../../public/zuitzerland/colors.webp";
+import zuWordmarkNavy from "../../public/zuitzerland/wordmark-navy.webp";
+import zuWordmarkPink from "../../public/zuitzerland/wordmark-pink.webp";
+import zuPatternLime from "../../public/zuitzerland/pattern-lime.webp";
+import zuPatternPink from "../../public/zuitzerland/pattern-pink.webp";
+import zuSeal from "../../public/zuitzerland/seal.webp";
 import zuSlideSpeaker from "../../public/zuitzerland/slide-speaker.webp";
 import zuSlidePartners from "../../public/zuitzerland/slide-partners.webp";
 import zuSlideAgenda from "../../public/zuitzerland/slide-agenda.webp";
-import zuSocialTicket from "../../public/zuitzerland/social-ticket.webp";
+import zuYtKeynote from "../../public/zuitzerland/yt-keynote.webp";
+import zuYtOpening from "../../public/zuitzerland/yt-opening.webp";
+import zuYtSwissWay from "../../public/zuitzerland/yt-swiss-way.webp";
+import zuYtHubs from "../../public/zuitzerland/yt-hubs.webp";
+import zuYtDemos from "../../public/zuitzerland/yt-demos.webp";
+import zuYtFireside from "../../public/zuitzerland/yt-fireside.webp";
 import zuPosters from "../../public/zuitzerland/print-posters.webp";
 import zuSignage from "../../public/zuitzerland/print-signage.webp";
 import zuStickers from "../../public/zuitzerland/print-stickers.webp";
@@ -284,15 +289,6 @@ export const projects: Project[] = [
           ],
           text: "orage.app opens on a storm at sea, with a scroll-driven season dial that walks through a cycle and rain falling at the same angle as the paintings. The first version looked like a generic website, so I threw it away and rebuilt it product-first. It runs zero analytics and makes zero third-party requests: privacy before you've even downloaded the app.",
         },
-        {
-          title: "Every section, its own sky",
-          images: [
-            { src: orageLandingForecast, alt: "orage.app forecast section: the next five days over a sun painting" },
-            { src: orageLandingHeadsUp, alt: "orage.app heads-up section: storm notifications over a dusk sky" },
-            { src: orageLandingJournal, alt: "orage.app journal section: a notebook page with today's sky as a polaroid" },
-          ],
-          text: "Each feature sits on its own painting, with a real piece of the app on top: the forecast, the heads-up before a storm, the journal. The season dial in the corner follows you down the page, from day 1 to day 28.",
-        },
       ],
     },
   },
@@ -305,7 +301,7 @@ export const projects: Project[] = [
     link: { href: "https://www.zuitzerland.ch/", label: "zuitzerland.ch" },
     cover: { src: zuCover, alt: "Zuitzerland illustration: glass domes on an alpine lake" },
     role: "Brand & event designer",
-    deliverables: ["Brand identity", "Speaker & stage slides", "Posters & prints", "Social media visuals", "Merch & welcome kits"],
+    deliverables: ["Brand identity", "Speaker & stage slides", "Posters & prints", "YouTube thumbnails", "Merch & welcome kits"],
     tags: ["branding", "logo design", "event design", "print", "merch"],
     tools: ["Figma", "Figma Slides"],
     question: "How do you keep one brand consistent across a month of events, every screen, print and piece of merch?",
@@ -337,12 +333,21 @@ export const projects: Project[] = [
       highlightsTitle: "Selected work",
       highlights: [
         {
-          title: "The identity",
+          title: "The wordmark",
           images: [
-            { src: zuLogo, alt: "Zuitzerland logo and Z monogram on light and gradient backgrounds" },
-            { src: zuColors, alt: "Zuitzerland color palette" },
+            { src: zuWordmarkNavy, alt: "Zuitzerland wordmark in white on night blue" },
+            { src: zuWordmarkPink, alt: "Zuitzerland wordmark in orchid on light pink" },
           ],
-          text: "The wordmark and the Z monogram, on light and on the signature gradient. Green and blue for nature and technology, pink for the human touch.",
+          text: "A custom wordmark with a sparkle and a little flag folded into its letters: Swiss, a bit playful, and readable from the back of a room.",
+        },
+        {
+          title: "Seal, pattern and color",
+          images: [
+            { src: zuPatternLime, alt: "Lime background with the sparkle pattern and the Zuitzerland seal, labelled Zuiteam" },
+            { src: zuSeal, alt: "Zuitzerland seal: A Swiss Network State, Future Society Sandbox, with the Z monogram" },
+            { src: zuPatternPink, alt: "Pink background with the sparkle pattern and the seal, labelled Zuiticipants" },
+          ],
+          text: "The round seal carries the mission, “A Swiss Network State · Future Society Sandbox”, around the Z monogram. Each color has a role (lime for the team, pink for participants, lavender for guests), so the sparkle pattern also tells you who you're talking to.",
         },
         {
           title: "On stage",
@@ -363,9 +368,16 @@ export const projects: Project[] = [
           text: "Posters, room signs with schedules and QR codes, and a sticker sheet. A month of events means people get lost, so every print had a job to do.",
         },
         {
-          title: "Social",
-          images: [{ src: zuSocialTicket, alt: "“You're going!” ticket visual for the Zuitzerland summit" }],
-          text: "Announcement visuals like this “You're going!” ticket for the summit: made to be shared, so attendees did the promotion for us.",
+          title: "After the event: YouTube thumbnails",
+          images: [
+            { src: zuYtKeynote, alt: "YouTube thumbnail: Keynote, Vitalik Buterin" },
+            { src: zuYtOpening, alt: "YouTube thumbnail: Opening Ceremony" },
+            { src: zuYtSwissWay, alt: "YouTube thumbnail: Panel, d/acc the Swiss Way" },
+            { src: zuYtHubs, alt: "YouTube thumbnail: Panel, Permanent Zuzalu Hubs" },
+            { src: zuYtDemos, alt: "YouTube thumbnail: d/acc Tech Experiment Results & Demos" },
+            { src: zuYtFireside, alt: "YouTube thumbnail: Fireside, d/acc and Future of Ethereum" },
+          ],
+          text: "Every summit talk went on YouTube with its own thumbnail. One system for keynotes, panels and firesides: cut-out speakers in black and white, the talk title on a brand color, the seal to sign it. Easy to tell apart in a playlist, and clearly from the same event.",
         },
         {
           title: "Merch & welcome kits",
@@ -386,7 +398,7 @@ export const projects: Project[] = [
     year: "2025",
     client: "VenaLabs",
     link: { href: "https://venalabs.com/en/landing", label: "venalabs.com" },
-    cover: { src: venaCover, alt: "VenaLabs v2 screens in perspective: Discover, leaderboard and profile" },
+    cover: { src: venaCover, alt: "VenaLabs 3D lightning bolt and routine gem on a dark blue glow" },
     role: "Product designer",
     deliverables: ["UX research & app architecture", "Full app redesign (v1 → v2)", "Design system", "Rewards & gamification"],
     tags: ["ux/ui design", "redesign", "design system", "gamification"],
