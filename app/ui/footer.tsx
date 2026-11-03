@@ -17,10 +17,10 @@ export default function Footer() {
             on Telegram.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row">
-            <Button href={links.bookCall} variant="light" icon>
+            <Button href={links.bookCall} variant="dark">
               Book a free intro call
             </Button>
-            <Button href={links.telegram} variant="dark">
+            <Button href={links.telegram} variant="outlineDark">
               Chat on Telegram
             </Button>
           </div>

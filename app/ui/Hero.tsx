@@ -1,9 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import ninjapic from "../../public/ninjapic.png";
-import remix from "../../public/remix/icon.svg";
 import Button from "./button";
 import { links } from "../data/site";
-import { projects, type ProjectImage } from "../data/projects";
+import { projects } from "../data/projects";
 
 // TODO(content): double-check these numbers.
 const stats = [
@@ -11,25 +11,7 @@ const stats = [
   { value: "40+", label: "clients worldwide" },
 ];
 
-// Covers in one column, case-study visuals in the other.
-const covers = projects.map((p) => p.cover);
-const visuals = projects.flatMap((p) => p.caseStudy.gallery ?? []);
-
-function Column({ images, reverse = false }: { images: ProjectImage[]; reverse?: boolean }) {
-  // Rendered twice so the -50% translate loops without a seam.
-  return (
-    <div
-      className="flex animate-marquee-y flex-col gap-5"
-      style={reverse ? { animationDirection: "reverse" } : undefined}
-    >
-      {[...images, ...images].map((img, i) => (
-        <div key={i} className="overflow-hidden rounded-2xl border-2 border-line">
-          <Image src={img.src} alt="" sizes="(min-width: 1024px) 22vw, 0px" className="h-auto w-full" />
-        </div>
-      ))}
-    </div>
-  );
-}
+const showcase = projects.slice(0, 4);
 
 export default function Hero() {
   return (
@@ -39,26 +21,23 @@ export default function Hero() {
         aria-hidden
         className="pointer-events-none absolute -left-40 top-10 h-[32rem] w-[32rem] rounded-full bg-primary/10 blur-[120px]"
       />
-      <div className="container-site relative grid items-center gap-16 lg:min-h-[100svh] lg:grid-cols-[1.15fr_0.85fr]">
-        <div className="flex flex-col gap-8 pb-20 pt-28 md:pt-36 lg:py-32">
-          <div className="flex items-center gap-4">
+      <div className="container-site relative grid items-center gap-16 pb-20 pt-28 md:pt-36 lg:grid-cols-[1.1fr_0.9fr] lg:pb-28">
+        <div className="flex flex-col gap-8">
+          <div className="flex flex-wrap items-center gap-4">
             <Image
               priority
               src={ninjapic}
               alt="Ninja Fire avatar"
-              className="h-14 w-14 rounded-full border-2 border-label shadow-primarySm"
+              className="h-14 w-14 rounded-full border-2 border-label"
             />
             <div>
               <p className="font-extrabold">Hi, I&apos;m Ninja Fire</p>
-              <p className="flex flex-wrap items-center gap-x-1.5 text-sm text-placeholder">
-                Product designer at
-                <span className="inline-flex items-center gap-1 font-semibold text-label">
-                  <Image src={remix} alt="" className="h-4 w-4" />
-                  Remix
-                </span>
-                <span aria-hidden>·</span> freelance brand &amp; UX/UI
-              </p>
+              <p className="text-sm text-placeholder">Product &amp; brand designer</p>
             </div>
+            <p className="flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">
+              <span aria-hidden className="h-2 w-2 rounded-full bg-primary" />
+              Open to new projects
+            </p>
           </div>
 
           <h1 id="hero-title" className="text-display">
@@ -78,7 +57,7 @@ export default function Hero() {
             <Button href="#work" variant="primary">
               See my work
             </Button>
-            <Button href={links.bookCall} variant="dark">
+            <Button href={links.bookCall} variant="outline">
               Book a free intro call
             </Button>
           </div>
@@ -94,16 +73,36 @@ export default function Hero() {
           </dl>
         </div>
 
-        {/* Two columns of work drifting in opposite directions */}
-        <div
-          aria-hidden
-          className="relative hidden h-[100svh] grid-cols-2 gap-5 overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)] lg:grid"
-        >
-          <Column images={covers} />
-          <div className="-mt-40">
-            <Column images={visuals} reverse />
-          </div>
-        </div>
+        {/* Static showcase: two columns, the right one offset down */}
+        <ul className="grid grid-cols-2 gap-4 md:gap-5">
+          {showcase.map((p, i) => (
+            <li key={p.slug} className={i % 2 === 1 ? "translate-y-10" : ""}>
+              <Link
+                href={`/work/${p.slug}`}
+                className="group relative block aspect-[4/5] overflow-hidden rounded-2xl border-2 border-line transition-all duration-300 hover:-translate-y-1 hover:border-label hover:shadow-primaryXl"
+              >
+                <Image
+                  priority
+                  src={p.cover.src}
+                  alt=""
+                  fill
+                  sizes="(min-width: 1024px) 22vw, 50vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div
+                  aria-hidden
+                  className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/10 to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-100"
+                />
+                <div className="absolute inset-x-0 bottom-0 flex flex-col gap-0.5 p-4 transition-transform duration-300 md:translate-y-2 md:group-hover:translate-y-0">
+                  <span className="font-extrabold">{p.title}</span>
+                  <span className="line-clamp-1 text-xs text-caption md:opacity-0 md:transition-opacity md:duration-300 md:group-hover:opacity-100">
+                    {p.tagline}
+                  </span>
+                </div>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

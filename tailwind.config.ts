@@ -38,17 +38,12 @@ const config: Config = {
       },
       keyframes: {
         marquee: {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-50%)' },
-        },
-        'marquee-y': {
-          from: { transform: 'translateY(0)' },
-          to: { transform: 'translateY(-50%)' },
+          from: { transform: 'translate3d(0, 0, 0)' },
+          to: { transform: 'translate3d(-100%, 0, 0)' },
         },
       },
       animation: {
-        marquee: 'marquee 160s linear infinite',
-        'marquee-y': 'marquee-y 70s linear infinite',
+        marquee: 'marquee 120s linear infinite',
       },
     },
   },

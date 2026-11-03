@@ -82,7 +82,6 @@ p {
   }
 
   .animate-marquee,
-  .animate-marquee-y,
   [class*="animate-[hero-zoom"] {
     animation: none;
   }
