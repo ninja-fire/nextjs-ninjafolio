@@ -41,9 +41,14 @@ const config: Config = {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(-50%)' },
         },
+        'marquee-y': {
+          from: { transform: 'translateY(0)' },
+          to: { transform: 'translateY(-50%)' },
+        },
       },
       animation: {
-        marquee: 'marquee 60s linear infinite',
+        marquee: 'marquee 160s linear infinite',
+        'marquee-y': 'marquee-y 70s linear infinite',
       },
     },
   },
