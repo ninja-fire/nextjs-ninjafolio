@@ -4,8 +4,6 @@ import orageHome from "../../public/orage/app-home.webp";
 import orageCover from "../../public/orage/cover.webp";
 import orageJournal from "../../public/orage/app-journal-sky-placed.webp";
 import venaCover from "../../public/venalabs/cover.webp";
-import ethPosterEth from "../../public/ethzurich/poster-eth.webp";
-import ethPosterType from "../../public/ethzurich/poster-type.webp";
 import ethPosterHand from "../../public/ethzurich/poster-hand.webp";
 import zuWordmark from "../../public/zuitzerland/wordmark-pink.webp";
 import zuKeynote from "../../public/zuitzerland/yt-keynote.webp";
@@ -13,6 +11,8 @@ import trooperMascot from "../../public/trooper/trooper01.webp";
 import looterDeck from "../../public/looter/looter03.webp";
 import trooperLanding from "../../public/trooper/trooper02.webp";
 import zuStickers from "../../public/zuitzerland/print-stickers.webp";
+import zuMerch from "../../public/zuitzerland/merch-hoodie.webp";
+import familyHero from "../../public/family/family.png";
 
 type Tile = { slug: string; title: string; src: StaticImageData; alt: string; aspect: string; position?: string };
 
@@ -21,18 +21,18 @@ const columns: Tile[][] = [
   [
     { slug: "orage", title: "Orage", src: orageHome, alt: "Orage app home screen", aspect: "aspect-[3/5]", position: "object-top" },
     { slug: "trooper", title: "Trooper", src: trooperMascot, alt: "Trooper mascot and logo", aspect: "aspect-[4/3]" },
-    { slug: "ethzurich", title: "ETHZürich", src: ethPosterEth, alt: "ETHZürich conference poster", aspect: "aspect-[5/7]" },
+    { slug: "venalabs", title: "VenaLabs", src: venaCover, alt: "VenaLabs 3D logo", aspect: "aspect-square" },
   ],
   [
     { slug: "zuitzerland", title: "Zuitzerland", src: zuWordmark, alt: "Zuitzerland wordmark", aspect: "aspect-[5/2]" },
-    { slug: "venalabs", title: "VenaLabs", src: venaCover, alt: "VenaLabs 3D logo", aspect: "aspect-square" },
+    { slug: "looter", title: "Looter", src: looterDeck, alt: "Looter pitch deck slides", aspect: "aspect-[4/3]" },
     { slug: "zuitzerland", title: "Zuitzerland", src: zuKeynote, alt: "Zuitzerland keynote YouTube thumbnail", aspect: "aspect-video" },
     { slug: "ethzurich", title: "ETHZürich", src: ethPosterHand, alt: "ETHZürich poster with the hand illustration", aspect: "aspect-[5/7]" },
   ],
   [
-    { slug: "ethzurich", title: "ETHZürich", src: ethPosterType, alt: "ETHZürich typographic poster", aspect: "aspect-[5/7]" },
+    { slug: "zuitzerland", title: "Zuitzerland", src: zuMerch, alt: "Zuitzerland hoodie", aspect: "aspect-[4/3]" },
     { slug: "orage", title: "Orage", src: orageCover, alt: "Orage logo over a watercolor storm", aspect: "aspect-[4/5]" },
-    { slug: "looter", title: "Looter", src: looterDeck, alt: "Looter pitch deck slides", aspect: "aspect-[4/3]" },
+    { slug: "family", title: "Family", src: familyHero, alt: "Family app screens", aspect: "aspect-[4/3]" },
   ],
   [
     { slug: "zuitzerland", title: "Zuitzerland", src: zuStickers, alt: "Zuitzerland stickers on a laptop", aspect: "aspect-video" },
@@ -44,9 +44,9 @@ const columns: Tile[][] = [
 export default function ProjectWall() {
   return (
     <div className="relative h-[28rem] overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,#000_12%,#000_88%,transparent)] md:h-[40rem] lg:-mr-24 lg:h-[46rem]">
-      <div className="absolute left-1/2 top-1/2 grid w-[150%] -translate-x-[45%] -translate-y-1/2 rotate-[-8deg] grid-cols-4 gap-3 md:gap-4">
+      <div className="absolute left-1/2 top-1/2 grid w-[150%] -translate-x-[38%] -translate-y-1/2 rotate-[-8deg] grid-cols-4 gap-3 md:gap-4">
         {columns.map((col, c) => (
-          <ul key={c} className={`flex flex-col gap-3 md:gap-4 ${["translate-y-16", "translate-y-2", "-translate-y-6", "-translate-y-20"][c]}`}>
+          <ul key={c} className={`flex flex-col gap-3 md:gap-4 ${["-translate-y-28", "translate-y-2", "translate-y-20", "-translate-y-12"][c]}`}>
             {col.map((t) => (
               <li key={t.alt}>
                 <Link
@@ -72,7 +72,7 @@ export default function ProjectWall() {
         ))}
       </div>
       {/* Soften the left edge where the wall meets the headline */}
-      <div aria-hidden className="pointer-events-none absolute inset-y-0 left-0 hidden w-24 bg-gradient-to-r from-background to-transparent lg:block" />
+      <div aria-hidden className="pointer-events-none absolute inset-y-0 left-0 hidden w-12 bg-gradient-to-r from-background to-transparent lg:block" />
     </div>
   );
 }
