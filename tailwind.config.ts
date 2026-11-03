@@ -8,37 +8,43 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'trooper': "url('../public/trooper/trooper.png')",
-        'looter': "url('../public/looter/looter.png')",
-        'family': "url('../public/family/family.png')",
-        'trooperP1': "url('../public/trooper/problem1.png')",
-        'trooperP2': "url('../public/trooper/problem2.png')",
-        'trooperP3': "url('../public/trooper/problem3.png')",
-      },
       fontFamily: {
         sans: ['var(--font-brico)'],
       },
       colors: {
         'background': '#151514',
+        'surface': '#1E1E1C',
+        'line': 'rgba(245, 247, 239, 0.12)',
         'label': '#F5F7EF',
-        'caption': 'rgba(245, 247, 239, 0.8);',
-        'placeholder': 'rgba(245, 247, 239, 0.64);',
+        'caption': 'rgba(245, 247, 239, 0.8)',
+        'placeholder': 'rgba(245, 247, 239, 0.64)',
         'primary': '#C6FE09',
       },
       boxShadow: {
-        'darkXl': '8px 8px 0px #151514;',
-        'darkSm': '4px 4px 0px #151514;',
-        'lightXl': '8px 8px 0px #F5F7EF;',
-        'lightSm': '4px 4px 0px #F5F7EF;',
-        'primarySm': '4px 4px 0px #C6FE09;',
+        'darkXl': '8px 8px 0px #151514',
+        'darkSm': '4px 4px 0px #151514',
+        'lightXl': '8px 8px 0px #F5F7EF',
+        'lightSm': '4px 4px 0px #F5F7EF',
+        'primaryXl': '8px 8px 0px #C6FE09',
+        'primarySm': '4px 4px 0px #C6FE09',
       },
-      dropShadow: {
-        '4xl': [
-            '0px 16px 32px rgba(12, 12, 12, 0.32)',
-            '0px 32px 64px rgba(12, 12, 12, 0.64)'
-        ]
-      }
+      fontSize: {
+        'display': ['clamp(3rem, 8vw, 7.5rem)', { lineHeight: '0.92', letterSpacing: '-0.03em' }],
+        'h2': ['clamp(2.25rem, 5vw, 4rem)', { lineHeight: '1', letterSpacing: '-0.02em' }],
+        'h3': ['clamp(1.5rem, 2.6vw, 2.25rem)', { lineHeight: '1.1', letterSpacing: '-0.01em' }],
+      },
+      maxWidth: {
+        'site': '90rem',
+      },
+      keyframes: {
+        marquee: {
+          from: { transform: 'translate3d(0, 0, 0)' },
+          to: { transform: 'translate3d(-100%, 0, 0)' },
+        },
+      },
+      animation: {
+        marquee: 'marquee 120s linear infinite',
+      },
     },
   },
   plugins: [],

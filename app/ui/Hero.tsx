@@ -1,72 +1,74 @@
 import Image from "next/image";
 import ninjapic from "../../public/ninjapic.png";
-import avantgarde from "../../public/avantgarde.png";
-import looter from "../../public/looter/looter.png";
-import trooper from "../../public/trooper/trooper.png";
-import confab from "../../public/confab.png";
-import family from "../../public/family/family.png";
-import arrowimg from "../../public/arrowimg.png";
+import Button from "./button";
+import { links } from "../data/site";
+import ProjectWall from "./projectWall";
+
+// TODO(content): double-check these numbers.
+const stats = [
+  { value: "6+", label: "years designing" },
+  { value: "40+", label: "clients worldwide" },
+];
 
 export default function Hero() {
-    return (
-        <div className="flex flex-col 2xl:flex-row gap-20 px-6 md:px-32 py-16 pt-40 justify-center items-center">
-            <div className="flex flex-col gap-16 2xl:w-4/12">
-                <div className="flex flex-col gap-0">
-                    <h1>I <span className="text-primary">fire</span> design,</h1> <h1>You <span className="text-primary">launch</span></h1>
-                </div>
-                <div className="flex flex-col gap-6">
-                    <div className="flex gap-6 items-end">
-                        <div className="flex items-center justify-center border-2 border-label rounded-full shadow-lightSm w-content overflow-hidden">
-                            <Image priority src={ninjapic} alt='' className="w-20" />
-                        </div>
-                        <p className="text-label text-2xl font-extrabold leading-8">Hi, I&apos;m Ninja Fire!</p>
-                    </div>
-                    <p className="text-caption font-normal">
-                        I&apos;m a dedicated <span className="text-primary font-bold">Web3 UX/UI designer</span> with a deep understanding of <span className="text-primary font-bold">blockchain technology</span> and a knack for creating <span className="text-primary font-bold">intuitive</span>, <span className="text-primary font-bold">user-centered</span> designs. My goal is to <span className="text-primary font-bold">bridge the gap</span> between complex technologies and user-friendly interfaces, ensuring that the <span className="text-primary font-bold">decentralized web</span> is accessible to everyone. With a keen eye for detail and a commitment to innovation, I <span className="text-primary font-bold">help projects succeed</span> in the rapidly evolving Web3 space.
-                    </p>
-                </div>
+  return (
+    <section aria-labelledby="hero-title" className="relative overflow-hidden">
+      {/* Soft lime glow behind the headline */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -left-40 top-10 h-[32rem] w-[32rem] rounded-full bg-primary/10 blur-[120px]"
+      />
+      <div className="container-site relative grid items-center gap-16 pb-20 pt-28 md:pt-36 lg:grid-cols-[1.1fr_0.9fr] lg:pb-28">
+        <div className="flex flex-col gap-8">
+          <div className="flex items-center gap-4">
+            <Image
+              priority
+              src={ninjapic}
+              alt="Ninja Fire avatar"
+              className="h-14 w-14 rounded-full border-2 border-label"
+            />
+            <div>
+              <p className="font-extrabold">Hi, I&apos;m Ninja Fire</p>
+              <p className="text-sm text-placeholder">Product &amp; brand designer</p>
             </div>
-            <div className="flex flex-wrap gap-6 2xl:w-8/12">
-                <div className="flex flex-col md:flex-row gap-6">
-                    <div className="flex relative items-center justify-center border-4 border-background shadow-darkXl overflow-hidden">
-                        <div className="flex absolute items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm px-2 py-1 left-4 top-4 z-[2]">
-                            <span className="text-xs text-background font-medium">design system</span>
-                        </div>
-                        <Image priority src={avantgarde} alt='' />
-                    </div>
-                    <div className="flex relative items-center justify-center border-4 border-background shadow-darkXl overflow-hidden">
-                        <div className="flex absolute items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm px-2 py-1 left-4 top-4">
-                            <span className="text-xs text-background font-medium">dapp design</span>
-                        </div>
-                        <Image priority src={confab} alt='' />
-                    </div>
-                </div>
-                <div className="flex flex-col md:flex-row gap-6">
-                    <div className="flex relative items-center justify-center border-4 border-background shadow-darkXl overflow-hidden">
-                        <div className="flex absolute items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm px-2 py-1 left-4 top-4">
-                            <span className="text-xs text-background font-medium">landing page design</span>
-                        </div>
-                        <Image priority src={family} alt='' />
-                    </div>
-                    <div className="flex relative items-center justify-center border-4 border-background shadow-darkXl overflow-hidden">
-                        <div className="flex absolute items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm px-2 py-1 left-4 top-4">
-                            <span className="text-xs text-background font-medium">pitch deck design</span>
-                        </div>
-                        <Image priority src={looter} alt='' />
-                    </div>
-                </div>
-                <div className="flex flex-col md:flex-row gap-6">
-                    <div className="flex relative items-center justify-center border-4 border-background shadow-darkXl overflow-hidden">
-                        <div className="flex absolute items-center justify-center rounded-full bg-label border-2 border-background shadow-darkSm px-2 py-1 left-4 top-4">
-                            <span className="text-xs text-background font-medium">branding design</span>
-                        </div>
-                        <Image priority src={trooper} alt='' />
-                    </div>
-                    <div className="flex relative items-center justify-center overflow-hidden">
-                        <Image priority src={arrowimg} alt='' />
-                    </div>
-                </div>
-            </div>
-        </div >
-    );
+          </div>
+
+          <h1 id="hero-title" className="text-display">
+            I <span className="text-primary">fire</span> design,
+            <br />
+            you <span className="text-primary">launch</span>.
+          </h1>
+
+          <p className="max-w-xl text-lg text-caption md:text-xl">
+            I design <strong className="text-label">brand identities</strong> and{" "}
+            <strong className="text-label">product interfaces</strong> for founders who are building something hard.
+            You get one designer from first logo to shipped product, and a launch that looks as serious as the tech
+            behind it.
+          </p>
+
+          <div className="flex flex-col gap-4 sm:flex-row">
+            <Button href="#work" variant="primary">
+              See my work
+            </Button>
+            <Button href={links.bookCall} variant="outline">
+              Book a free intro call
+            </Button>
+          </div>
+
+          <dl className="mt-4 grid max-w-sm grid-cols-2 gap-6 border-t border-line pt-8">
+            {stats.map((s) => (
+              <div key={s.label}>
+                <dt className="sr-only">{s.label}</dt>
+                <dd className="text-3xl font-extrabold text-label md:text-4xl">{s.value}</dd>
+                <dd className="text-sm text-placeholder">{s.label}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+
+        {/* Project wall: real work from every project, tilted, each piece links to its case study */}
+        <ProjectWall />
+      </div>
+    </section>
+  );
 }
