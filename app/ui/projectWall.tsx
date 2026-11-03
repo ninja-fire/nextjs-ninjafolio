@@ -8,7 +8,7 @@ import ethPosterHand from "../../public/ethzurich/poster-hand.webp";
 import zuWordmark from "../../public/zuitzerland/wordmark-pink.webp";
 import zuFireside from "../../public/zuitzerland/yt-fireside.webp";
 import trooperMascot from "../../public/trooper/mascot.webp";
-import looterCharacter from "../../public/looter/looterblur.png";
+import looterCharacter from "../../public/looter/character.webp";
 import trooperLanding from "../../public/trooper/trooper02.webp";
 import zuStickers from "../../public/zuitzerland/print-stickers.webp";
 import zuMerch from "../../public/zuitzerland/merch-hoodie.webp";
@@ -25,7 +25,7 @@ const columns: Tile[][] = [
   ],
   [
     { slug: "zuitzerland", title: "Zuitzerland", src: zuWordmark, alt: "Zuitzerland wordmark", aspect: "aspect-[5/2]" },
-    { slug: "looter", title: "Looter", src: looterCharacter, alt: "Looter 3D character carrying a loot chest", aspect: "aspect-square" },
+    { slug: "looter", title: "Looter", src: looterCharacter, alt: "Looter 3D character carrying a loot chest", aspect: "aspect-[15/16]" },
     { slug: "zuitzerland", title: "Zuitzerland", src: zuFireside, alt: "Zuitzerland fireside YouTube thumbnail", aspect: "aspect-video" },
     { slug: "ethzurich", title: "ETHZürich", src: ethPosterHand, alt: "ETHZürich poster with the hand illustration", aspect: "aspect-[5/7]" },
   ],
