@@ -16,6 +16,50 @@ import orageSkyStorm from "../../public/orage/sky-day-02-a.webp";
 import orageSkySun from "../../public/orage/sky-day-14-a.webp";
 import orageSkyAutumn from "../../public/orage/sky-day-22-b.webp";
 
+import zuCover from "../../public/zuitzerland/cover.webp";
+import zuLogo from "../../public/zuitzerland/logo.webp";
+import zuColors from "../../public/zuitzerland/colors.webp";
+import zuSummary from "../../public/zuitzerland/brand-summary.webp";
+import zuLandingHero from "../../public/zuitzerland/landing-hero.webp";
+import zuLandingProgram from "../../public/zuitzerland/landing-program.webp";
+import zuOnsite from "../../public/zuitzerland/merch-onsite.webp";
+import zuPosters from "../../public/zuitzerland/merch-posters.webp";
+import zuSignage from "../../public/zuitzerland/merch-signage.webp";
+import zuKits from "../../public/zuitzerland/merch-kits.webp";
+import zuTiers from "../../public/zuitzerland/merch-tiers.webp";
+import zuCards from "../../public/zuitzerland/merch-cards.webp";
+import zuStickers from "../../public/zuitzerland/merch-stickers.webp";
+import zuBags from "../../public/zuitzerland/merch-bags.webp";
+import zuHoodie from "../../public/zuitzerland/merch-hoodie.webp";
+import zuDcombCover from "../../public/zuitzerland/dcombinator-cover.webp";
+import zuDcombManifesto from "../../public/zuitzerland/dcombinator-manifesto.webp";
+import zuDcombFlywheel from "../../public/zuitzerland/dcombinator-flywheel.webp";
+
+import venaCover from "../../public/venalabs/cover.webp";
+import venaLanding from "../../public/venalabs/landing-learn.webp";
+import venaDiscover from "../../public/venalabs/app-discover.webp";
+import venaAirdrops from "../../public/venalabs/app-airdrops.webp";
+import venaCourse from "../../public/venalabs/app-course.webp";
+import venaRoutines from "../../public/venalabs/app-routines.webp";
+import venaCards from "../../public/venalabs/components-cards.webp";
+import venaRewards from "../../public/venalabs/components-rewards.webp";
+import venaIllustrations from "../../public/venalabs/illustrations.webp";
+
+import ethCover from "../../public/ethzurich/cover.webp";
+import ethSummary from "../../public/ethzurich/brand-summary.webp";
+import ethLogo from "../../public/ethzurich/logo.webp";
+import ethLogomark from "../../public/ethzurich/logomark.webp";
+import ethLogomarkGrid from "../../public/ethzurich/logomark-grid.webp";
+import ethPrimary from "../../public/ethzurich/primary-color.webp";
+import ethPalette from "../../public/ethzurich/palette.webp";
+import ethTypeDisplay from "../../public/ethzurich/type-display.webp";
+import ethTypeHierarchy from "../../public/ethzurich/type-hierarchy.webp";
+import ethPatterns from "../../public/ethzurich/patterns.webp";
+import ethPatternsUsage from "../../public/ethzurich/patterns-usage.webp";
+import ethBillboard from "../../public/ethzurich/billboard.webp";
+import ethTote from "../../public/ethzurich/tote.webp";
+import ethSpeaker from "../../public/ethzurich/speaker.webp";
+
 import trooperCover from "../../public/trooper/trooper.png";
 import trooperP1 from "../../public/trooper/problem1.png";
 import trooperP2 from "../../public/trooper/problem2.png";
@@ -231,6 +275,312 @@ export const projects: Project[] = [
           ],
           text: "orage.app opens on a storm at sea, with a scroll-driven season dial that walks through a cycle and rain falling at the same angle as the paintings. The first version looked like a generic website, so I threw it away and rebuilt it product-first. It runs zero analytics and makes zero third-party requests: privacy before you've even downloaded the app.",
         },
+      ],
+    },
+  },
+  {
+    slug: "zuitzerland",
+    title: "Zuitzerland",
+    tagline: "A brand for a Swiss network state, from logo to merch kits",
+    year: "2025",
+    client: "Zuitzerland",
+    cover: { src: zuCover, alt: "Zuitzerland merch flat lay: cap, bottle, notebook, mug and card in lilac" },
+    role: "Brand designer",
+    deliverables: [
+      "Logo & brand guidelines",
+      "Illustration & pattern system",
+      "Event landing page",
+      "Merch strategy & on-site signage",
+      "Pitch deck (dCombinator)",
+    ],
+    tags: ["branding", "logo design", "landing page design", "merch", "pitch deck"],
+    tools: ["Figma", "Figma Slides"],
+    question: "How do you make 700 years of Swiss democracy feel like the future?",
+    summary:
+      "Zuitzerland is a Swiss network state: a month-long residency where builders, researchers and thinkers test new ways to govern, fund and live together. It needed a brand that felt both Swiss and solarpunk, serious enough for policymakers and warm enough for a community. I built the whole identity, then carried it everywhere the community would see it: the website, the venue, the welcome kits and the deck for what comes next.",
+    objectives: [
+      "Create an identity that holds technology and nature, ambition and warmth, in one system.",
+      "Make it flexible enough to run a month of events, rooms and talks without a designer on every asset.",
+      "Turn attendees into ambassadors with merch they actually want to keep.",
+      "Give the team a pitch deck that sells the next chapter: a permanent builder hub.",
+    ],
+    caseStudy: {
+      challenges: [
+        "How might we make a governance experiment feel welcoming instead of technical?",
+        "How might we build one brand that works on a slide, a lanyard, a hoodie and a building wall?",
+        "How might we tell residents, team and guests apart without breaking the family look?",
+      ],
+      process: [
+        {
+          name: "Define",
+          intro:
+            "I started from the brand's own tension: advanced technology and social well-being, Swiss tradition and a new kind of society. That became four values (responsible innovation, open collaboration, transparency and trust, positive impact) and a visual direction: solarpunk by day, lunarpunk by night.",
+        },
+        {
+          name: "Design",
+          items: [
+            {
+              title: "A wordmark with a horizon",
+              text: "A custom Zuitzerland wordmark and a compact Z monogram, set in a round “A Swiss Network State · Future Society Sandbox” seal for stamps, stickers and badges.",
+            },
+            {
+              title: "Night to bloom",
+              text: "A gradient from deep night blue through electric blue to orchid pink, with a soft lime and an off-white. Green and blue for nature and technology, pink for the human touch.",
+            },
+            {
+              title: "A world to step into",
+              text: "Glass domes on alpine lakes, open landscapes, organic architecture: one illustrated universe that sets the scene on the website, the welcome cards and the deck.",
+            },
+            {
+              title: "A sparkle pattern",
+              text: "A four-pointed star pattern in every brand color gives any surface, from tape to tote bags, an instant Zuitzerland look.",
+            },
+          ],
+        },
+        {
+          name: "Refine",
+          intro:
+            "Then I rolled it out: a landing page that sells the residency in one sentence, a program people can scan in seconds, signage for every room, and a merch strategy with three color-coded tiers. Each new asset tested the system, and the guidelines grew with it.",
+        },
+      ],
+      highlightsTitle: "Design highlights",
+      highlights: [
+        {
+          title: "An identity built on a tension",
+          images: [
+            { src: zuLogo, alt: "Zuitzerland logo and Z monogram on light and gradient backgrounds" },
+            { src: zuColors, alt: "Zuitzerland color palette: night blue to orchid gradient, lime and off-white" },
+            { src: zuSummary, alt: "Zuitzerland brand summary: essence, personality, values and visual elements" },
+          ],
+          text: "The wordmark, the Z monogram, the night-to-bloom gradient and the brand summary that keeps everyone on the same page. Every choice traces back to one idea: high-tech and human, side by side.",
+        },
+        {
+          title: "A landing page that sells the residency in one line",
+          images: [
+            { src: zuLandingHero, alt: "Zuitzerland landing page hero: 700 years of Swiss democracy rewired for the web3 era" },
+            { src: zuLandingProgram, alt: "Zuitzerland program section, week by week" },
+          ],
+          text: "“700 years of Swiss democracy, rewired for the web3 era.” The hero says what it is, the illustration says how it feels, and two buttons cover the only questions that matter: who is it for, and how do I join. The program reads week by week, so a busy visitor finds their track in seconds.",
+        },
+        {
+          title: "Wayfinding that feels like the brand",
+          images: [
+            { src: zuSignage, alt: "Room signage: Room B, Solarpunk talks" },
+            { src: zuPosters, alt: "Framed Zuitzerland posters on a lime wall" },
+            { src: zuOnsite, alt: "Branded bean bags in the Zuitzerland lounge" },
+          ],
+          text: "Room signs, schedules with QR codes, framed posters and lounge pieces. A month of events means people get lost, so every sign does a job, and the pattern makes the venue feel like one place.",
+        },
+        {
+          title: "Three tiers, one family",
+          images: [
+            { src: zuTiers, alt: "Three badge colors: Zuiteam in lime, Zuiticipants in pink, Zuitguest in lilac" },
+            { src: zuKits, alt: "Zuitzerland welcome kit boxes in lime, pink and lilac" },
+            { src: zuCards, alt: "Zuitzerland NFC card and holder" },
+          ],
+          text: "Team, participants and guests each get their own color, so you know who to ask for help at a glance. Every attendee receives a curated kit: t-shirt, cap, NFC card holder, badge and lanyard, bottle, tote and sticker pack.",
+        },
+        {
+          title: "Merch people keep",
+          images: [
+            { src: zuStickers, alt: "Zuitzerland stickers on a laptop" },
+            { src: zuBags, alt: "Drawstring bags in lilac, lime and pink" },
+            { src: zuHoodie, alt: "Folded hoodie with a pink hood and the Zuitzerland seal" },
+          ],
+          text: "Good merch is distribution. The seal, the wordmark and the sparkle pattern work on stickers, bags and hoodies, so the brand keeps traveling long after the residency ends.",
+        },
+        {
+          title: "A deck for the next chapter",
+          images: [
+            { src: zuDcombCover, alt: "dCombinator pitch deck cover" },
+            { src: zuDcombManifesto, alt: "dCombinator manifesto slide" },
+            { src: zuDcombFlywheel, alt: "dCombinator legitimacy flywheel diagram" },
+          ],
+          text: "dCombinator is Zuitzerland's next step: a permanent accelerator and builder hub for the d/acc ecosystem, anchored in Switzerland. I designed the deck with the same visual language, turning dense ideas like a legitimacy flywheel into diagrams an investor can read in one look.",
+        },
+      ],
+    },
+  },
+  {
+    slug: "venalabs",
+    title: "VenaLabs",
+    tagline: "Learn, farm, earn, repeat: a Web3 learning app with game-like rewards",
+    year: "2025",
+    client: "VenaLabs",
+    cover: { src: venaCover, alt: "VenaLabs landing page hero with a glowing 3D logo: Learn, farm, earn, repeat" },
+    role: "Product designer",
+    deliverables: ["Web app UX/UI", "Design system", "Rewards & gamification", "Landing page", "Interactive prototype"],
+    tags: ["ux/ui design", "design system", "landing page design", "gamification"],
+    tools: ["Figma"],
+    question: "How do you turn airdrop hunting into a habit people enjoy, instead of a chore?",
+    summary:
+      "VenaLabs helps crypto newcomers learn Web3 and catch the airdrops worth their time, with courses, step-by-step airdrop guides and daily routines picked by experts. The content was strong; the experience didn't make people come back. I designed the web app, its design system, a rewards loop that makes progress feel tangible, and the landing page that sells it.",
+    objectives: [
+      "Bring courses, airdrops and routines into one clear dashboard.",
+      "Make progress visible and rewarding, so users come back every day.",
+      "Make the premium offer obvious without getting in the way of free users.",
+      "Build a design system the team can grow without me.",
+    ],
+    caseStudy: {
+      challenges: [
+        "How might we make a dense Web3 topic feel approachable to beginners?",
+        "How might we reward consistency without turning the app into a casino?",
+        "How might we keep one layout working for courses, airdrops and routines?",
+      ],
+      process: [
+        {
+          name: "Define",
+          intro:
+            "I mapped the three things users come for (learn, farm airdrops, keep a routine) and the states each one goes through, from not connected to premium. That gave one structure for the whole product: navigation on the left, content in the middle, your progress and to-dos always on the right.",
+        },
+        {
+          name: "Design",
+          intro:
+            "A dark, focused interface with icy blue accents, and one card system for every content type, in big, medium and small sizes and default, hover and done states. On top of it, a rewards layer: VenaPoints, chests and a daily streak flame, each with an active and a locked state, so you always see what you've earned and what's next.",
+        },
+        {
+          name: "Refine",
+          intro:
+            "I built an interactive prototype to test the core flows end to end: connecting, starting a course, following an airdrop step by step, and claiming rewards. The details that came out of it, like breadcrumbs inside courses and a to-do list that remembers where you stopped, went straight into the system.",
+        },
+      ],
+      highlightsTitle: "Design highlights",
+      highlights: [
+        {
+          title: "One dashboard, three ways to grow",
+          images: [
+            { src: venaDiscover, alt: "VenaLabs Discover page with featured courses, airdrops and routines" },
+            { src: venaAirdrops, alt: "VenaLabs Airdrops page with filters and airdrop cards" },
+          ],
+          text: "Discover brings everything together; Airdrops, Courses and Routines each get their own page with tabs and filters. The side panel never moves: your level, your rewards and today's to-do are always one glance away.",
+        },
+        {
+          title: "Learning paths, not lists",
+          images: [
+            { src: venaCourse, alt: "VenaLabs course path with chapters as a tree" },
+            { src: venaRoutines, alt: "VenaLabs Routines page" },
+          ],
+          text: "Courses unfold as a path of chapters, each with the rewards you'll earn, so you always know how far you are from the next milestone. Routines turn repeated airdrop tasks into a weekly checklist.",
+        },
+        {
+          title: "Rewards you can almost touch",
+          images: [
+            { src: venaRewards, alt: "VenaLabs reward components: VenaPoints, chest and streak flame, active and locked" },
+            { src: venaIllustrations, alt: "VenaLabs 3D illustration set: coin, parachute drop, crystal, book, lightning, chest and flames" },
+          ],
+          text: "VenaPoints, chests and a streak flame in gold, silver and color. Locked rewards fade to silver, so the next goal is always visible. The same 3D world runs through the app and the marketing.",
+        },
+        {
+          title: "A system the team can grow",
+          images: [{ src: venaCards, alt: "VenaLabs card components in every type, size and state" }],
+          text: "Every card type in three sizes and every state, plus buttons, inputs, tabs, filters, breadcrumbs and navigation, all as Figma components. New content types slot in without a new design.",
+        },
+        {
+          title: "A landing page that shows the product",
+          images: [{ src: venaLanding, alt: "VenaLabs landing page Learn & Earn section built from real app components" }],
+          text: "“Learn, farm, earn, repeat.” The landing page is built from real product components, so visitors see the app before they sign up, with clear sections for how it works, confirmed airdrops and the community.",
+        },
+      ],
+    },
+  },
+  {
+    slug: "ethzurich",
+    title: "ETHZürich",
+    tagline: "A bold identity for Zürich's community Ethereum conference",
+    year: "2026",
+    client: "ETHZürich",
+    cover: { src: ethCover, alt: "ETHZürich key visual: oversized ETHEREUM ZÜRICH type with the red logomark" },
+    role: "Brand designer",
+    deliverables: ["Logo & logomark", "Color & typography system", "Pattern system", "Brand guidelines", "Event applications"],
+    tags: ["branding", "logo design", "brand guidelines"],
+    tools: ["Figma", "Figma Slides"],
+    question: "How do you brand a builder conference so it stands out in a city full of banks?",
+    summary:
+      "ETHZürich is a community-driven Ethereum conference in Zürich, bringing developers, researchers, founders and builders together. It needed an identity loud enough for billboards and flexible enough for a speaker card. I designed the logo, colors, type, patterns and the guidelines that let the team produce everything else.",
+    objectives: [
+      "Root the brand in both Ethereum and Zürich.",
+      "Stand out from the polished, corporate look of Swiss finance.",
+      "Give the team a system they can apply on their own, from slides to signage.",
+    ],
+    caseStudy: {
+      challenges: [
+        "How might we make one mark say Zürich, Ethereum and conversation at the same time?",
+        "How might we keep a loud identity readable and consistent across every format?",
+      ],
+      process: [
+        {
+          name: "Define",
+          intro:
+            "The brand had to reflect the builder community: curious, experimental and collaborative, where technology, community and academic thinking meet. Openness, innovation and collaboration became the brief.",
+        },
+        {
+          name: "Design",
+          items: [
+            {
+              title: "A mark made of the city",
+              text: "The logomark folds four ideas into one shape: Zürich's flag, the Ethereum diamond, the letter Z and a speech bubble for the talks.",
+            },
+            {
+              title: "Convergence Blue",
+              text: "A primary blue born from Ethereum's blue and the deep blue of the Zürich flag, backed by Builder Red, Alpine Light, Limmat Pink and Midnight Chain.",
+            },
+            {
+              title: "Type with a voice",
+              text: "Chaney Extended for headlines that fill a billboard, Overused Grotesk for everything people actually read.",
+            },
+            {
+              title: "Patterns from the mark",
+              text: "Fragments of the logomark become patterns for backgrounds, frames and graphic accents, so any surface can carry the brand.",
+            },
+          ],
+        },
+        {
+          name: "Refine",
+          intro:
+            "I tested the system on real applications, a billboard, a tote bag, a speaker card and the event key visual, and wrote the rules into the guidelines: clear space, color ratios, type hierarchy and pattern usage.",
+        },
+      ],
+      highlightsTitle: "Design highlights",
+      highlights: [
+        {
+          title: "Four ideas, one mark",
+          images: [
+            { src: ethLogo, alt: "ETHZürich logo lockup in blue" },
+            { src: ethLogomark, alt: "ETHZürich logomark construction: Zürich, Ethereum, Z letter and talk bubble" },
+            { src: ethLogomarkGrid, alt: "ETHZürich logomark in every color combination" },
+          ],
+          text: "Zürich's diagonal, the Ethereum diamond, a Z and a speech bubble. The logomark works on its own as an app icon or a sticker, and the stacked wordmark gives the full name real presence.",
+        },
+        {
+          title: "Colors with a story",
+          images: [
+            { src: ethPrimary, alt: "Convergence Blue, the ETHZürich primary color" },
+            { src: ethPalette, alt: "ETHZürich palette: Builder Red, Alpine Light, Limmat Pink, Midnight Chain" },
+          ],
+          text: "Every color is named after the place or the community: Convergence Blue, Builder Red for the hacker energy, Alpine Light, Limmat Pink after the river, Midnight Chain for depth.",
+        },
+        {
+          title: "Loud headlines, calm reading",
+          images: [
+            { src: ethTypeDisplay, alt: "Chaney display typeface specimen" },
+            { src: ethTypeHierarchy, alt: "ETHZürich type hierarchy from H1 to captions" },
+          ],
+          text: "A wide display face for impact, a neutral grotesk for clarity, and a five-level hierarchy so every speaker card and schedule looks like it belongs.",
+        },
+        {
+          title: "From guidelines to the street",
+          images: [
+            { src: ethBillboard, alt: "ETHZürich billboard mockup" },
+            { src: ethTote, alt: "ETHZürich tote bag" },
+            { src: ethSpeaker, alt: "ETHZürich speaker card" },
+          ],
+          text: "A billboard, a tote bag and a speaker card, built only from the rules in the guidelines. If the system works there, it works everywhere.",
+        },
+      ],
+      gallery: [
+        { src: ethSummary, alt: "ETHZürich brand summary with a blue pattern" },
+        { src: ethPatterns, alt: "ETHZürich patterns in red, blue and pink" },
+        { src: ethPatternsUsage, alt: "ETHZürich pattern usage guidelines" },
       ],
     },
   },
