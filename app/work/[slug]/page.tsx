@@ -30,6 +30,39 @@ function Frame({ image, sizes }: { image: ProjectImage; sizes: string }) {
 }
 
 function HighlightBlock({ h, index }: { h: Highlight; index: number }) {
+  // v1 screen next to its v2 redesign, problem / fix below.
+  if (h.before) {
+    const pair = [
+      { label: "v1", image: h.before },
+      { label: "v2", image: h.images[0] },
+    ];
+    return (
+      <Reveal className="flex flex-col gap-10">
+        <div className="grid gap-6 md:grid-cols-2">
+          {pair.map(({ label, image }) => (
+            <figure key={label} className="flex flex-col gap-3">
+              <figcaption className={`eyebrow ${label === "v1" ? "!text-placeholder" : ""}`}>{label}</figcaption>
+              <Frame image={image} sizes="(min-width: 768px) 50vw, 100vw" />
+            </figure>
+          ))}
+        </div>
+        <div className="grid gap-6 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
+          <h3 className="text-h3">{h.title}</h3>
+          <div className="grid gap-6 sm:grid-cols-2">
+            <div className="flex flex-col gap-2">
+              <p className="eyebrow !text-placeholder">The problem</p>
+              <p className="text-caption">{h.issue}</p>
+            </div>
+            <div className="flex flex-col gap-2 border-l-2 border-primary pl-5">
+              <p className="eyebrow">The fix</p>
+              <p className="text-caption">{h.solution}</p>
+            </div>
+          </div>
+        </div>
+      </Reveal>
+    );
+  }
+
   // Single image + issue/solution → side-by-side, alternating sides.
   if (h.images.length === 1 && h.issue) {
     const flip = index % 2 === 1;

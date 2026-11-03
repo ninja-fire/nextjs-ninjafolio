@@ -36,10 +36,28 @@ import venaCourses from "../../public/venalabs/courses.webp";
 import venaAirdrops from "../../public/venalabs/airdrops.webp";
 import venaRoutines from "../../public/venalabs/routines.webp";
 import venaBattlePass from "../../public/venalabs/battle-pass.webp";
+import venaArchitecture from "../../public/venalabs/architecture.webp";
+import venaV1Discover from "../../public/venalabs/v1-discover.webp";
+import venaV1Airdrops from "../../public/venalabs/v1-airdrops.webp";
+import venaV1Routines from "../../public/venalabs/v1-routines.webp";
+import venaV1Courses from "../../public/venalabs/v1-courses.webp";
 
 import ethCover from "../../public/ethzurich/cover.webp";
 import ethCrowd from "../../public/ethzurich/illustration-crowd.webp";
 import ethManifesto from "../../public/ethzurich/illustration-manifesto.webp";
+import ethVenue from "../../public/ethzurich/illustration-venue.webp";
+import ethMeetups from "../../public/ethzurich/illustration-meetups.webp";
+import ethAudience from "../../public/ethzurich/illustration-audience.webp";
+import ethStage from "../../public/ethzurich/illustration-stage.webp";
+import ethCity from "../../public/ethzurich/illustration-city.webp";
+import ethEther from "../../public/ethzurich/illustration-ether.webp";
+import ethPeople from "../../public/ethzurich/illustration-people.webp";
+import ethPosterType from "../../public/ethzurich/poster-type.webp";
+import ethPosterEth from "../../public/ethzurich/poster-eth.webp";
+import ethPosterHand from "../../public/ethzurich/poster-hand.webp";
+import ethPosterCrowd from "../../public/ethzurich/poster-crowd.webp";
+import ethPosterStage from "../../public/ethzurich/poster-stage.webp";
+import ethPosterPeople from "../../public/ethzurich/poster-people.webp";
 import ethLogo from "../../public/ethzurich/logo.webp";
 import ethLogomark from "../../public/ethzurich/logomark.webp";
 import ethPalette from "../../public/ethzurich/palette.webp";
@@ -107,6 +125,8 @@ export type Phase = {
 export type Highlight = {
   title: string;
   images: ProjectImage[];
+  /** The v1 screen this highlight replaces; renders a v1 / v2 comparison. */
+  before?: ProjectImage;
   text?: string;
   issue?: string;
   solution?: string;
@@ -374,9 +394,14 @@ export const projects: Project[] = [
     caseStudy: {
       process: [
         {
+          name: "Research",
+          intro:
+            "Before touching a screen, I mapped the whole app in FigJam: every section, every sub-page and the links between them. That map showed the problem: the same content lived in several places and nothing told you where to start.",
+        },
+        {
           name: "Restructure",
           intro:
-            "v2 starts from what people come to do: learn, farm, keep a routine. One layout carries all of it: navigation on the left, content in the middle, your streak and today's tasks always at hand.",
+            "v2 starts from what people come to do: learn, farm, keep a routine. Discover became the hub, ranking, referrals and settings moved under the profile, and one layout carries everything: navigation on the left, content in the middle, your streak and today's tasks always at hand.",
         },
         {
           name: "Design system",
@@ -389,30 +414,51 @@ export const projects: Project[] = [
             "VenaPoints, chests, a streak flame and a battle pass. Every useful action gives feedback, and locked rewards stay visible, so there's always a next goal.",
         },
       ],
-      highlightsTitle: "Inside v2",
+      highlightsTitle: "From v1 to v2",
       highlights: [
         {
-          title: "Discover: everything on one screen",
-          images: [{ src: venaDiscover, alt: "VenaLabs Discover: recommended quest, airdrops and today's routine" }],
-          text: "A recommended quest, the airdrops worth your time and today's routine. One page to know what to do next.",
+          title: "Mapping the app first",
+          images: [{ src: venaArchitecture, alt: "VenaLabs app architecture in FigJam: navigation, Discover, Routines, Courses, Airdrops, Profile and Settings" }],
+          text: "The architecture became the brief for v2: five main sections, Discover linking to the rest, and premium and settings each in one place.",
         },
         {
-          title: "Courses as a map",
-          images: [{ src: venaCourses, alt: "VenaLabs course map with completed, in-progress and locked chapters" }],
-          text: "Each course is a path of short chapters: completed, in progress, locked. You see how far you've come and what you'll earn next.",
+          title: "Discover",
+          before: { src: venaV1Discover, alt: "VenaLabs v1 home: a marketing hero explaining airdrops above a table" },
+          images: [{ src: venaDiscover, alt: "VenaLabs v2 Discover: recommended quest, airdrops and today's routine" }],
+          issue:
+            "The home page was a marketing page: a big logo, a paragraph explaining what an airdrop is, and a table pushed below the fold. Returning users scrolled past it every time.",
+          solution:
+            "Discover answers one question: what should I do today? A recommended quest, the airdrops worth your time and today's routine, with your streak and tasks in the side panel.",
         },
         {
-          title: "Airdrops you can act on",
-          images: [{ src: venaAirdrops, alt: "VenaLabs airdrop page with tasks and rewards" }],
-          text: "Every airdrop on a single screen: what the project is, the tasks to complete and the rewards waiting for you.",
+          title: "Airdrops",
+          before: { src: venaV1Airdrops, alt: "VenaLabs v1 airdrops: a dense table with many columns and filters" },
+          images: [{ src: venaAirdrops, alt: "VenaLabs v2 airdrop page with tasks and rewards" }],
+          issue:
+            "A spreadsheet: ten columns, a row of filters and unlabeled progress bars. Hard to scan, and nothing told you what to actually do.",
+          solution:
+            "Each airdrop gets its own page: what the project is, the tasks to complete with your progress, and the rewards waiting for you.",
         },
         {
-          title: "Routines and streaks",
-          images: [{ src: venaRoutines, alt: "VenaLabs routines with a creator's routine of the day and a streak" }],
-          text: "Follow a creator's routine, tick off today's tasks and keep your streak alive. Habits, not one-off visits.",
+          title: "Routines",
+          before: { src: venaV1Routines, alt: "VenaLabs v1 routines: large creator banners" },
+          images: [{ src: venaRoutines, alt: "VenaLabs v2 routines: routine of the day with tasks, streak and check-ins" }],
+          issue:
+            "Big creator banners with a name and a face, but nothing about what a routine contains or how far along you are.",
+          solution:
+            "The routine of the day shows its tasks and your progress (3/5), and the streak and weekly check-ins sit right next to it.",
         },
         {
-          title: "A battle pass for crypto",
+          title: "Courses",
+          before: { src: venaV1Courses, alt: "VenaLabs v1 course map with identical grey chapter cards" },
+          images: [{ src: venaCourses, alt: "VenaLabs v2 course map with completed, in-progress and locked chapters" }],
+          issue:
+            "The course map was already there, but every chapter looked the same: small grey cards, tiny text, no way to tell done from locked.",
+          solution:
+            "Completed, in progress and locked each have their own look, the path is drawn with arrows, and the reward for each chapter is visible.",
+        },
+        {
+          title: "New in v2: a battle pass",
           images: [{ src: venaBattlePass, alt: "VenaLabs battle pass with tiers and rewards" }],
           text: "Missions earn XP, XP unlocks tiers, tiers unlock rewards. A pattern from games that keeps people coming back.",
         },
@@ -461,15 +507,34 @@ export const projects: Project[] = [
         {
           title: "Illustrations that bring people in",
           images: [
-            { src: ethCrowd, alt: "Illustration of conference attendees" },
             { src: ethManifesto, alt: "Illustration of a hand sprinkling sparks over a landscape" },
+            { src: ethVenue, alt: "Illustration of people networking in a conference venue" },
+            { src: ethMeetups, alt: "Illustration grid of people meeting and talking" },
+            { src: ethAudience, alt: "Illustration of an audience facing a stage" },
+            { src: ethStage, alt: "Illustration of a woman looking at an empty stage" },
+            { src: ethCrowd, alt: "Illustration of conference attendees" },
+            { src: ethCity, alt: "Illustration of attendees in front of Zürich buildings" },
+            { src: ethEther, alt: "Illustration of two faces around the Ethereum diamond" },
+            { src: ethPeople, alt: "Illustration of six attendees in a grid" },
           ],
-          text: "A series of textured, flat illustrations in the brand colors. People first, technology as a spark: they set the tone on the website and in every announcement.",
+          text: "A series of textured, flat illustrations in the brand colors. People first, technology as a spark: they set the tone on the website, in announcements and on the posters.",
         },
         {
-          title: "Posters",
+          title: "Welcome and agenda posters",
           images: [
-            { src: ethKeyVisual, alt: "ETHZürich key visual poster" },
+            { src: ethPosterType, alt: "Typographic ETHZürich welcome poster in pink" },
+            { src: ethPosterEth, alt: "ETHZürich welcome poster with the Ethereum illustration, dark version" },
+            { src: ethPosterHand, alt: "ETHZürich welcome poster with the hand illustration, green version" },
+            { src: ethPosterCrowd, alt: "ETHZürich welcome poster with the crowd illustration" },
+            { src: ethPosterStage, alt: "ETHZürich welcome poster with the stage illustration" },
+            { src: ethPosterPeople, alt: "ETHZürich welcome poster with the attendees illustration, dark version" },
+          ],
+          text: "28 A0 posters for the venue from one template: seven visuals, four colorways. Each one carries the agenda QR code and the partner logos, so the series feels varied but always on brand.",
+        },
+        {
+          title: "Key visual, out in the city",
+          images: [
+            { src: ethKeyVisual, alt: "ETHZürich key visual" },
             { src: ethBillboard, alt: "ETHZürich billboard" },
             { src: ethTote, alt: "ETHZürich tote bag" },
           ],
