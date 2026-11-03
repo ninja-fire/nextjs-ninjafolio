@@ -1,17 +1,14 @@
 import Image from "next/image";
-import Link from "next/link";
 import ninjapic from "../../public/ninjapic.png";
 import Button from "./button";
 import { links } from "../data/site";
-import { projects } from "../data/projects";
+import ProjectWall from "./projectWall";
 
 // TODO(content): double-check these numbers.
 const stats = [
   { value: "6+", label: "years designing" },
   { value: "40+", label: "clients worldwide" },
 ];
-
-const showcase = projects.slice(0, 4);
 
 export default function Hero() {
   return (
@@ -69,36 +66,8 @@ export default function Hero() {
           </dl>
         </div>
 
-        {/* Static showcase: two columns, the right one offset down */}
-        <ul className="grid grid-cols-2 gap-4 md:gap-5">
-          {showcase.map((p, i) => (
-            <li key={p.slug} className={i % 2 === 1 ? "translate-y-10" : ""}>
-              <Link
-                href={`/work/${p.slug}`}
-                className="group relative block aspect-[4/5] overflow-hidden rounded-2xl border-2 border-line transition-all duration-300 hover:-translate-y-1 hover:border-label hover:shadow-primaryXl"
-              >
-                <Image
-                  priority
-                  src={p.cover.src}
-                  alt=""
-                  fill
-                  sizes="(min-width: 1024px) 22vw, 50vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div
-                  aria-hidden
-                  className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/10 to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-100"
-                />
-                <div className="absolute inset-x-0 bottom-0 flex flex-col gap-0.5 p-4 transition-transform duration-300 md:translate-y-2 md:group-hover:translate-y-0">
-                  <span className="font-extrabold">{p.title}</span>
-                  <span className="line-clamp-1 text-xs text-caption md:opacity-0 md:transition-opacity md:duration-300 md:group-hover:opacity-100">
-                    {p.tagline}
-                  </span>
-                </div>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        {/* Project wall: real work from every project, tilted, each piece links to its case study */}
+        <ProjectWall />
       </div>
     </section>
   );
