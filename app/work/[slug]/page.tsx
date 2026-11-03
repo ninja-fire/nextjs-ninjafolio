@@ -42,7 +42,9 @@ function HighlightBlock({ h, index }: { h: Highlight; index: number }) {
           {pair.map(({ label, image }) => (
             <figure key={label} className="flex flex-col gap-3">
               <figcaption className={`eyebrow ${label === "v1" ? "!text-placeholder" : ""}`}>{label}</figcaption>
-              <Frame image={image} sizes="(min-width: 768px) 50vw, 100vw" />
+              <div className="flex-1">
+                <Frame image={image} sizes="(min-width: 768px) 50vw, 100vw" />
+              </div>
             </figure>
           ))}
         </div>

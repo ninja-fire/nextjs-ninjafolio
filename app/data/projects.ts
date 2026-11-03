@@ -31,16 +31,19 @@ import zuTiers from "../../public/zuitzerland/merch-tiers.webp";
 import zuHoodie from "../../public/zuitzerland/merch-hoodie.webp";
 
 import venaCover from "../../public/venalabs/cover.webp";
-import venaDiscover from "../../public/venalabs/discover.webp";
-import venaCourses from "../../public/venalabs/courses.webp";
-import venaAirdrops from "../../public/venalabs/airdrops.webp";
-import venaRoutines from "../../public/venalabs/routines.webp";
-import venaBattlePass from "../../public/venalabs/battle-pass.webp";
+import venaDiscover from "../../public/venalabs/v2-discover.webp";
+import venaCourses from "../../public/venalabs/v2-courses.webp";
+import venaAirdrops from "../../public/venalabs/v2-airdrops.webp";
+import venaRoutines from "../../public/venalabs/v2-routines.webp";
+import venaLeaderboard from "../../public/venalabs/v2-leaderboard.webp";
+import venaProfile from "../../public/venalabs/v2-profile.webp";
 import venaArchitecture from "../../public/venalabs/architecture.webp";
 import venaV1Discover from "../../public/venalabs/v1-discover.webp";
 import venaV1Airdrops from "../../public/venalabs/v1-airdrops.webp";
 import venaV1Routines from "../../public/venalabs/v1-routines.webp";
 import venaV1Courses from "../../public/venalabs/v1-courses.webp";
+import venaV1Leaderboard from "../../public/venalabs/v1-leaderboard.webp";
+import venaV1Profile from "../../public/venalabs/v1-profile.webp";
 
 import ethCover from "../../public/ethzurich/cover.webp";
 import ethCrowd from "../../public/ethzurich/illustration-crowd.webp";
@@ -55,9 +58,6 @@ import ethPeople from "../../public/ethzurich/illustration-people.webp";
 import ethPosterType from "../../public/ethzurich/poster-type.webp";
 import ethPosterEth from "../../public/ethzurich/poster-eth.webp";
 import ethPosterHand from "../../public/ethzurich/poster-hand.webp";
-import ethPosterCrowd from "../../public/ethzurich/poster-crowd.webp";
-import ethPosterStage from "../../public/ethzurich/poster-stage.webp";
-import ethPosterPeople from "../../public/ethzurich/poster-people.webp";
 import ethLogo from "../../public/ethzurich/logo.webp";
 import ethLogomark from "../../public/ethzurich/logomark.webp";
 import ethPalette from "../../public/ethzurich/palette.webp";
@@ -65,7 +65,6 @@ import ethType from "../../public/ethzurich/type.webp";
 import ethKeyVisual from "../../public/ethzurich/key-visual.webp";
 import ethBillboard from "../../public/ethzurich/billboard.webp";
 import ethTote from "../../public/ethzurich/tote.webp";
-import ethWebsite from "../../public/ethzurich/website.webp";
 
 import trooperCover from "../../public/trooper/trooper.png";
 import trooperP1 from "../../public/trooper/problem1.png";
@@ -377,14 +376,14 @@ export const projects: Project[] = [
     year: "2025",
     client: "VenaLabs",
     link: { href: "https://venalabs.com/en/landing", label: "venalabs.com" },
-    cover: { src: venaCover, alt: "VenaLabs v2 landing page: Find the airdrops, follow your routines, learn to farm" },
+    cover: { src: venaCover, alt: "VenaLabs v2 Discover screen: a starter course, airdrops and routines" },
     role: "Product designer",
-    deliverables: ["Full app redesign (v1 → v2)", "Design system", "Rewards & gamification", "Landing page"],
+    deliverables: ["UX research & app architecture", "Full app redesign (v1 → v2)", "Design system", "Rewards & gamification"],
     tags: ["ux/ui design", "redesign", "design system", "gamification"],
     tools: ["Figma"],
     question: "How do you turn courses, airdrops and routines into one app people open every day?",
     summary:
-      "VenaLabs helps people learn crypto and farm airdrops, with courses, step-by-step airdrop guides and daily routines from creators. I redesigned the whole app from v1 to v2: a new structure, a new design system and a rewards loop that makes progress visible, plus the landing page that sells it.",
+      "VenaLabs helps people learn crypto and farm airdrops, with courses, step-by-step airdrop guides and daily routines from creators. I redesigned the whole app from v1 to v2: a new structure, a new design system and a rewards loop that makes progress visible.",
     objectives: [
       "Bring courses, airdrops and routines into one clear structure.",
       "Make progress visible and rewarding, so users come back every day.",
@@ -411,7 +410,7 @@ export const projects: Project[] = [
         {
           name: "Gamification",
           intro:
-            "VenaPoints, chests, a streak flame and a battle pass. Every useful action gives feedback, and locked rewards stay visible, so there's always a next goal.",
+            "VenaPoints, chests, streaks and a leaderboard. Every useful action gives feedback, and rewards stay visible, so there's always a next goal.",
         },
       ],
       highlightsTitle: "From v1 to v2",
@@ -433,34 +432,46 @@ export const projects: Project[] = [
         {
           title: "Airdrops",
           before: { src: venaV1Airdrops, alt: "VenaLabs v1 airdrops: a dense table with many columns and filters" },
-          images: [{ src: venaAirdrops, alt: "VenaLabs v2 airdrop page with tasks and rewards" }],
+          images: [{ src: venaAirdrops, alt: "VenaLabs v2 airdrops: cards with filters for new, trending and favorites" }],
           issue:
             "A spreadsheet: ten columns, a row of filters and unlabeled progress bars. Hard to scan, and nothing told you what to actually do.",
           solution:
-            "Each airdrop gets its own page: what the project is, the tasks to complete with your progress, and the rewards waiting for you.",
+            "Cards you can scan in a second: project, action and progress. Tabs for new, trending and favorites, and filters for cost, network, reward and time. One tap opens the tasks to complete.",
         },
         {
           title: "Routines",
           before: { src: venaV1Routines, alt: "VenaLabs v1 routines: large creator banners" },
-          images: [{ src: venaRoutines, alt: "VenaLabs v2 routines: routine of the day with tasks, streak and check-ins" }],
+          images: [{ src: venaRoutines, alt: "VenaLabs v2 routines: creator routines as cards with progress and frequency" }],
           issue:
             "Big creator banners with a name and a face, but nothing about what a routine contains or how far along you are.",
           solution:
-            "The routine of the day shows its tasks and your progress (3/5), and the streak and weekly check-ins sit right next to it.",
+            "Each routine card says who made it, what it's for, how often to do it and how far along you are. Your to-do list and streak stay in the side panel on every page.",
         },
         {
           title: "Courses",
           before: { src: venaV1Courses, alt: "VenaLabs v1 course map with identical grey chapter cards" },
-          images: [{ src: venaCourses, alt: "VenaLabs v2 course map with completed, in-progress and locked chapters" }],
+          images: [{ src: venaCourses, alt: "VenaLabs v2 course page: chapter map, rewards and the list of chapters" }],
           issue:
-            "The course map was already there, but every chapter looked the same: small grey cards, tiny text, no way to tell done from locked.",
+            "The course map was already there, but every chapter looked the same: small grey cards, tiny text, no idea what a course contains before you start.",
           solution:
-            "Completed, in progress and locked each have their own look, the path is drawn with arrows, and the reward for each chapter is visible.",
+            "A course page with the chapter map, what you'll earn and the list of chapters, so you know what you're signing up for before pressing start.",
         },
         {
-          title: "New in v2: a battle pass",
-          images: [{ src: venaBattlePass, alt: "VenaLabs battle pass with tiers and rewards" }],
-          text: "Missions earn XP, XP unlocks tiers, tiers unlock rewards. A pattern from games that keeps people coming back.",
+          title: "Leaderboard",
+          before: { src: venaV1Leaderboard, alt: "VenaLabs v1 leaderboard: a long list of usernames and points" },
+          images: [{ src: venaLeaderboard, alt: "VenaLabs v2 leaderboard with categories for VenaPoints, chests and streaks" }],
+          issue:
+            "One long list ranked by points. If you weren't already near the top, there was nothing in it for you.",
+          solution:
+            "Several ways to win: VenaPoints, chests and streaks each have their own ranking and their own winner, so newer users have a race they can actually compete in.",
+        },
+        {
+          title: "Profile",
+          before: { src: venaV1Profile, alt: "VenaLabs v1 profile: an avatar and a username on an empty page" },
+          images: [{ src: venaProfile, alt: "VenaLabs v2 profile with level, rewards and achievements" }],
+          issue: "An avatar and a username on an empty page. All your progress lived somewhere else, if anywhere.",
+          solution:
+            "The profile becomes your trophy shelf: level progress, VenaPoints, chests and streaks, and every course, routine and airdrop you've completed.",
         },
       ],
     },
@@ -474,7 +485,7 @@ export const projects: Project[] = [
     link: { href: "https://ethereumzuri.ch/", label: "ethereumzuri.ch" },
     cover: { src: ethCover, alt: "ETHZürich illustration: a crowd at a conference in blue, red and pink" },
     role: "Brand designer & illustrator",
-    deliverables: ["Logo & brand identity", "Brand guidelines", "Illustrations", "Event posters & key visual", "Website art direction"],
+    deliverables: ["Logo & brand identity", "Brand guidelines", "Illustrations", "Event posters & key visual"],
     tags: ["branding", "logo design", "illustration", "posters"],
     tools: ["Figma"],
     question: "How do you make a blockchain conference look as curious and human as its community?",
@@ -525,9 +536,6 @@ export const projects: Project[] = [
             { src: ethPosterType, alt: "Typographic ETHZürich welcome poster in pink" },
             { src: ethPosterEth, alt: "ETHZürich welcome poster with the Ethereum illustration, dark version" },
             { src: ethPosterHand, alt: "ETHZürich welcome poster with the hand illustration, green version" },
-            { src: ethPosterCrowd, alt: "ETHZürich welcome poster with the crowd illustration" },
-            { src: ethPosterStage, alt: "ETHZürich welcome poster with the stage illustration" },
-            { src: ethPosterPeople, alt: "ETHZürich welcome poster with the attendees illustration, dark version" },
           ],
           text: "28 A0 posters for the venue from one template: seven visuals, four colorways. Each one carries the agenda QR code and the partner logos, so the series feels varied but always on brand.",
         },
@@ -539,11 +547,6 @@ export const projects: Project[] = [
             { src: ethTote, alt: "ETHZürich tote bag" },
           ],
           text: "The key visual uses the full name as a graphic: huge, stacked and impossible to miss, from a billboard down to a tote bag.",
-        },
-        {
-          title: "Live on ethereumzuri.ch",
-          images: [{ src: ethWebsite, alt: "ethereumzuri.ch website with the illustration and the new identity" }],
-          text: "The identity and illustrations carried through to the conference website.",
         },
       ],
     },
