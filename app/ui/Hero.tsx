@@ -23,7 +23,7 @@ export default function Hero() {
       />
       <div className="container-site relative grid items-center gap-16 pb-20 pt-28 md:pt-36 lg:grid-cols-[1.1fr_0.9fr] lg:pb-28">
         <div className="flex flex-col gap-8">
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex items-center gap-4">
             <Image
               priority
               src={ninjapic}
@@ -34,10 +34,6 @@ export default function Hero() {
               <p className="font-extrabold">Hi, I&apos;m Ninja Fire</p>
               <p className="text-sm text-placeholder">Product &amp; brand designer</p>
             </div>
-            <p className="flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">
-              <span aria-hidden className="h-2 w-2 rounded-full bg-primary" />
-              Open to new projects
-            </p>
           </div>
 
           <h1 id="hero-title" className="text-display">
