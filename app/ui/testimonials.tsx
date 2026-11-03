@@ -28,7 +28,7 @@ export default function Testimonials() {
                 className={`rounded-3xl border-2 border-line bg-surface p-8 md:p-10 ${featured ? "lg:row-span-2" : ""}`}
               >
                 <figure className="flex h-full flex-col gap-8">
-                  <blockquote lang={t.lang} className="flex flex-col gap-3">
+                  <blockquote className="flex flex-col gap-3">
                     <span aria-hidden className="h-6 text-6xl font-extrabold leading-none text-primary">
                       &ldquo;
                     </span>
@@ -44,6 +44,7 @@ export default function Testimonials() {
                     <div>
                       <p className="font-extrabold">{t.name}</p>
                       <p className="text-sm text-placeholder">{t.role}</p>
+                      {t.note && <p className="text-xs italic text-placeholder">{t.note}</p>}
                     </div>
                   </figcaption>
                 </figure>

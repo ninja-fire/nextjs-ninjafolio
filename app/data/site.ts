@@ -49,7 +49,8 @@ export type Testimonial = {
   role: string;
   avatar: StaticImageData;
   quote: string;
-  lang?: string;
+  /** Shown under the role, e.g. when the quote is translated. */
+  note?: string;
 };
 
 export const testimonials: Testimonial[] = [
@@ -71,8 +72,8 @@ export const testimonials: Testimonial[] = [
     name: "Marvin Scaringella",
     role: "CEO, VenaLabs",
     avatar: marvin,
-    lang: "fr",
+    note: "Translated from French",
     quote:
-      "Manon est une designer de talent avec qui nous avons eu le plaisir de travailler sur notre projet VenaLabs. Elle a su faire preuve d'une grande initiative et d'une créativité exceptionnelle, transformant nos idées en une réalité visuelle. C'est rare de rencontrer une designer qui comprend aussi profondément les besoins de ses clients et qui y répond avec autant de brio. Merci Manon, tu as été formidable !",
+      "Manon is a talented designer, and we had the pleasure of working with her on our VenaLabs project. She showed real initiative and exceptional creativity, turning our ideas into a visual reality. It's rare to meet a designer who understands her clients' needs so deeply and answers them so brilliantly. Thank you Manon, you were amazing!",
   },
 ];
