@@ -16,36 +16,40 @@ export default function Testimonials() {
             </>
           }
         />
-        <ul className="grid gap-6 lg:grid-cols-3">
-          {testimonials.map((t, i) => (
-            <Reveal
-              as="li"
-              key={t.name}
-              delay={i * 120}
-              className="flex flex-col justify-between gap-8 rounded-3xl border-2 border-line bg-surface p-8"
-            >
-              <figure className="flex h-full flex-col justify-between gap-8">
-                <blockquote lang={t.lang} className="flex flex-col gap-4">
-                  <span aria-hidden className="text-6xl font-extrabold leading-none text-primary">
-                    &ldquo;
-                  </span>
-                  <p className="text-caption">{t.quote}</p>
-                </blockquote>
-                <figcaption className="flex items-center gap-4 border-t border-line pt-6">
-                  <Image
-                    src={t.avatar}
-                    alt=""
-                    className="h-12 w-12 rounded-full border-2 border-label bg-primary"
-                    sizes="48px"
-                  />
-                  <div>
-                    <p className="font-extrabold">{t.name}</p>
-                    <p className="text-sm text-placeholder">{t.role}</p>
-                  </div>
-                </figcaption>
-              </figure>
-            </Reveal>
-          ))}
+        {/* The shortest quote is featured large; the two longer ones stack beside it */}
+        <ul className="grid gap-6 lg:grid-cols-2 lg:grid-rows-[auto_auto]">
+          {testimonials.map((t, i) => {
+            const featured = i === 0;
+            return (
+              <Reveal
+                as="li"
+                key={t.name}
+                delay={i * 120}
+                className={`rounded-3xl border-2 border-line bg-surface p-8 md:p-10 ${featured ? "lg:row-span-2" : ""}`}
+              >
+                <figure className="flex h-full flex-col gap-8">
+                  <blockquote lang={t.lang} className="flex flex-col gap-3">
+                    <span aria-hidden className="h-6 text-6xl font-extrabold leading-none text-primary">
+                      &ldquo;
+                    </span>
+                    <p className={featured ? "text-2xl leading-snug text-label md:text-3xl" : "text-caption"}>{t.quote}</p>
+                  </blockquote>
+                  <figcaption className="mt-auto flex items-center gap-4">
+                    <Image
+                      src={t.avatar}
+                      alt=""
+                      className="h-12 w-12 rounded-full border-2 border-label bg-primary"
+                      sizes="48px"
+                    />
+                    <div>
+                      <p className="font-extrabold">{t.name}</p>
+                      <p className="text-sm text-placeholder">{t.role}</p>
+                    </div>
+                  </figcaption>
+                </figure>
+              </Reveal>
+            );
+          })}
         </ul>
       </div>
     </section>
