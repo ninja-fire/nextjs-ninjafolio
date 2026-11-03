@@ -29,7 +29,7 @@ export default function Testimonials() {
               >
                 <figure className="flex h-full flex-col gap-8">
                   <blockquote className="flex flex-col gap-3">
-                    <span aria-hidden className="h-6 text-6xl font-extrabold leading-none text-primary">
+                    <span aria-hidden className={`font-extrabold leading-none text-primary ${featured ? "h-14 text-9xl" : "h-6 text-6xl"}`}>
                       &ldquo;
                     </span>
                     <p className={featured ? "text-2xl leading-snug text-label md:text-3xl" : "text-caption"}>{t.quote}</p>
