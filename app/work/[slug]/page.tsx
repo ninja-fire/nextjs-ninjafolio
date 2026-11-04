@@ -22,7 +22,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       type: "article",
       siteName: "NinjaFire",
       url: `/work/${project.slug}`,
-      images: [{ url: project.cover.src.src, width: project.cover.src.width, height: project.cover.src.height, alt: project.cover.alt }],
+      // Generated from the cover by scripts/og-images.mjs before each build.
+      images: [{ url: `/og/${project.slug}.jpg`, width: 1200, height: 630, alt: project.cover.alt }],
     },
   };
 }

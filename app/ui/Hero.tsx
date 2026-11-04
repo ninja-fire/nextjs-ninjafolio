@@ -4,7 +4,6 @@ import Button from "./button";
 import { links } from "../data/site";
 import ProjectWall from "./projectWall";
 
-// TODO(content): double-check these numbers.
 const stats = [
   { value: "6+", label: "years designing" },
   { value: "40+", label: "clients worldwide" },
