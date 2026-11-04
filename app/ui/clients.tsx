@@ -1,4 +1,6 @@
-/* eslint-disable @next/next/no-img-element -- plain eager <img>: next/image lazy-loads, which makes logos pop in mid-scroll */
+/* eslint-disable @next/next/no-img-element -- plain <img>: SVG logos gain nothing from next/image */
+// Native lazy-loading: the strip sits right under the hero, inside Chrome's ~1250px load-ahead range, so all
+// logos still load right after first layout (no pop-in) without competing with the hero for bandwidth.
 
 // Logos live in /public/logoclient/logoclient-01.svg … -40.svg
 const logos = Array.from({ length: 40 }, (_, i) => `/logoclient/logoclient-${String(i + 1).padStart(2, "0")}.svg`);
@@ -17,7 +19,7 @@ function Row({ items, reverse = false }: { items: string[]; reverse?: boolean })
     >
       {items.map((src) => (
         <li key={src} className="shrink-0 px-6 md:px-10">
-          <img src={src} alt="" loading="eager" decoding="async" className="h-8 w-auto opacity-50 grayscale md:h-11" />
+          <img src={src} alt="" loading="lazy" decoding="async" className="h-8 w-auto opacity-50 grayscale md:h-11" />
         </li>
       ))}
     </ul>

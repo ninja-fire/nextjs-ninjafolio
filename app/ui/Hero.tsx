@@ -24,6 +24,8 @@ export default function Hero() {
               priority
               src={ninjapic}
               alt="Ninja Fire avatar"
+              width={56}
+              height={56}
               className="h-14 w-14 rounded-full border-2 border-label"
             />
             <div>

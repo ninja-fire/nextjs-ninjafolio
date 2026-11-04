@@ -55,7 +55,7 @@ export default function ProjectWall() {
                   className={`group relative block overflow-hidden rounded-xl border-2 border-line bg-surface transition-all duration-300 ease-out hover:-translate-x-1 hover:-translate-y-1 hover:border-label hover:shadow-primaryXl ${t.aspect}`}
                 >
                   <Image
-                    priority
+                    loading="eager"
                     src={t.src}
                     alt=""
                     fill
