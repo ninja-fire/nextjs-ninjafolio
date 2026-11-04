@@ -37,3 +37,7 @@ next-env.d.ts
 
 # generated link-preview images (scripts/og-images.mjs)
 /public/og/
+
+# local agent docs
+/AGENTS.md
+/docs/
