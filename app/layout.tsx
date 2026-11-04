@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import NavMenu from "./ui/navmenu";
 import Footer from "./ui/footer";
+import { siteUrl } from "./data/site";
 
 const bricoFont = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -17,6 +18,19 @@ export const metadata: Metadata = {
   },
   description:
     "UX/UI and brand identity designer for ambitious products. dApps, web apps, design systems, logos, 3D mascots and pitch decks, with deep Web3 expertise.",
+  metadataBase: new URL(siteUrl),
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName: "NinjaFire",
+    locale: "en_US",
+    url: "/",
+  },
+  twitter: { card: "summary_large_image" },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#151514",
 };
 
 export default function RootLayout({

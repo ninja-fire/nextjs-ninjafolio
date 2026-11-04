@@ -17,7 +17,13 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title: `${project.title}: ${project.tagline}`,
     description: project.summary,
-    openGraph: { images: [project.cover.src.src] },
+    alternates: { canonical: `/work/${project.slug}` },
+    openGraph: {
+      type: "article",
+      siteName: "NinjaFire",
+      url: `/work/${project.slug}`,
+      images: [{ url: project.cover.src.src, width: project.cover.src.width, height: project.cover.src.height, alt: project.cover.alt }],
+    },
   };
 }
 

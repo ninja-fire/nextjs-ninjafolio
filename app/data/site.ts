@@ -3,6 +3,8 @@ import dani from "../../public/testimonials/dani.png";
 import madperps from "../../public/testimonials/madperps.png";
 import marvin from "../../public/testimonials/marvin.png";
 
+export const siteUrl = "https://ninjafire.design";
+
 export const links = {
   bookCall: "https://cal.com/ninjafire/introcall",
   telegram: "https://t.me/ninja_fire",
